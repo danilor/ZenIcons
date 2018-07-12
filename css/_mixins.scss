@@ -1,0 +1,67 @@
+/**
+Mixins
+@author Danilo Ramírez
+@version 1.0
+ */
+
+@mixin flex(){
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex_align( $c ){
+  -webkit-box-align: $c;
+  -moz-box-align: $c;
+  -ms-flex-align: $c;
+  -webkit-align-items: $c;
+  align-items: $c;
+}
+
+@mixin flex_justify( $c ){
+  -webkit-box-pack: $c;
+  -moz-box-pack: $c;
+  -ms-flex-pack: $c;
+  -webkit-justify-content: $c;
+  justify-content: $c;
+}
+
+@mixin flex_direction( $c ){
+  -webkit-flex-direction: $c;
+  flex-direction: $c;
+}
+
+@mixin flex_absolute_center(){
+  @include flex();
+  @include flex_justify( center );
+  @include flex_align( center );
+  @include flex_direction(column);
+}
+
+@mixin full_background_image( $u ){
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  background-image: url($u);
+}
+
+@mixin border_rad( $c ){
+  -webkit-border-radius: $c;
+  -moz-border-radius: $c;
+  border-radius: $c;
+}
+
+@mixin set_shadow( $s ){
+  -webkit-box-shadow: $s;
+  -moz-box-shadow: $s;
+  box-shadow: $s;
+}
+
+@mixin set_transition( $s... ){
+  -webkit-transition: $s;
+  -moz-transition: $s;
+  -o-transition: $s;
+  transition: $s;
+}

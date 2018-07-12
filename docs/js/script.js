@@ -81,7 +81,9 @@ function downloadPack(){
     var path = 'src/';
     var name = 'ZenIcons';
     var extension = '.zip';
-    $('.download_pack').attr('href',path + name + current_version + extension  );
+	var path = 'https://github.com/danilor/ZenIcons/releases/';
+    // $('.download_pack').attr('href',path + name + current_version + extension  );
+	$('.download_pack').attr('href',path );
 }
 
 function bindSearch(){

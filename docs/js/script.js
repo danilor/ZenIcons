@@ -6,13 +6,13 @@ var json_file = 'Zenicons.json';
 var current_version = '1.1';
 var keyPressWait = 500;
 
-function addClickBind(){
-    $('.icons-list .icon').click(function(){
+function addClickBind() {
+    $('.icons-list .icon').click(function () {
         console.log('Icon clicked');
-        var icon = $( this ).attr('icon');
+        var icon = $(this).attr('icon');
         $('.code').html(icon);
         $('.icon-title').html('<span class="' + icon + '"></span> ' + icon);
-        $('#contentcopy').val( '<span class="' + icon + '"></span> ' );
+        $('#contentcopy').val('<span class="' + icon + '"></span> ');
         $('#iconInformation').modal({
             showClose: false,
             fadeDuration: 250
@@ -31,8 +31,8 @@ function showNoty(t, m) {
     }).show();
 }
 
-function addCopyBind(){
-    $('.copy').click(function(){
+function addCopyBind() {
+    $('.copy').click(function () {
         var copyText = document.getElementById("contentcopy");
         /* Select the text field */
         copyText.select();
@@ -42,32 +42,27 @@ function addCopyBind(){
     });
 }
 
-function addSingleIcon( icon ){
+function addSingleIcon(icon) {
     var icon_div = $('<div></div>');
     icon_div.addClass('icon');
-    icon_div.attr('icon' ,base_icon+icon );
+    icon_div.attr('icon', base_icon + icon.properties.name);
     // icon_div.addClass('tooltip');
-    icon_div.attr('title',base_icon+icon);
+    icon_div.attr('title', base_icon + icon.properties.name);
     var span_div = $('<span></span>');
-    span_div.addClass(base_icon+icon);
-    icon_div.append( span_div );
+    span_div.addClass(base_icon + icon.properties.name);
+    icon_div.append(span_div);
     $('.icons-list').append(icon_div);
 }
 
-function readIcons(  ){
-    $.getJSON( json_file, function( data ) {
-        // console.log( 'IconSet' , data.iconSets );
-        for( i = 0; i < data.iconSets.length; i++ ){
-            var selection = data.iconSets[i].selection;
-            // console.log( selection );
-            for( j = 0 ; j < selection.length; j++ ){
-                var icon = selection[j];
-                if( parseInt( icon.order ) !== 0 ){
-                    // console.log( icon );
-                    icons_list.push( icon );
-                    addSingleIcon( icon.name );
-                }
-            }
+function readIcons() {
+    $.getJSON(json_file, function (data) {
+        console.log('Data', data);
+        console.log('IconSet', data.icons);
+        for (var i = 0; i < data.icons.length; i++) {
+            // console.log( icon );
+            const icon = data.icons[i];
+            icons_list.push(icon);
+            addSingleIcon(icon);
         }
         $('.icon_loading').hide();
         $('.wrapper-icon-list').show();
@@ -77,51 +72,51 @@ function readIcons(  ){
     });
 }
 
-function downloadPack(){
+function downloadPack() {
     var path = 'src/';
     var name = 'ZenIcons';
     var extension = '.zip';
-	var path = 'https://github.com/danilor/ZenIcons/releases/';
+    var path = 'https://github.com/danilor/ZenIcons/releases/';
     // $('.download_pack').attr('href',path + name + current_version + extension  );
-	$('.download_pack').attr('href',path );
+    $('.download_pack').attr('href', path);
 }
 
-function bindSearch(){
-    var delay = (function(){
+function bindSearch() {
+    var delay = (function () {
         var timer = 0;
-        return function(callback, ms){
-            clearTimeout (timer);
+        return function (callback, ms) {
+            clearTimeout(timer);
             timer = setTimeout(callback, ms);
         };
     })();
-    $('#search').keyup(function(){
+    $('#search').keyup(function () {
         var term = $(this).val();
-        delay(()=>{
-            searchIcon( term );
-        }, keyPressWait );
+        delay(() => {
+            searchIcon(term);
+        }, keyPressWait);
     });
 }
 
-function searchIcon( term ){
-    console.log( 'Searching for ' + term );
+function searchIcon(term) {
+    console.log('Searching for ' + term);
 
-    if( term === '' ){
-        $( '.icons_area .icons-list .icon' ).show();
-    }else{
-        $( '.icons_area .icons-list .icon' ).each(function(){
+    if (term === '') {
+        $('.icons_area .icons-list .icon').show();
+    } else {
+        $('.icons_area .icons-list .icon').each(function () {
             var title = $(this).attr('title');
-            if( title.indexOf(term) !== -1 ){
-                $( this ).show();
-            }else{
-                $( this ).hide();
+            if (title.indexOf(term) !== -1) {
+                $(this).show();
+            } else {
+                $(this).hide();
             }
         });
     }
 }
 
-$( document ).ready(function(){
+$(document).ready(function () {
     readIcons();
     downloadPack();
     bindSearch();
-    $( '#year' ).html( currentTime.getFullYear() );
+    $('#year').html(currentTime.getFullYear());
 });

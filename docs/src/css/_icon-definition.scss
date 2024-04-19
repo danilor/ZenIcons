@@ -1,31 +1,20 @@
 @import "variables";
+
 @font-face {
-  font-family: 'zenicon';
-  src:  url('../font/zenicon.eot?pzkgu');
-  src:  url('../font/zenicon.eot?pzkgu#iefix') format('embedded-opentype'),
-  url('../font/zenicon.ttf?pzkgu') format('truetype'),
-  url('../font/zenicon.woff?pzkgu') format('woff'),
-  url('../font/zenicon.svg?pzkgu#zenicon') format('svg');
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?g1x2yz');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?g1x2yz#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?g1x2yz') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?g1x2yz') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?g1x2yz##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
-}
-[class^="zi-"], [class*=" zi-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'zenicon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-display: block;
 }
 
 [class^="zi-"], [class*=" zi-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'zenicon' !important;
+  font-family: '#{$icomoon-font-family}' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -38,856 +27,8607 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.zi-buddha:before {
-  content: "\e901";
-}
-.zi-email:before {
-  content: "\e900";
-}
-.zi-email-multi:before {
-  content: "\e903";
-}
-.zi-email-multi-opened:before {
-  content: "\e904";
-}
-.zi-email-opened:before {
-  content: "\e905";
-}
-.zi-home:before {
-  content: "\e908";
-}
-.zi-pencil:before {
-  content: "\e906";
-}
-.zi-pencil2:before {
-  content: "\e907";
-}
-.zi-droplet:before {
-  content: "\e90b";
-}
-.zi-image:before {
-  content: "\e90d";
-}
-.zi-images:before {
-  content: "\e90e";
-}
-.zi-camera:before {
-  content: "\e90f";
-}
-.zi-play:before {
-  content: "\e912";
-}
-.zi-film:before {
-  content: "\e913";
-}
-.zi-video-camera:before {
-  content: "\e914";
-}
-.zi-dice:before {
-  content: "\e915";
-}
-.zi-pacman:before {
-  content: "\e916";
-}
-.zi-spades:before {
-  content: "\e917";
-}
-.zi-clubs:before {
-  content: "\e918";
-}
-.zi-diamonds:before {
-  content: "\e919";
-}
-.zi-connection:before {
-  content: "\e91b";
-}
-.zi-podcast:before {
-  content: "\e91c";
-}
-.zi-feed:before {
-  content: "\e91d";
-}
-.zi-mic:before {
-  content: "\e91e";
-}
-.zi-book:before {
-  content: "\e91f";
-}
-.zi-books:before {
-  content: "\e920";
-}
-.zi-file-text:before {
-  content: "\e922";
-}
-.zi-file-empty:before {
-  content: "\e924";
-}
-.zi-files-empty:before {
-  content: "\e925";
-}
-.zi-file-text2:before {
-  content: "\e926";
-}
-.zi-file-picture:before {
-  content: "\e927";
-}
-.zi-file-music:before {
-  content: "\e928";
-}
-.zi-file-play:before {
-  content: "\e929";
-}
-.zi-file-zip:before {
-  content: "\e92b";
-}
-.zi-copy:before {
-  content: "\e92c";
-}
-.zi-paste:before {
-  content: "\e92d";
-}
-.zi-folder:before {
-  content: "\e92f";
-}
-.zi-folder-open:before {
-  content: "\e930";
-}
-.zi-folder-plus:before {
-  content: "\e931";
-}
-.zi-folder-minus:before {
-  content: "\e932";
-}
-.zi-folder-download:before {
-  content: "\e933";
-}
-.zi-folder-upload:before {
-  content: "\e934";
-}
-.zi-tag:before {
-  content: "\e935";
-}
-.zi-tags:before {
-  content: "\e936";
-}
-.zi-barcode:before {
-  content: "\e937";
-}
-.zi-qrcode:before {
-  content: "\e938";
-}
-.zi-cart:before {
-  content: "\e93a";
-}
-.zi-coin-dollar:before {
-  content: "\e93b";
-}
-.zi-phone:before {
-  content: "\e942";
-}
-.zi-phone-hang-up:before {
-  content: "\e943";
-}
-.zi-address-book:before {
-  content: "\e944";
-}
-.zi-location:before {
-  content: "\e947";
-}
-.zi-location-negative:before {
-  content: "\e948";
-}
-.zi-compass:before {
-  content: "\e949";
-}
-.zi-compass2:before {
-  content: "\e94a";
-}
-.zi-map-black:before {
-  content: "\e94b";
-}
-.zi-map-white:before {
-  content: "\e94c";
-}
-.zi-clock:before {
-  content: "\e94e";
-}
-.zi-clock-black:before {
-  content: "\e94f";
-}
-.zi-alarm:before {
-  content: "\e950";
-}
-.zi-bell:before {
-  content: "\e951";
-}
-.zi-calendar:before {
-  content: "\e953";
-}
-.zi-printer:before {
-  content: "\e954";
-}
-.zi-keyboard:before {
-  content: "\e955";
-}
-.zi-display:before {
-  content: "\e956";
-}
-.zi-mobile:before {
-  content: "\e958";
-}
-.zi-mobile2:before {
-  content: "\e959";
-}
-.zi-drawer:before {
-  content: "\e95c";
-}
-.zi-drawer2:before {
-  content: "\e95d";
-}
-.zi-floppy-disk:before {
-  content: "\e962";
-}
-.zi-undo:before {
-  content: "\e967";
-}
-.zi-redo:before {
-  content: "\e968";
-}
-.zi-forward1:before {
-  content: "\e969";
-}
-.zi-reply:before {
-  content: "\e96a";
-}
-.zi-bubble:before {
-  content: "\e96b";
-}
-.zi-bubbles:before {
-  content: "\e96c";
-}
-.zi-bubbles-back:before {
-  content: "\e96d";
-}
-.zi-bubble-w:before {
-  content: "\e96e";
-}
-.zi-bubbles-conversation:before {
-  content: "\e96f";
-}
-.zi-bubbles-conversation-back:before {
-  content: "\e970";
-}
-.zi-user:before {
-  content: "\e971";
-}
-.zi-users:before {
-  content: "\e972";
-}
-.zi-user-plus:before {
-  content: "\e973";
-}
-.zi-user-minus:before {
-  content: "\e974";
-}
-.zi-user-check:before {
-  content: "\e975";
-}
-.zi-quotes-left:before {
-  content: "\e977";
-}
-.zi-quotes-right:before {
-  content: "\e978";
-}
-.zi-spinner-worm:before {
-  content: "\e97b";
-}
-.zi-spinner-dots:before {
-  content: "\e97f";
-}
-.zi-spinner-j:before {
-  content: "\e982";
-}
-.zi-spinner11:before {
-  content: "\e984";
-}
-.zi-search:before {
-  content: "\e986";
-}
-.zi-zoom-in:before {
-  content: "\e987";
-}
-.zi-zoom-out:before {
-  content: "\e988";
-}
-.zi-key:before {
-  content: "\e98d";
-}
-.zi-lock:before {
-  content: "\e98f";
-}
-.zi-unlocked:before {
-  content: "\e990";
-}
-.zi-wrench:before {
-  content: "\e991";
-}
-.zi-equalizer:before {
-  content: "\e992";
-}
-.zi-equalizer2:before {
-  content: "\e993";
-}
-.zi-cog:before {
-  content: "\e994";
-}
-.zi-cogs:before {
-  content: "\e995";
-}
-.zi-hammer:before {
-  content: "\e996";
-}
-.zi-magic-wand:before {
-  content: "\e997";
-}
-.zi-bug:before {
-  content: "\e999";
-}
-.zi-pie-chart:before {
-  content: "\e99a";
-}
-.zi-stats-dots:before {
-  content: "\e99b";
-}
-.zi-stats-bars:before {
-  content: "\e99c";
-}
-.zi-stats-bars-combined:before {
-  content: "\e99d";
-}
-.zi-gift:before {
-  content: "\e99f";
-}
-.zi-meter:before {
-  content: "\e9a6";
-}
-.zi-fire:before {
-  content: "\e9a9";
-}
-.zi-lab:before {
-  content: "\e9aa";
-}
-.zi-magnet:before {
-  content: "\e9ab";
-}
-.zi-trash:before {
-  content: "\e9ac";
-}
-.zi-bin:before {
-  content: "\e9ad";
-}
-.zi-airplane:before {
-  content: "\e9af";
-}
-.zi-truck:before {
-  content: "\e9b0";
-}
-.zi-power:before {
-  content: "\e9b5";
-}
-.zi-power-cord:before {
-  content: "\e9b7";
-}
-.zi-tree:before {
-  content: "\e9bc";
-}
-.zi-cloud:before {
-  content: "\e9c1";
-}
-.zi-cloud-download:before {
-  content: "\e9c2";
-}
-.zi-cloud-upload:before {
-  content: "\e9c3";
-}
-.zi-cloud-check:before {
-  content: "\e9c4";
-}
-.zi-flag:before {
-  content: "\e9cc";
-}
-.zi-eye:before {
-  content: "\e9ce";
-}
-.zi-eye-plus:before {
-  content: "\e9cf";
-}
-.zi-eye-minus:before {
-  content: "\e9d0";
-}
-.zi-eye-blocked:before {
-  content: "\e9d1";
-}
-.zi-bookmark:before {
-  content: "\e9d2";
-}
-.zi-bookmarks:before {
-  content: "\e9d3";
-}
-.zi-sun:before {
-  content: "\e9d4";
-}
-.zi-contrast:before {
-  content: "\e9d5";
-}
-.zi-brightness-contrast:before {
-  content: "\e9d6";
-}
-.zi-star-empty:before {
-  content: "\e9d7";
-}
-.zi-star-half:before {
-  content: "\e9d8";
-}
-.zi-star-full:before {
-  content: "\e9d9";
-}
-.zi-heart:before {
-  content: "\e9da";
-}
-.zi-man:before {
-  content: "\e9dc";
-}
-.zi-woman:before {
-  content: "\e9dd";
-}
-.zi-man-woman:before {
-  content: "\e9de";
-}
-.zi-happy:before {
-  content: "\e9df";
-}
-.zi-smile:before {
-  content: "\e9e1";
-}
-.zi-tongue:before {
-  content: "\e9e3";
-}
-.zi-sad:before {
-  content: "\e9e5";
-}
-.zi-wink:before {
-  content: "\e9e7";
-}
-.zi-grin:before {
-  content: "\e9e9";
-}
-.zi-cool:before {
-  content: "\e9eb";
-}
-.zi-angry:before {
-  content: "\e9ed";
-}
-.zi-evil:before {
-  content: "\e9ef";
-}
-.zi-shocked:before {
-  content: "\e9f1";
-}
-.zi-baffled:before {
-  content: "\e9f3";
-}
-.zi-confused:before {
-  content: "\e9f5";
-}
-.zi-neutral:before {
-  content: "\e9f7";
-}
-.zi-hipster:before {
-  content: "\e9f9";
-}
-.zi-wondering:before {
-  content: "\e9fb";
-}
-.zi-sleepy:before {
-  content: "\e9fd";
-}
-.zi-frustrated:before {
-  content: "\e9ff";
-}
-.zi-crying:before {
-  content: "\ea01";
-}
-.zi-point-up:before {
-  content: "\ea03";
-}
-.zi-point-right:before {
-  content: "\ea04";
-}
-.zi-point-down:before {
-  content: "\ea05";
-}
-.zi-point-left:before {
-  content: "\ea06";
-}
-.zi-warning:before {
-  content: "\ea07";
-}
-.zi-notification:before {
-  content: "\ea08";
-}
-.zi-plus:before {
-  content: "\ea0a";
-}
-.zi-minus:before {
-  content: "\ea0b";
-}
-.zi-blocked:before {
-  content: "\ea0e";
-}
-.zi-cross:before {
-  content: "\ea0f";
-}
-.zi-checkmark-filled:before {
-  content: "\ea10";
-}
-.zi-checkmark2:before {
-  content: "\ea11";
-}
-.zi-enter:before {
-  content: "\ea13";
-}
-.zi-exit:before {
-  content: "\ea14";
-}
-.zi-play-circle:before {
-  content: "\ea15";
-}
-.zi-pause-circle:before {
-  content: "\ea16";
-}
-.zi-stop-circle:before {
-  content: "\ea17";
-}
-.zi-previous-circle:before {
-  content: "\ea18";
-}
-.zi-next-circle:before {
-  content: "\ea19";
-}
-.zi-backward-circle:before {
-  content: "\ea1a";
-}
-.zi-forward-circle:before {
-  content: "\ea1b";
-}
-.zi-play3:before {
-  content: "\ea1c";
-}
-.zi-pause:before {
-  content: "\ea1d";
-}
-.zi-stop:before {
-  content: "\ea1e";
-}
-.zi-backward:before {
-  content: "\ea1f";
-}
-.zi-forward:before {
-  content: "\ea20";
-}
-.zi-first:before {
-  content: "\ea21";
-}
-.zi-last:before {
-  content: "\ea22";
-}
-.zi-previous:before {
-  content: "\ea23";
-}
-.zi-next:before {
-  content: "\ea24";
-}
-.zi-eject:before {
-  content: "\ea25";
-}
-.zi-volume-high:before {
-  content: "\ea26";
-}
-.zi-volume-medium:before {
-  content: "\ea27";
-}
-.zi-volume-low:before {
-  content: "\ea28";
-}
-.zi-volume-mute:before {
-  content: "\ea29";
-}
-.zi-mute:before {
-  content: "\ea2a";
-}
-.zi-volume-increase:before {
-  content: "\ea2b";
-}
-.zi-volume-decrease:before {
-  content: "\ea2c";
-}
-.zi-loop:before {
-  content: "\ea2e";
-}
-.zi-arrow-up-bold:before {
-  content: "\ea32";
-}
-.zi-arrow-right-bold:before {
-  content: "\ea34";
-}
-.zi-arrow-down-bold:before {
-  content: "\ea36";
-}
-.zi-arrow-left-bold:before {
-  content: "\ea38";
-}
-.zi-arrow-up:before {
-  content: "\ea3a";
-}
-.zi-arrow-right:before {
-  content: "\ea3c";
-}
-.zi-arrow-down:before {
-  content: "\ea3e";
-}
-.zi-arrow-left:before {
-  content: "\ea40";
-}
-.zi-circle-up:before {
-  content: "\ea41";
-}
-.zi-circle-right:before {
-  content: "\ea42";
-}
-.zi-circle-down:before {
-  content: "\ea43";
-}
-.zi-circle-left:before {
-  content: "\ea44";
-}
-.zi-checkbox-checked:before {
-  content: "\ea52";
-}
-.zi-checkbox-unchecked:before {
-  content: "\ea53";
-}
-.zi-ungroup:before {
-  content: "\ea59";
-}
-.zi-scissors:before {
-  content: "\ea5a";
-}
-.zi-filter:before {
-  content: "\ea5b";
-}
-.zi-bold:before {
-  content: "\ea62";
-}
-.zi-underline:before {
-  content: "\ea63";
-}
-.zi-italic:before {
-  content: "\ea64";
-}
-.zi-strikethrough:before {
-  content: "\ea65";
-}
-.zi-omega:before {
-  content: "\ea66";
-}
-.zi-superscript2:before {
-  content: "\ea6b";
-}
-.zi-subscript2:before {
-  content: "\ea6c";
-}
-.zi-text-color:before {
-  content: "\ea6d";
-}
-.zi-code:before {
-  content: "\ea80";
-}
-.zi-terminal:before {
-  content: "\ea81";
-}
-.zi-share-symbol:before {
-  content: "\ea82";
-}
-.zi-amazon:before {
-  content: "\ea87";
-}
-.zi-google-square:before {
-  content: "\ea89";
-}
-.zi-google-plus:before {
-  content: "\ea8b";
-}
-.zi-google-plus-square:before {
-  content: "\ea8c";
-}
-.zi-google-plus-circle:before {
-  content: "\ea8d";
-}
-.zi-hangouts:before {
-  content: "\ea8e";
-}
-.zi-google-drive:before {
-  content: "\ea8f";
-}
-.zi-facebook:before {
-  content: "\ea90";
-}
-.zi-facebook-square:before {
-  content: "\ea91";
-}
-.zi-instagram:before {
-  content: "\ea92";
-}
-.zi-whatsapp:before {
-  content: "\ea93";
-}
-.zi-spotify:before {
-  content: "\ea94";
-}
-.zi-telegram:before {
-  content: "\ea95";
-}
-.zi-twitter:before {
-  content: "\ea96";
-}
-.zi-youtube:before {
-  content: "\ea9d";
-}
-.zi-youtube-full:before {
-  content: "\ea9e";
-}
-.zi-twitch:before {
-  content: "\ea9f";
-}
-.zi-vimeo:before {
-  content: "\eaa0";
-}
-.zi-deviantart:before {
-  content: "\eaaa";
-}
-.zi-steam:before {
-  content: "\eaac";
-}
-.zi-steam-square:before {
-  content: "\eaad";
-}
-.zi-dropbox:before {
-  content: "\eaae";
-}
-.zi-onedrive:before {
-  content: "\eaaf";
-}
-.zi-github:before {
-  content: "\eab0";
-}
-.zi-npm:before {
-  content: "\eab1";
-}
-.zi-basecamp:before {
-  content: "\eab2";
-}
-.zi-trello:before {
-  content: "\eab3";
-}
-.zi-wordpress:before {
-  content: "\eab4";
-}
-.zi-blogger:before {
-  content: "\eab7";
-}
-.zi-blogger-negative:before {
-  content: "\eab8";
-}
-.zi-tumblr:before {
-  content: "\eab9";
-}
-.zi-tumblr-square:before {
-  content: "\eaba";
-}
-.zi-tux:before {
-  content: "\eabd";
-}
-.zi-appleinc:before {
-  content: "\eabe";
-}
-.zi-android:before {
-  content: "\eac0";
-}
-.zi-windows1:before {
-  content: "\eac1";
-}
-.zi-windows:before {
-  content: "\eac2";
-}
-.zi-soundcloud:before {
-  content: "\eac3";
-}
-.zi-soundcloud2:before {
-  content: "\eac4";
-}
-.zi-skype:before {
-  content: "\eac5";
-}
-.zi-wikipedia:before {
-  content: "\eac8";
-}
-.zi-linkedin:before {
-  content: "\eac9";
-}
-.zi-pinterest:before {
-  content: "\ead1";
-}
-.zi-paypal:before {
-  content: "\ead8";
-}
-.zi-chrome:before {
-  content: "\ead9";
-}
-.zi-firefox:before {
-  content: "\eada";
-}
-.zi-ie:before {
-  content: "\eadb";
-}
-.zi-edge:before {
-  content: "\eadc";
-}
-.zi-safari:before {
-  content: "\eadd";
-}
-.zi-opera:before {
-  content: "\eade";
-}
-.zi-file-pdf:before {
-  content: "\eadf";
-}
-.zi-file-word:before {
-  content: "\eae1";
-}
-.zi-file-excel:before {
-  content: "\eae2";
-}
-.zi-html-five:before {
-  content: "\eae4";
-}
-.zi-html-five-negative:before {
-  content: "\eae5";
-}
-.zi-css3:before {
-  content: "\eae6";
-}
-.zi-git:before {
-  content: "\eae7";
+.zi-buddha {
+  &:before {
+    content: $zi-buddha;
+  }
+}
+.zi-email {
+  &:before {
+    content: $zi-email;
+  }
+}
+.zi-email-multi {
+  &:before {
+    content: $zi-email-multi;
+  }
+}
+.zi-email-multi-opened {
+  &:before {
+    content: $zi-email-multi-opened;
+  }
+}
+.zi-email-opened {
+  &:before {
+    content: $zi-email-opened;
+  }
+}
+.zi-1password {
+  &:before {
+    content: $zi-1password;
+    color: #0094f5;
+  }
+}
+.zi-500px {
+  &:before {
+    content: $zi-500px;
+    color: #0099e5;
+  }
+}
+.zi-abbrobotstudio {
+  &:before {
+    content: $zi-abbrobotstudio;
+    color: #ff9e0f;
+  }
+}
+.zi-about-dot-me {
+  &:before {
+    content: $zi-about-dot-me;
+    color: #00a98f;
+  }
+}
+.zi-abstract {
+  &:before {
+    content: $zi-abstract;
+  }
+}
+.zi-academia {
+  &:before {
+    content: $zi-academia;
+  }
+}
+.zi-accusoft {
+  &:before {
+    content: $zi-accusoft;
+    color: #ff7e4a;
+  }
+}
+.zi-acm {
+  &:before {
+    content: $zi-acm;
+    color: #0085ca;
+  }
+}
+.zi-addthis {
+  &:before {
+    content: $zi-addthis;
+    color: #ff6550;
+  }
+}
+.zi-adguard {
+  &:before {
+    content: $zi-adguard;
+    color: #66b574;
+  }
+}
+.zi-adobe {
+  &:before {
+    content: $zi-adobe;
+    color: #f00;
+  }
+}
+.zi-adobeacrobatreader {
+  &:before {
+    content: $zi-adobeacrobatreader;
+    color: #ee3f24;
+  }
+}
+.zi-adobeaftereffects {
+  &:before {
+    content: $zi-adobeaftereffects;
+    color: #d291ff;
+  }
+}
+.zi-adobeaudition {
+  &:before {
+    content: $zi-adobeaudition;
+    color: #00e4bb;
+  }
+}
+.zi-adobecreativecloud {
+  &:before {
+    content: $zi-adobecreativecloud;
+    color: #d41818;
+  }
+}
+.zi-adobedreamweaver {
+  &:before {
+    content: $zi-adobedreamweaver;
+    color: #35fa00;
+  }
+}
+.zi-adobeillustrator {
+  &:before {
+    content: $zi-adobeillustrator;
+    color: #ff7c00;
+  }
+}
+.zi-adobeindesign {
+  &:before {
+    content: $zi-adobeindesign;
+    color: #fd3f93;
+  }
+}
+.zi-adobelightroomcc {
+  &:before {
+    content: $zi-adobelightroomcc;
+    color: #3df0f0;
+  }
+}
+.zi-adobelightroomclassic {
+  &:before {
+    content: $zi-adobelightroomclassic;
+    color: #add5ec;
+  }
+}
+.zi-adobephotoshop {
+  &:before {
+    content: $zi-adobephotoshop;
+    color: #00c8ff;
+  }
+}
+.zi-adobepremiere {
+  &:before {
+    content: $zi-adobepremiere;
+    color: #ea77ff;
+  }
+}
+.zi-adobetypekit {
+  &:before {
+    content: $zi-adobetypekit;
+    color: #87ec00;
+  }
+}
+.zi-adobexd {
+  &:before {
+    content: $zi-adobexd;
+    color: #ff2bc2;
+  }
+}
+.zi-airbnb {
+  &:before {
+    content: $zi-airbnb;
+    color: #ff5a5f;
+  }
+}
+.zi-airplayaudio {
+  &:before {
+    content: $zi-airplayaudio;
+  }
+}
+.zi-airplayvideo {
+  &:before {
+    content: $zi-airplayvideo;
+  }
+}
+.zi-algolia {
+  &:before {
+    content: $zi-algolia;
+    color: #5468ff;
+  }
+}
+.zi-alliedmodders {
+  &:before {
+    content: $zi-alliedmodders;
+    color: #1578d3;
+  }
+}
+.zi-amazon1 {
+  &:before {
+    content: $zi-amazon1;
+    color: #f90;
+  }
+}
+.zi-amazonalexa {
+  &:before {
+    content: $zi-amazonalexa;
+    color: #00caff;
+  }
+}
+.zi-amazonaws {
+  &:before {
+    content: $zi-amazonaws;
+  }
+}
+.zi-amd {
+  &:before {
+    content: $zi-amd;
+    color: #ed1c24;
+  }
+}
+.zi-americanexpress {
+  &:before {
+    content: $zi-americanexpress;
+    color: #2e77bc;
+  }
+}
+.zi-anaconda {
+  &:before {
+    content: $zi-anaconda;
+    color: #42b029;
+  }
+}
+.zi-analogue {
+  &:before {
+    content: $zi-analogue;
+  }
+}
+.zi-anchor1 {
+  &:before {
+    content: $zi-anchor1;
+    color: #8940fa;
+  }
+}
+.zi-android1 {
+  &:before {
+    content: $zi-android1;
+    color: #3ddc84;
+  }
+}
+.zi-angellist {
+  &:before {
+    content: $zi-angellist;
+  }
+}
+.zi-angular {
+  &:before {
+    content: $zi-angular;
+    color: #dd0031;
+  }
+}
+.zi-angularuniversal {
+  &:before {
+    content: $zi-angularuniversal;
+    color: #00acc1;
+  }
+}
+.zi-ansible {
+  &:before {
+    content: $zi-ansible;
+    color: #e00;
+  }
+}
+.zi-apache {
+  &:before {
+    content: $zi-apache;
+    color: #d22128;
+  }
+}
+.zi-apacheairflow {
+  &:before {
+    content: $zi-apacheairflow;
+    color: #007a88;
+  }
+}
+.zi-apachecordova {
+  &:before {
+    content: $zi-apachecordova;
+    color: #e8e8e8;
+  }
+}
+.zi-apacheflink {
+  &:before {
+    content: $zi-apacheflink;
+    color: #e6526f;
+  }
+}
+.zi-apachekafka {
+  &:before {
+    content: $zi-apachekafka;
+  }
+}
+.zi-apachenetbeanside {
+  &:before {
+    content: $zi-apachenetbeanside;
+    color: #1b6ac6;
+  }
+}
+.zi-apacheopenoffice {
+  &:before {
+    content: $zi-apacheopenoffice;
+    color: #0e85cd;
+  }
+}
+.zi-apacherocketmq {
+  &:before {
+    content: $zi-apacherocketmq;
+    color: #d77310;
+  }
+}
+.zi-apachespark {
+  &:before {
+    content: $zi-apachespark;
+    color: #e25a1c;
+  }
+}
+.zi-apple {
+  &:before {
+    content: $zi-apple;
+    color: #999;
+  }
+}
+.zi-applemusic {
+  &:before {
+    content: $zi-applemusic;
+  }
+}
+.zi-applepay {
+  &:before {
+    content: $zi-applepay;
+  }
+}
+.zi-applepodcasts {
+  &:before {
+    content: $zi-applepodcasts;
+    color: #93c;
+  }
+}
+.zi-appveyor {
+  &:before {
+    content: $zi-appveyor;
+    color: #00b3e0;
+  }
+}
+.zi-aral {
+  &:before {
+    content: $zi-aral;
+    color: #0063cb;
+  }
+}
+.zi-archiveofourown {
+  &:before {
+    content: $zi-archiveofourown;
+    color: #900;
+  }
+}
+.zi-archlinux {
+  &:before {
+    content: $zi-archlinux;
+    color: #1793d1;
+  }
+}
+.zi-arduino {
+  &:before {
+    content: $zi-arduino;
+    color: #00979d;
+  }
+}
+.zi-artstation {
+  &:before {
+    content: $zi-artstation;
+    color: #13aff0;
+  }
+}
+.zi-arxiv {
+  &:before {
+    content: $zi-arxiv;
+    color: #b31b1b;
+  }
+}
+.zi-asana {
+  &:before {
+    content: $zi-asana;
+  }
+}
+.zi-asciidoctor {
+  &:before {
+    content: $zi-asciidoctor;
+    color: #e40046;
+  }
+}
+.zi-at-and-t {
+  &:before {
+    content: $zi-at-and-t;
+    color: #00a8e0;
+  }
+}
+.zi-atlassian {
+  &:before {
+    content: $zi-atlassian;
+    color: #0052cc;
+  }
+}
+.zi-atom {
+  &:before {
+    content: $zi-atom;
+    color: #66595c;
+  }
+}
+.zi-audi {
+  &:before {
+    content: $zi-audi;
+    color: #bb0a30;
+  }
+}
+.zi-audible {
+  &:before {
+    content: $zi-audible;
+    color: #f8991c;
+  }
+}
+.zi-aurelia {
+  &:before {
+    content: $zi-aurelia;
+    color: #ed2b88;
+  }
+}
+.zi-auth0 {
+  &:before {
+    content: $zi-auth0;
+    color: #eb5424;
+  }
+}
+.zi-automatic {
+  &:before {
+    content: $zi-automatic;
+    color: #7d8084;
+  }
+}
+.zi-autotask {
+  &:before {
+    content: $zi-autotask;
+    color: #e51937;
+  }
+}
+.zi-aventrix {
+  &:before {
+    content: $zi-aventrix;
+    color: #09d;
+  }
+}
+.zi-awesomewm {
+  &:before {
+    content: $zi-awesomewm;
+    color: #535d6c;
+  }
+}
+.zi-azureartifacts {
+  &:before {
+    content: $zi-azureartifacts;
+    color: #cb2e6d;
+  }
+}
+.zi-azuredevops {
+  &:before {
+    content: $zi-azuredevops;
+    color: #0078d7;
+  }
+}
+.zi-azurepipelines {
+  &:before {
+    content: $zi-azurepipelines;
+    color: #2560e0;
+  }
+}
+.zi-babel {
+  &:before {
+    content: $zi-babel;
+    color: #f9dc3e;
+  }
+}
+.zi-baidu {
+  &:before {
+    content: $zi-baidu;
+    color: #2319dc;
+  }
+}
+.zi-bamboo {
+  &:before {
+    content: $zi-bamboo;
+    color: #0052cc;
+  }
+}
+.zi-bancontact {
+  &:before {
+    content: $zi-bancontact;
+    color: #005498;
+  }
+}
+.zi-bandcamp {
+  &:before {
+    content: $zi-bandcamp;
+    color: #408294;
+  }
+}
+.zi-bandlab {
+  &:before {
+    content: $zi-bandlab;
+    color: #dc3710;
+  }
+}
+.zi-basecamp1 {
+  &:before {
+    content: $zi-basecamp1;
+    color: #5ecc62;
+  }
+}
+.zi-bathasu {
+  &:before {
+    content: $zi-bathasu;
+    color: #00a3e0;
+  }
+}
+.zi-beats {
+  &:before {
+    content: $zi-beats;
+    color: #005571;
+  }
+}
+.zi-beatsbydre {
+  &:before {
+    content: $zi-beatsbydre;
+    color: #e01f3d;
+  }
+}
+.zi-behance {
+  &:before {
+    content: $zi-behance;
+    color: #1769ff;
+  }
+}
+.zi-bigcartel {
+  &:before {
+    content: $zi-bigcartel;
+  }
+}
+.zi-bing {
+  &:before {
+    content: $zi-bing;
+    color: #008373;
+  }
+}
+.zi-bit {
+  &:before {
+    content: $zi-bit;
+    color: #73398d;
+  }
+}
+.zi-bitbucket {
+  &:before {
+    content: $zi-bitbucket;
+    color: #0052cc;
+  }
+}
+.zi-bitcoin {
+  &:before {
+    content: $zi-bitcoin;
+    color: #f7931a;
+  }
+}
+.zi-bitdefender {
+  &:before {
+    content: $zi-bitdefender;
+    color: #ed1c24;
+  }
+}
+.zi-bitly {
+  &:before {
+    content: $zi-bitly;
+    color: #ee6123;
+  }
+}
+.zi-bitrise {
+  &:before {
+    content: $zi-bitrise;
+    color: #683d87;
+  }
+}
+.zi-blackberry {
+  &:before {
+    content: $zi-blackberry;
+  }
+}
+.zi-blender {
+  &:before {
+    content: $zi-blender;
+    color: #f5792a;
+  }
+}
+.zi-blogger1 {
+  &:before {
+    content: $zi-blogger1;
+    color: #ff5722;
+  }
+}
+.zi-bmcsoftware {
+  &:before {
+    content: $zi-bmcsoftware;
+    color: #fe5000;
+  }
+}
+.zi-boeing {
+  &:before {
+    content: $zi-boeing;
+    color: #1d439c;
+  }
+}
+.zi-boost {
+  &:before {
+    content: $zi-boost;
+    color: #f69220;
+  }
+}
+.zi-bootstrap {
+  &:before {
+    content: $zi-bootstrap;
+    color: #563d7c;
+  }
+}
+.zi-bower {
+  &:before {
+    content: $zi-bower;
+    color: #ef5734;
+  }
+}
+.zi-box1 {
+  &:before {
+    content: $zi-box1;
+    color: #0061d5;
+  }
+}
+.zi-brand-dot-ai {
+  &:before {
+    content: $zi-brand-dot-ai;
+    color: #0aa0ff;
+  }
+}
+.zi-brandfolder {
+  &:before {
+    content: $zi-brandfolder;
+    color: #40d1f5;
+  }
+}
+.zi-brave {
+  &:before {
+    content: $zi-brave;
+    color: #fb542b;
+  }
+}
+.zi-breaker {
+  &:before {
+    content: $zi-breaker;
+    color: #003dad;
+  }
+}
+.zi-broadcom {
+  &:before {
+    content: $zi-broadcom;
+    color: #cc092f;
+  }
+}
+.zi-buddy {
+  &:before {
+    content: $zi-buddy;
+    color: #1a86fd;
+  }
+}
+.zi-buffer {
+  &:before {
+    content: $zi-buffer;
+    color: #168eea;
+  }
+}
+.zi-buymeacoffee {
+  &:before {
+    content: $zi-buymeacoffee;
+    color: #ff813f;
+  }
+}
+.zi-buzzfeed {
+  &:before {
+    content: $zi-buzzfeed;
+    color: #e32;
+  }
+}
+.zi-c {
+  &:before {
+    content: $zi-c;
+    color: #a8b9cc;
+  }
+}
+.zi-cakephp {
+  &:before {
+    content: $zi-cakephp;
+    color: #d33c43;
+  }
+}
+.zi-campaignmonitor {
+  &:before {
+    content: $zi-campaignmonitor;
+    color: #509cf6;
+  }
+}
+.zi-canva {
+  &:before {
+    content: $zi-canva;
+    color: #00c4cc;
+  }
+}
+.zi-cashapp {
+  &:before {
+    content: $zi-cashapp;
+    color: #00c244;
+  }
+}
+.zi-cassandra {
+  &:before {
+    content: $zi-cassandra;
+    color: #1287b1;
+  }
+}
+.zi-castorama {
+  &:before {
+    content: $zi-castorama;
+    color: #0078d7;
+  }
+}
+.zi-castro {
+  &:before {
+    content: $zi-castro;
+    color: #00b265;
+  }
+}
+.zi-centos {
+  &:before {
+    content: $zi-centos;
+    color: #262577;
+  }
+}
+.zi-cevo {
+  &:before {
+    content: $zi-cevo;
+    color: #1eabe2;
+  }
+}
+.zi-chase {
+  &:before {
+    content: $zi-chase;
+    color: #117aca;
+  }
+}
+.zi-chef {
+  &:before {
+    content: $zi-chef;
+    color: #f09820;
+  }
+}
+.zi-circle1 {
+  &:before {
+    content: $zi-circle1;
+    color: #8669ae;
+  }
+}
+.zi-circleci {
+  &:before {
+    content: $zi-circleci;
+  }
+}
+.zi-cirrusci {
+  &:before {
+    content: $zi-cirrusci;
+  }
+}
+.zi-cisco {
+  &:before {
+    content: $zi-cisco;
+    color: #1ba0d7;
+  }
+}
+.zi-civicrm {
+  &:before {
+    content: $zi-civicrm;
+    color: #81c459;
+  }
+}
+.zi-clockify {
+  &:before {
+    content: $zi-clockify;
+    color: #03a9f4;
+  }
+}
+.zi-clojure {
+  &:before {
+    content: $zi-clojure;
+    color: #5881d8;
+  }
+}
+.zi-cloudbees {
+  &:before {
+    content: $zi-cloudbees;
+    color: #1997b5;
+  }
+}
+.zi-cloudflare {
+  &:before {
+    content: $zi-cloudflare;
+    color: #f38020;
+  }
+}
+.zi-cmake {
+  &:before {
+    content: $zi-cmake;
+    color: #064f8c;
+  }
+}
+.zi-co-op {
+  &:before {
+    content: $zi-co-op;
+    color: #00b1e7;
+  }
+}
+.zi-codacy {
+  &:before {
+    content: $zi-codacy;
+  }
+}
+.zi-codecademy {
+  &:before {
+    content: $zi-codecademy;
+    color: #1f4056;
+  }
+}
+.zi-codechef {
+  &:before {
+    content: $zi-codechef;
+    color: #5b4638;
+  }
+}
+.zi-codeclimate {
+  &:before {
+    content: $zi-codeclimate;
+  }
+}
+.zi-codecov {
+  &:before {
+    content: $zi-codecov;
+    color: #f01f7a;
+  }
+}
+.zi-codefactor {
+  &:before {
+    content: $zi-codefactor;
+    color: #f44a6a;
+  }
+}
+.zi-codeforces {
+  &:before {
+    content: $zi-codeforces;
+    color: #1f8acb;
+  }
+}
+.zi-codeigniter {
+  &:before {
+    content: $zi-codeigniter;
+    color: #ee4623;
+  }
+}
+.zi-codepen1 {
+  &:before {
+    content: $zi-codepen1;
+  }
+}
+.zi-coderwall {
+  &:before {
+    content: $zi-coderwall;
+    color: #3e8dcc;
+  }
+}
+.zi-codesandbox1 {
+  &:before {
+    content: $zi-codesandbox1;
+  }
+}
+.zi-codeship {
+  &:before {
+    content: $zi-codeship;
+    color: #3c4858;
+  }
+}
+.zi-codewars {
+  &:before {
+    content: $zi-codewars;
+    color: #ad2c27;
+  }
+}
+.zi-codio {
+  &:before {
+    content: $zi-codio;
+    color: #4574e0;
+  }
+}
+.zi-coffeescript {
+  &:before {
+    content: $zi-coffeescript;
+  }
+}
+.zi-coinbase {
+  &:before {
+    content: $zi-coinbase;
+    color: #0667d0;
+  }
+}
+.zi-commonworkflowlanguage {
+  &:before {
+    content: $zi-commonworkflowlanguage;
+    color: #b5314c;
+  }
+}
+.zi-composer {
+  &:before {
+    content: $zi-composer;
+    color: #885630;
+  }
+}
+.zi-compropago {
+  &:before {
+    content: $zi-compropago;
+    color: #00aaef;
+  }
+}
+.zi-conda-forge {
+  &:before {
+    content: $zi-conda-forge;
+  }
+}
+.zi-conekta {
+  &:before {
+    content: $zi-conekta;
+    color: #414959;
+  }
+}
+.zi-confluence {
+  &:before {
+    content: $zi-confluence;
+  }
+}
+.zi-coronarenderer {
+  &:before {
+    content: $zi-coronarenderer;
+    color: #e6502a;
+  }
+}
+.zi-coursera {
+  &:before {
+    content: $zi-coursera;
+    color: #2a73cc;
+  }
+}
+.zi-coveralls {
+  &:before {
+    content: $zi-coveralls;
+    color: #3f5767;
+  }
+}
+.zi-cpanel {
+  &:before {
+    content: $zi-cpanel;
+    color: #ff6c2c;
+  }
+}
+.zi-cplusplus {
+  &:before {
+    content: $zi-cplusplus;
+    color: #00599c;
+  }
+}
+.zi-creativecommons {
+  &:before {
+    content: $zi-creativecommons;
+    color: #ef9421;
+  }
+}
+.zi-crehana {
+  &:before {
+    content: $zi-crehana;
+    color: #4b22f4;
+  }
+}
+.zi-crunchbase {
+  &:before {
+    content: $zi-crunchbase;
+    color: #0288d1;
+  }
+}
+.zi-crunchyroll {
+  &:before {
+    content: $zi-crunchyroll;
+    color: #f47521;
+  }
+}
+.zi-cryengine {
+  &:before {
+    content: $zi-cryengine;
+  }
+}
+.zi-csharp {
+  &:before {
+    content: $zi-csharp;
+    color: #239120;
+  }
+}
+.zi-css31 {
+  &:before {
+    content: $zi-css31;
+    color: #1572b6;
+  }
+}
+.zi-csswizardry {
+  &:before {
+    content: $zi-csswizardry;
+    color: #f43059;
+  }
+}
+.zi-curl {
+  &:before {
+    content: $zi-curl;
+  }
+}
+.zi-d3-dot-js {
+  &:before {
+    content: $zi-d3-dot-js;
+    color: #f9a03c;
+  }
+}
+.zi-dailymotion {
+  &:before {
+    content: $zi-dailymotion;
+    color: #0066dc;
+  }
+}
+.zi-dart {
+  &:before {
+    content: $zi-dart;
+    color: #0175c2;
+  }
+}
+.zi-dashlane {
+  &:before {
+    content: $zi-dashlane;
+    color: #007c97;
+  }
+}
+.zi-datacamp {
+  &:before {
+    content: $zi-datacamp;
+    color: #3ac;
+  }
+}
+.zi-dazn {
+  &:before {
+    content: $zi-dazn;
+    color: #f8f8f5;
+  }
+}
+.zi-dblp {
+  &:before {
+    content: $zi-dblp;
+    color: #004f9f;
+  }
+}
+.zi-debian {
+  &:before {
+    content: $zi-debian;
+    color: #a81d33;
+  }
+}
+.zi-deepin {
+  &:before {
+    content: $zi-deepin;
+    color: #007cff;
+  }
+}
+.zi-deezer {
+  &:before {
+    content: $zi-deezer;
+    color: #feaa2d;
+  }
+}
+.zi-delicious {
+  &:before {
+    content: $zi-delicious;
+    color: #39f;
+  }
+}
+.zi-deliveroo {
+  &:before {
+    content: $zi-deliveroo;
+    color: #00ccbc;
+  }
+}
+.zi-dell {
+  &:before {
+    content: $zi-dell;
+    color: #007db8;
+  }
+}
+.zi-deno {
+  &:before {
+    content: $zi-deno;
+  }
+}
+.zi-dependabot {
+  &:before {
+    content: $zi-dependabot;
+    color: #025e8c;
+  }
+}
+.zi-designernews {
+  &:before {
+    content: $zi-designernews;
+    color: #2d72d9;
+  }
+}
+.zi-dev-dot-to {
+  &:before {
+    content: $zi-dev-dot-to;
+  }
+}
+.zi-deviantart1 {
+  &:before {
+    content: $zi-deviantart1;
+    color: #05cc47;
+  }
+}
+.zi-devrant {
+  &:before {
+    content: $zi-devrant;
+    color: #f99a66;
+  }
+}
+.zi-diaspora {
+  &:before {
+    content: $zi-diaspora;
+  }
+}
+.zi-digg {
+  &:before {
+    content: $zi-digg;
+  }
+}
+.zi-digitalocean {
+  &:before {
+    content: $zi-digitalocean;
+    color: #0080ff;
+  }
+}
+.zi-directus {
+  &:before {
+    content: $zi-directus;
+  }
+}
+.zi-discord {
+  &:before {
+    content: $zi-discord;
+    color: #7289da;
+  }
+}
+.zi-discourse {
+  &:before {
+    content: $zi-discourse;
+  }
+}
+.zi-discover {
+  &:before {
+    content: $zi-discover;
+    color: #ff6000;
+  }
+}
+.zi-disqus {
+  &:before {
+    content: $zi-disqus;
+    color: #2e9fff;
+  }
+}
+.zi-disroot {
+  &:before {
+    content: $zi-disroot;
+    color: #50162d;
+  }
+}
+.zi-django {
+  &:before {
+    content: $zi-django;
+  }
+}
+.zi-dlna {
+  &:before {
+    content: $zi-dlna;
+    color: #48a842;
+  }
+}
+.zi-docker {
+  &:before {
+    content: $zi-docker;
+    color: #1488c6;
+  }
+}
+.zi-docusign {
+  &:before {
+    content: $zi-docusign;
+    color: #fc2;
+  }
+}
+.zi-dolby {
+  &:before {
+    content: $zi-dolby;
+  }
+}
+.zi-dot-net {
+  &:before {
+    content: $zi-dot-net;
+    color: #5c2d91;
+  }
+}
+.zi-draugiem-dot-lv {
+  &:before {
+    content: $zi-draugiem-dot-lv;
+    color: #f60;
+  }
+}
+.zi-dribbble {
+  &:before {
+    content: $zi-dribbble;
+    color: #ea4c89;
+  }
+}
+.zi-drone {
+  &:before {
+    content: $zi-drone;
+  }
+}
+.zi-dropbox1 {
+  &:before {
+    content: $zi-dropbox1;
+    color: #0061ff;
+  }
+}
+.zi-drupal {
+  &:before {
+    content: $zi-drupal;
+    color: #0678be;
+  }
+}
+.zi-dtube {
+  &:before {
+    content: $zi-dtube;
+    color: #f00;
+  }
+}
+.zi-duckduckgo {
+  &:before {
+    content: $zi-duckduckgo;
+    color: #de5833;
+  }
+}
+.zi-dunked {
+  &:before {
+    content: $zi-dunked;
+    color: #2da9d7;
+  }
+}
+.zi-duolingo {
+  &:before {
+    content: $zi-duolingo;
+    color: #58cc02;
+  }
+}
+.zi-dynatrace {
+  &:before {
+    content: $zi-dynatrace;
+    color: #1496ff;
+  }
+}
+.zi-ebay {
+  &:before {
+    content: $zi-ebay;
+    color: #e53238;
+  }
+}
+.zi-eclipseide {
+  &:before {
+    content: $zi-eclipseide;
+    color: #2c2255;
+  }
+}
+.zi-elastic {
+  &:before {
+    content: $zi-elastic;
+    color: #005571;
+  }
+}
+.zi-elasticcloud {
+  &:before {
+    content: $zi-elasticcloud;
+    color: #005571;
+  }
+}
+.zi-elasticsearch {
+  &:before {
+    content: $zi-elasticsearch;
+    color: #005571;
+  }
+}
+.zi-elasticstack {
+  &:before {
+    content: $zi-elasticstack;
+    color: #005571;
+  }
+}
+.zi-electron {
+  &:before {
+    content: $zi-electron;
+    color: #47848f;
+  }
+}
+.zi-elementary {
+  &:before {
+    content: $zi-elementary;
+    color: #64baff;
+  }
+}
+.zi-eleventy {
+  &:before {
+    content: $zi-eleventy;
+  }
+}
+.zi-ello {
+  &:before {
+    content: $zi-ello;
+  }
+}
+.zi-elsevier {
+  &:before {
+    content: $zi-elsevier;
+    color: #ff6c00;
+  }
+}
+.zi-ember-dot-js {
+  &:before {
+    content: $zi-ember-dot-js;
+    color: #e04e39;
+  }
+}
+.zi-emlakjet {
+  &:before {
+    content: $zi-emlakjet;
+    color: #0ae524;
+  }
+}
+.zi-empirekred {
+  &:before {
+    content: $zi-empirekred;
+    color: #72be50;
+  }
+}
+.zi-envato {
+  &:before {
+    content: $zi-envato;
+    color: #81b441;
+  }
+}
+.zi-epel {
+  &:before {
+    content: $zi-epel;
+    color: #fc0000;
+  }
+}
+.zi-epicgames {
+  &:before {
+    content: $zi-epicgames;
+  }
+}
+.zi-epson {
+  &:before {
+    content: $zi-epson;
+    color: #039;
+  }
+}
+.zi-esea {
+  &:before {
+    content: $zi-esea;
+    color: #0e9648;
+  }
+}
+.zi-eslint {
+  &:before {
+    content: $zi-eslint;
+    color: #4b32c3;
+  }
+}
+.zi-ethereum {
+  &:before {
+    content: $zi-ethereum;
+  }
+}
+.zi-etsy {
+  &:before {
+    content: $zi-etsy;
+    color: #f16521;
+  }
+}
+.zi-eventbrite {
+  &:before {
+    content: $zi-eventbrite;
+    color: #f05537;
+  }
+}
+.zi-eventstore {
+  &:before {
+    content: $zi-eventstore;
+    color: #5ab552;
+  }
+}
+.zi-evernote {
+  &:before {
+    content: $zi-evernote;
+    color: #00a82d;
+  }
+}
+.zi-everplaces {
+  &:before {
+    content: $zi-everplaces;
+    color: #fa4b32;
+  }
+}
+.zi-evry {
+  &:before {
+    content: $zi-evry;
+    color: #063a54;
+  }
+}
+.zi-exercism {
+  &:before {
+    content: $zi-exercism;
+    color: #009cab;
+  }
+}
+.zi-expertsexchange {
+  &:before {
+    content: $zi-expertsexchange;
+    color: #00aae7;
+  }
+}
+.zi-expo {
+  &:before {
+    content: $zi-expo;
+  }
+}
+.zi-eyeem {
+  &:before {
+    content: $zi-eyeem;
+  }
+}
+.zi-f-droid {
+  &:before {
+    content: $zi-f-droid;
+    color: #1976d2;
+  }
+}
+.zi-f-secure {
+  &:before {
+    content: $zi-f-secure;
+    color: #00baff;
+  }
+}
+.zi-facebook2 {
+  &:before {
+    content: $zi-facebook2;
+    color: #1877f2;
+  }
+}
+.zi-faceit {
+  &:before {
+    content: $zi-faceit;
+    color: #f50;
+  }
+}
+.zi-fandango {
+  &:before {
+    content: $zi-fandango;
+    color: #ff7300;
+  }
+}
+.zi-favro {
+  &:before {
+    content: $zi-favro;
+    color: #512da8;
+  }
+}
+.zi-feathub {
+  &:before {
+    content: $zi-feathub;
+    color: #9b9b9b;
+  }
+}
+.zi-fedora {
+  &:before {
+    content: $zi-fedora;
+    color: #294172;
+  }
+}
+.zi-feedly {
+  &:before {
+    content: $zi-feedly;
+    color: #2bb24c;
+  }
+}
+.zi-fidoalliance {
+  &:before {
+    content: $zi-fidoalliance;
+    color: #ffbf3b;
+  }
+}
+.zi-figma1 {
+  &:before {
+    content: $zi-figma1;
+    color: #f24e1e;
+  }
+}
+.zi-filezilla {
+  &:before {
+    content: $zi-filezilla;
+    color: #bf0000;
+  }
+}
+.zi-firebase {
+  &:before {
+    content: $zi-firebase;
+    color: #ffca28;
+  }
+}
+.zi-fitbit {
+  &:before {
+    content: $zi-fitbit;
+    color: #00b0b9;
+  }
+}
+.zi-fiverr {
+  &:before {
+    content: $zi-fiverr;
+    color: #1dbf73;
+  }
+}
+.zi-flask {
+  &:before {
+    content: $zi-flask;
+  }
+}
+.zi-flattr {
+  &:before {
+    content: $zi-flattr;
+  }
+}
+.zi-flickr {
+  &:before {
+    content: $zi-flickr;
+    color: #0063dc;
+  }
+}
+.zi-flipboard {
+  &:before {
+    content: $zi-flipboard;
+    color: #e12828;
+  }
+}
+.zi-floatplane {
+  &:before {
+    content: $zi-floatplane;
+    color: #00aeef;
+  }
+}
+.zi-flutter {
+  &:before {
+    content: $zi-flutter;
+    color: #02569b;
+  }
+}
+.zi-fnac {
+  &:before {
+    content: $zi-fnac;
+    color: #e1a925;
+  }
+}
+.zi-formstack {
+  &:before {
+    content: $zi-formstack;
+    color: #21b573;
+  }
+}
+.zi-fossa {
+  &:before {
+    content: $zi-fossa;
+    color: #90a1b8;
+  }
+}
+.zi-fossilscm {
+  &:before {
+    content: $zi-fossilscm;
+    color: #548294;
+  }
+}
+.zi-foursquare {
+  &:before {
+    content: $zi-foursquare;
+    color: #f94877;
+  }
+}
+.zi-framer1 {
+  &:before {
+    content: $zi-framer1;
+    color: #05f;
+  }
+}
+.zi-freebsd {
+  &:before {
+    content: $zi-freebsd;
+    color: #ab2b28;
+  }
+}
+.zi-freecodecamp {
+  &:before {
+    content: $zi-freecodecamp;
+    color: #006400;
+  }
+}
+.zi-fujifilm {
+  &:before {
+    content: $zi-fujifilm;
+    color: #ed1a3a;
+  }
+}
+.zi-fujitsu {
+  &:before {
+    content: $zi-fujitsu;
+    color: #f00;
+  }
+}
+.zi-furaffinity {
+  &:before {
+    content: $zi-furaffinity;
+    color: #faaf3a;
+  }
+}
+.zi-furrynetwork {
+  &:before {
+    content: $zi-furrynetwork;
+    color: #2e75b4;
+  }
+}
+.zi-garmin {
+  &:before {
+    content: $zi-garmin;
+    color: #007cc3;
+  }
+}
+.zi-gatsby {
+  &:before {
+    content: $zi-gatsby;
+    color: #639;
+  }
+}
+.zi-gauges {
+  &:before {
+    content: $zi-gauges;
+    color: #2fa66a;
+  }
+}
+.zi-genius {
+  &:before {
+    content: $zi-genius;
+    color: #ffff64;
+  }
+}
+.zi-gentoo {
+  &:before {
+    content: $zi-gentoo;
+    color: #54487a;
+  }
+}
+.zi-geocaching {
+  &:before {
+    content: $zi-geocaching;
+    color: #00874d;
+  }
+}
+.zi-gerrit {
+  &:before {
+    content: $zi-gerrit;
+    color: #eee;
+  }
+}
+.zi-ghost {
+  &:before {
+    content: $zi-ghost;
+    color: #738a94;
+  }
+}
+.zi-gimp {
+  &:before {
+    content: $zi-gimp;
+    color: #5c5543;
+  }
+}
+.zi-git1 {
+  &:before {
+    content: $zi-git1;
+    color: #f05032;
+  }
+}
+.zi-gitea {
+  &:before {
+    content: $zi-gitea;
+    color: #609926;
+  }
+}
+.zi-github2 {
+  &:before {
+    content: $zi-github2;
+  }
+}
+.zi-gitlab1 {
+  &:before {
+    content: $zi-gitlab1;
+    color: #fca121;
+  }
+}
+.zi-gitpod {
+  &:before {
+    content: $zi-gitpod;
+    color: #1aa6e4;
+  }
+}
+.zi-gitter {
+  &:before {
+    content: $zi-gitter;
+    color: #ed1965;
+  }
+}
+.zi-glassdoor {
+  &:before {
+    content: $zi-glassdoor;
+    color: #0caa41;
+  }
+}
+.zi-glitch {
+  &:before {
+    content: $zi-glitch;
+    color: #33f;
+  }
+}
+.zi-gmail {
+  &:before {
+    content: $zi-gmail;
+    color: #d14836;
+  }
+}
+.zi-gnome {
+  &:before {
+    content: $zi-gnome;
+    color: #4a86cf;
+  }
+}
+.zi-gnu {
+  &:before {
+    content: $zi-gnu;
+    color: #a42e2b;
+  }
+}
+.zi-gnuicecat {
+  &:before {
+    content: $zi-gnuicecat;
+    color: #002f5b;
+  }
+}
+.zi-gnuprivacyguard {
+  &:before {
+    content: $zi-gnuprivacyguard;
+    color: #0093dd;
+  }
+}
+.zi-gnusocial {
+  &:before {
+    content: $zi-gnusocial;
+    color: #a22430;
+  }
+}
+.zi-go {
+  &:before {
+    content: $zi-go;
+    color: #00add8;
+  }
+}
+.zi-godotengine {
+  &:before {
+    content: $zi-godotengine;
+    color: #478cbf;
+  }
+}
+.zi-gog-dot-com {
+  &:before {
+    content: $zi-gog-dot-com;
+    color: #86328a;
+  }
+}
+.zi-goldenline {
+  &:before {
+    content: $zi-goldenline;
+    color: #f1b92b;
+  }
+}
+.zi-goodreads {
+  &:before {
+    content: $zi-goodreads;
+    color: #630;
+  }
+}
+.zi-google {
+  &:before {
+    content: $zi-google;
+    color: #4285f4;
+  }
+}
+.zi-googleads {
+  &:before {
+    content: $zi-googleads;
+    color: #4285f4;
+  }
+}
+.zi-googleanalytics {
+  &:before {
+    content: $zi-googleanalytics;
+    color: #ffc107;
+  }
+}
+.zi-googlechrome {
+  &:before {
+    content: $zi-googlechrome;
+    color: #4285f4;
+  }
+}
+.zi-googlecloud {
+  &:before {
+    content: $zi-googlecloud;
+    color: #4285f4;
+  }
+}
+.zi-googledrive {
+  &:before {
+    content: $zi-googledrive;
+    color: #4285f4;
+  }
+}
+.zi-googlehangouts {
+  &:before {
+    content: $zi-googlehangouts;
+    color: #0c9d58;
+  }
+}
+.zi-googlehangoutschat {
+  &:before {
+    content: $zi-googlehangoutschat;
+    color: #00897b;
+  }
+}
+.zi-googlekeep {
+  &:before {
+    content: $zi-googlekeep;
+    color: #fb0;
+  }
+}
+.zi-googlepay {
+  &:before {
+    content: $zi-googlepay;
+    color: #5f6368;
+  }
+}
+.zi-googleplay {
+  &:before {
+    content: $zi-googleplay;
+    color: #607d8b;
+  }
+}
+.zi-googlepodcasts {
+  &:before {
+    content: $zi-googlepodcasts;
+    color: #4285f4;
+  }
+}
+.zi-googlescholar {
+  &:before {
+    content: $zi-googlescholar;
+    color: #4885ed;
+  }
+}
+.zi-googlesearchconsole {
+  &:before {
+    content: $zi-googlesearchconsole;
+    color: #458cf5;
+  }
+}
+.zi-gov-dot-uk {
+  &:before {
+    content: $zi-gov-dot-uk;
+    color: #005ea5;
+  }
+}
+.zi-gradle {
+  &:before {
+    content: $zi-gradle;
+  }
+}
+.zi-grafana {
+  &:before {
+    content: $zi-grafana;
+    color: #f46800;
+  }
+}
+.zi-graphcool {
+  &:before {
+    content: $zi-graphcool;
+    color: #27ae60;
+  }
+}
+.zi-graphql {
+  &:before {
+    content: $zi-graphql;
+    color: #e10098;
+  }
+}
+.zi-grav {
+  &:before {
+    content: $zi-grav;
+  }
+}
+.zi-gravatar {
+  &:before {
+    content: $zi-gravatar;
+    color: #1e8cbe;
+  }
+}
+.zi-greenkeeper {
+  &:before {
+    content: $zi-greenkeeper;
+    color: #00c775;
+  }
+}
+.zi-greensock {
+  &:before {
+    content: $zi-greensock;
+    color: #88ce02;
+  }
+}
+.zi-groovy {
+  &:before {
+    content: $zi-groovy;
+    color: #4298b8;
+  }
+}
+.zi-groupon {
+  &:before {
+    content: $zi-groupon;
+    color: #53a318;
+  }
+}
+.zi-gulp {
+  &:before {
+    content: $zi-gulp;
+    color: #da4648;
+  }
+}
+.zi-gumroad {
+  &:before {
+    content: $zi-gumroad;
+    color: #36a9ae;
+  }
+}
+.zi-gumtree {
+  &:before {
+    content: $zi-gumtree;
+    color: #72ef36;
+  }
+}
+.zi-gutenberg {
+  &:before {
+    content: $zi-gutenberg;
+  }
+}
+.zi-habr {
+  &:before {
+    content: $zi-habr;
+    color: #77a2b6;
+  }
+}
+.zi-hackaday {
+  &:before {
+    content: $zi-hackaday;
+  }
+}
+.zi-hackerearth {
+  &:before {
+    content: $zi-hackerearth;
+    color: #323754;
+  }
+}
+.zi-hackerone {
+  &:before {
+    content: $zi-hackerone;
+    color: #494649;
+  }
+}
+.zi-hackerrank {
+  &:before {
+    content: $zi-hackerrank;
+    color: #2ec866;
+  }
+}
+.zi-hackhands {
+  &:before {
+    content: $zi-hackhands;
+    color: #00acbd;
+  }
+}
+.zi-hackster {
+  &:before {
+    content: $zi-hackster;
+    color: #1bacf7;
+  }
+}
+.zi-happycow {
+  &:before {
+    content: $zi-happycow;
+    color: #7c4ec4;
+  }
+}
+.zi-hashnode {
+  &:before {
+    content: $zi-hashnode;
+    color: #2962ff;
+  }
+}
+.zi-haskell {
+  &:before {
+    content: $zi-haskell;
+    color: #5d4f85;
+  }
+}
+.zi-hatenabookmark {
+  &:before {
+    content: $zi-hatenabookmark;
+    color: #00a4de;
+  }
+}
+.zi-haxe {
+  &:before {
+    content: $zi-haxe;
+    color: #ea8220;
+  }
+}
+.zi-helm {
+  &:before {
+    content: $zi-helm;
+    color: #277a9f;
+  }
+}
+.zi-here {
+  &:before {
+    content: $zi-here;
+    color: #48dad0;
+  }
+}
+.zi-heroku {
+  &:before {
+    content: $zi-heroku;
+    color: #430098;
+  }
+}
+.zi-hexo {
+  &:before {
+    content: $zi-hexo;
+    color: #0e83cd;
+  }
+}
+.zi-highly {
+  &:before {
+    content: $zi-highly;
+    color: #ff3c00;
+  }
+}
+.zi-hipchat {
+  &:before {
+    content: $zi-hipchat;
+    color: #0052cc;
+  }
+}
+.zi-hitachi {
+  &:before {
+    content: $zi-hitachi;
+    color: #e60027;
+  }
+}
+.zi-hockeyapp {
+  &:before {
+    content: $zi-hockeyapp;
+    color: #009ee1;
+  }
+}
+.zi-homeassistant {
+  &:before {
+    content: $zi-homeassistant;
+    color: #41bdf5;
+  }
+}
+.zi-homify {
+  &:before {
+    content: $zi-homify;
+    color: #7dcda3;
+  }
+}
+.zi-hootsuite {
+  &:before {
+    content: $zi-hootsuite;
+  }
+}
+.zi-houzz {
+  &:before {
+    content: $zi-houzz;
+    color: #4dbc15;
+  }
+}
+.zi-hp {
+  &:before {
+    content: $zi-hp;
+    color: #0096d6;
+  }
+}
+.zi-html5 {
+  &:before {
+    content: $zi-html5;
+    color: #e34f26;
+  }
+}
+.zi-htmlacademy {
+  &:before {
+    content: $zi-htmlacademy;
+    color: #302683;
+  }
+}
+.zi-huawei {
+  &:before {
+    content: $zi-huawei;
+    color: #f00;
+  }
+}
+.zi-hubspot {
+  &:before {
+    content: $zi-hubspot;
+    color: #ff7a59;
+  }
+}
+.zi-hulu {
+  &:before {
+    content: $zi-hulu;
+    color: #3dbb3d;
+  }
+}
+.zi-humblebundle {
+  &:before {
+    content: $zi-humblebundle;
+    color: #cc2929;
+  }
+}
+.zi-hurriyetemlak {
+  &:before {
+    content: $zi-hurriyetemlak;
+    color: #e02826;
+  }
+}
+.zi-hypothesis {
+  &:before {
+    content: $zi-hypothesis;
+    color: #bd1c2b;
+  }
+}
+.zi-iata {
+  &:before {
+    content: $zi-iata;
+    color: #004e81;
+  }
+}
+.zi-ibm {
+  &:before {
+    content: $zi-ibm;
+    color: #054ada;
+  }
+}
+.zi-icloud {
+  &:before {
+    content: $zi-icloud;
+    color: #3693f3;
+  }
+}
+.zi-icomoon {
+  &:before {
+    content: $zi-icomoon;
+    color: #825794;
+  }
+}
+.zi-icon {
+  &:before {
+    content: $zi-icon;
+    color: #31b8bb;
+  }
+}
+.zi-iconjar {
+  &:before {
+    content: $zi-iconjar;
+    color: #16a5f3;
+  }
+}
+.zi-icq {
+  &:before {
+    content: $zi-icq;
+    color: #7ebd00;
+  }
+}
+.zi-ideal {
+  &:before {
+    content: $zi-ideal;
+    color: #c06;
+  }
+}
+.zi-ifixit {
+  &:before {
+    content: $zi-ifixit;
+    color: #0071ce;
+  }
+}
+.zi-imdb {
+  &:before {
+    content: $zi-imdb;
+    color: #e6b91e;
+  }
+}
+.zi-imgur {
+  &:before {
+    content: $zi-imgur;
+    color: #1bb76e;
+  }
+}
+.zi-indeed {
+  &:before {
+    content: $zi-indeed;
+    color: #2164f3;
+  }
+}
+.zi-influxdb {
+  &:before {
+    content: $zi-influxdb;
+    color: #22adf6;
+  }
+}
+.zi-inkscape {
+  &:before {
+    content: $zi-inkscape;
+  }
+}
+.zi-instacart {
+  &:before {
+    content: $zi-instacart;
+    color: #43b02a;
+  }
+}
+.zi-instagram2 {
+  &:before {
+    content: $zi-instagram2;
+    color: #e4405f;
+  }
+}
+.zi-instapaper {
+  &:before {
+    content: $zi-instapaper;
+  }
+}
+.zi-intel {
+  &:before {
+    content: $zi-intel;
+    color: #0071c5;
+  }
+}
+.zi-intellijidea {
+  &:before {
+    content: $zi-intellijidea;
+  }
+}
+.zi-intercom {
+  &:before {
+    content: $zi-intercom;
+    color: #1f8ded;
+  }
+}
+.zi-internetarchive {
+  &:before {
+    content: $zi-internetarchive;
+  }
+}
+.zi-internetexplorer {
+  &:before {
+    content: $zi-internetexplorer;
+    color: #0076d6;
+  }
+}
+.zi-invision {
+  &:before {
+    content: $zi-invision;
+    color: #f36;
+  }
+}
+.zi-invoiceninja {
+  &:before {
+    content: $zi-invoiceninja;
+  }
+}
+.zi-ionic {
+  &:before {
+    content: $zi-ionic;
+    color: #3880ff;
+  }
+}
+.zi-ios {
+  &:before {
+    content: $zi-ios;
+  }
+}
+.zi-ipfs {
+  &:before {
+    content: $zi-ipfs;
+    color: #65c2cb;
+  }
+}
+.zi-issuu {
+  &:before {
+    content: $zi-issuu;
+    color: #f36d5d;
+  }
+}
+.zi-itch-dot-io {
+  &:before {
+    content: $zi-itch-dot-io;
+    color: #fa5c5c;
+  }
+}
+.zi-itunes {
+  &:before {
+    content: $zi-itunes;
+    color: #fb5bc5;
+  }
+}
+.zi-jabber {
+  &:before {
+    content: $zi-jabber;
+    color: #c00;
+  }
+}
+.zi-java {
+  &:before {
+    content: $zi-java;
+    color: #007396;
+  }
+}
+.zi-javascript {
+  &:before {
+    content: $zi-javascript;
+    color: #f7df1e;
+  }
+}
+.zi-jekyll {
+  &:before {
+    content: $zi-jekyll;
+    color: #c00;
+  }
+}
+.zi-jenkins {
+  &:before {
+    content: $zi-jenkins;
+    color: #d24939;
+  }
+}
+.zi-jest {
+  &:before {
+    content: $zi-jest;
+    color: #c21325;
+  }
+}
+.zi-jet {
+  &:before {
+    content: $zi-jet;
+    color: #fbba00;
+  }
+}
+.zi-jetbrains {
+  &:before {
+    content: $zi-jetbrains;
+  }
+}
+.zi-jinja {
+  &:before {
+    content: $zi-jinja;
+    color: #b41717;
+  }
+}
+.zi-jira {
+  &:before {
+    content: $zi-jira;
+  }
+}
+.zi-joomla {
+  &:before {
+    content: $zi-joomla;
+    color: #5091cd;
+  }
+}
+.zi-jquery {
+  &:before {
+    content: $zi-jquery;
+    color: #0769ad;
+  }
+}
+.zi-jsdelivr {
+  &:before {
+    content: $zi-jsdelivr;
+    color: #e84d3d;
+  }
+}
+.zi-jsfiddle {
+  &:before {
+    content: $zi-jsfiddle;
+    color: #4679a4;
+  }
+}
+.zi-json {
+  &:before {
+    content: $zi-json;
+  }
+}
+.zi-jupyter {
+  &:before {
+    content: $zi-jupyter;
+    color: #f37626;
+  }
+}
+.zi-justgiving {
+  &:before {
+    content: $zi-justgiving;
+    color: #ad29b6;
+  }
+}
+.zi-kaggle {
+  &:before {
+    content: $zi-kaggle;
+    color: #20beff;
+  }
+}
+.zi-kaios {
+  &:before {
+    content: $zi-kaios;
+    color: #6f02b5;
+  }
+}
+.zi-kaspersky {
+  &:before {
+    content: $zi-kaspersky;
+    color: #009982;
+  }
+}
+.zi-kentico {
+  &:before {
+    content: $zi-kentico;
+    color: #f05a22;
+  }
+}
+.zi-keras {
+  &:before {
+    content: $zi-keras;
+    color: #d00000;
+  }
+}
+.zi-keybase {
+  &:before {
+    content: $zi-keybase;
+    color: #33a0ff;
+  }
+}
+.zi-keycdn {
+  &:before {
+    content: $zi-keycdn;
+    color: #3686be;
+  }
+}
+.zi-khanacademy {
+  &:before {
+    content: $zi-khanacademy;
+    color: #14bf96;
+  }
+}
+.zi-kibana {
+  &:before {
+    content: $zi-kibana;
+    color: #005571;
+  }
+}
+.zi-kickstarter {
+  &:before {
+    content: $zi-kickstarter;
+    color: #2bde73;
+  }
+}
+.zi-kik {
+  &:before {
+    content: $zi-kik;
+    color: #82bc23;
+  }
+}
+.zi-kirby {
+  &:before {
+    content: $zi-kirby;
+    color: #ff0100;
+  }
+}
+.zi-klout {
+  &:before {
+    content: $zi-klout;
+    color: #e44600;
+  }
+}
+.zi-known {
+  &:before {
+    content: $zi-known;
+  }
+}
+.zi-ko-fi {
+  &:before {
+    content: $zi-ko-fi;
+    color: #f16061;
+  }
+}
+.zi-kodi {
+  &:before {
+    content: $zi-kodi;
+    color: #17b2e7;
+  }
+}
+.zi-koding {
+  &:before {
+    content: $zi-koding;
+    color: #00b057;
+  }
+}
+.zi-kotlin {
+  &:before {
+    content: $zi-kotlin;
+    color: #0095d5;
+  }
+}
+.zi-krita {
+  &:before {
+    content: $zi-krita;
+    color: #3babff;
+  }
+}
+.zi-kubernetes {
+  &:before {
+    content: $zi-kubernetes;
+    color: #326ce5;
+  }
+}
+.zi-laravel {
+  &:before {
+    content: $zi-laravel;
+    color: #ff2d20;
+  }
+}
+.zi-laravelhorizon {
+  &:before {
+    content: $zi-laravelhorizon;
+    color: #405263;
+  }
+}
+.zi-laravelnova {
+  &:before {
+    content: $zi-laravelnova;
+  }
+}
+.zi-last-dot-fm {
+  &:before {
+    content: $zi-last-dot-fm;
+    color: #d51007;
+  }
+}
+.zi-lastpass {
+  &:before {
+    content: $zi-lastpass;
+    color: #d32d27;
+  }
+}
+.zi-latex {
+  &:before {
+    content: $zi-latex;
+    color: #008080;
+  }
+}
+.zi-launchpad {
+  &:before {
+    content: $zi-launchpad;
+    color: #f8c300;
+  }
+}
+.zi-leetcode {
+  &:before {
+    content: $zi-leetcode;
+    color: #f89f1b;
+  }
+}
+.zi-lenovo {
+  &:before {
+    content: $zi-lenovo;
+    color: #e2231a;
+  }
+}
+.zi-letsencrypt {
+  &:before {
+    content: $zi-letsencrypt;
+    color: #003a70;
+  }
+}
+.zi-letterboxd {
+  &:before {
+    content: $zi-letterboxd;
+    color: #00d735;
+  }
+}
+.zi-lgtm {
+  &:before {
+    content: $zi-lgtm;
+    color: #fff;
+  }
+}
+.zi-liberapay {
+  &:before {
+    content: $zi-liberapay;
+    color: #f6c915;
+  }
+}
+.zi-librarything {
+  &:before {
+    content: $zi-librarything;
+  }
+}
+.zi-libreoffice {
+  &:before {
+    content: $zi-libreoffice;
+    color: #18a303;
+  }
+}
+.zi-line {
+  &:before {
+    content: $zi-line;
+    color: #00c300;
+  }
+}
+.zi-linewebtoon {
+  &:before {
+    content: $zi-linewebtoon;
+    color: #00d564;
+  }
+}
+.zi-linkedin2 {
+  &:before {
+    content: $zi-linkedin2;
+    color: #0077b5;
+  }
+}
+.zi-linode {
+  &:before {
+    content: $zi-linode;
+    color: #00a95c;
+  }
+}
+.zi-linux {
+  &:before {
+    content: $zi-linux;
+    color: #fcc624;
+  }
+}
+.zi-linuxfoundation {
+  &:before {
+    content: $zi-linuxfoundation;
+    color: #009bee;
+  }
+}
+.zi-linuxmint {
+  &:before {
+    content: $zi-linuxmint;
+    color: #87cf3e;
+  }
+}
+.zi-livejournal {
+  &:before {
+    content: $zi-livejournal;
+    color: #00b0ea;
+  }
+}
+.zi-livestream {
+  &:before {
+    content: $zi-livestream;
+    color: #cf202e;
+  }
+}
+.zi-llvm {
+  &:before {
+    content: $zi-llvm;
+  }
+}
+.zi-logstash {
+  &:before {
+    content: $zi-logstash;
+    color: #005571;
+  }
+}
+.zi-loop1 {
+  &:before {
+    content: $zi-loop1;
+    color: #f29400;
+  }
+}
+.zi-lua {
+  &:before {
+    content: $zi-lua;
+    color: #2c2d72;
+  }
+}
+.zi-lufthansa {
+  &:before {
+    content: $zi-lufthansa;
+    color: #05164d;
+  }
+}
+.zi-lumen {
+  &:before {
+    content: $zi-lumen;
+    color: #e74430;
+  }
+}
+.zi-lyft {
+  &:before {
+    content: $zi-lyft;
+    color: #ff00bf;
+  }
+}
+.zi-macys {
+  &:before {
+    content: $zi-macys;
+    color: #e21a2c;
+  }
+}
+.zi-magento {
+  &:before {
+    content: $zi-magento;
+    color: #ee672f;
+  }
+}
+.zi-magisk {
+  &:before {
+    content: $zi-magisk;
+    color: #00af9c;
+  }
+}
+.zi-mail-dot-ru {
+  &:before {
+    content: $zi-mail-dot-ru;
+    color: #168de2;
+  }
+}
+.zi-mailchimp {
+  &:before {
+    content: $zi-mailchimp;
+    color: #ffe01b;
+  }
+}
+.zi-makerbot {
+  &:before {
+    content: $zi-makerbot;
+    color: #ff1e0d;
+  }
+}
+.zi-manageiq {
+  &:before {
+    content: $zi-manageiq;
+    color: #ef2929;
+  }
+}
+.zi-manjaro {
+  &:before {
+    content: $zi-manjaro;
+    color: #35bf5c;
+  }
+}
+.zi-mapbox {
+  &:before {
+    content: $zi-mapbox;
+  }
+}
+.zi-markdown {
+  &:before {
+    content: $zi-markdown;
+  }
+}
+.zi-marketo {
+  &:before {
+    content: $zi-marketo;
+    color: #5c4c9f;
+  }
+}
+.zi-mastercard {
+  &:before {
+    content: $zi-mastercard;
+    color: #eb001b;
+  }
+}
+.zi-mastodon {
+  &:before {
+    content: $zi-mastodon;
+    color: #3088d4;
+  }
+}
+.zi-materialdesign {
+  &:before {
+    content: $zi-materialdesign;
+    color: #757575;
+  }
+}
+.zi-mathworks {
+  &:before {
+    content: $zi-mathworks;
+    color: #0076a8;
+  }
+}
+.zi-matrix {
+  &:before {
+    content: $zi-matrix;
+  }
+}
+.zi-mattermost {
+  &:before {
+    content: $zi-mattermost;
+    color: #0072c6;
+  }
+}
+.zi-matternet {
+  &:before {
+    content: $zi-matternet;
+  }
+}
+.zi-mcafee {
+  &:before {
+    content: $zi-mcafee;
+    color: #c01818;
+  }
+}
+.zi-mdnwebdocs {
+  &:before {
+    content: $zi-mdnwebdocs;
+  }
+}
+.zi-mediafire {
+  &:before {
+    content: $zi-mediafire;
+    color: #1299f3;
+  }
+}
+.zi-mediatemple {
+  &:before {
+    content: $zi-mediatemple;
+  }
+}
+.zi-medium {
+  &:before {
+    content: $zi-medium;
+  }
+}
+.zi-meetup {
+  &:before {
+    content: $zi-meetup;
+    color: #ed1c40;
+  }
+}
+.zi-mega {
+  &:before {
+    content: $zi-mega;
+    color: #d9272e;
+  }
+}
+.zi-mendeley {
+  &:before {
+    content: $zi-mendeley;
+    color: #9d1620;
+  }
+}
+.zi-mercedes {
+  &:before {
+    content: $zi-mercedes;
+  }
+}
+.zi-messenger {
+  &:before {
+    content: $zi-messenger;
+    color: #00b2ff;
+  }
+}
+.zi-meteor {
+  &:before {
+    content: $zi-meteor;
+    color: #de4f4f;
+  }
+}
+.zi-micro-dot-blog {
+  &:before {
+    content: $zi-micro-dot-blog;
+    color: #fd8308;
+  }
+}
+.zi-microgenetics {
+  &:before {
+    content: $zi-microgenetics;
+    color: #f00;
+  }
+}
+.zi-microsoft {
+  &:before {
+    content: $zi-microsoft;
+    color: #666;
+  }
+}
+.zi-microsoftaccess {
+  &:before {
+    content: $zi-microsoftaccess;
+    color: #ba141a;
+  }
+}
+.zi-microsoftazure {
+  &:before {
+    content: $zi-microsoftazure;
+    color: #0089d6;
+  }
+}
+.zi-microsoftedge {
+  &:before {
+    content: $zi-microsoftedge;
+    color: #0078d7;
+  }
+}
+.zi-microsoftexcel {
+  &:before {
+    content: $zi-microsoftexcel;
+    color: #217346;
+  }
+}
+.zi-microsoftoffice {
+  &:before {
+    content: $zi-microsoftoffice;
+    color: #e74025;
+  }
+}
+.zi-microsoftonedrive {
+  &:before {
+    content: $zi-microsoftonedrive;
+    color: #094ab2;
+  }
+}
+.zi-microsoftonenote {
+  &:before {
+    content: $zi-microsoftonenote;
+    color: #80397b;
+  }
+}
+.zi-microsoftoutlook {
+  &:before {
+    content: $zi-microsoftoutlook;
+    color: #0072c6;
+  }
+}
+.zi-microsoftpowerpoint {
+  &:before {
+    content: $zi-microsoftpowerpoint;
+    color: #d24726;
+  }
+}
+.zi-microsoftteams {
+  &:before {
+    content: $zi-microsoftteams;
+    color: #6264a7;
+  }
+}
+.zi-microsoftword {
+  &:before {
+    content: $zi-microsoftword;
+    color: #2b579a;
+  }
+}
+.zi-microstrategy {
+  &:before {
+    content: $zi-microstrategy;
+    color: #d9232e;
+  }
+}
+.zi-minds {
+  &:before {
+    content: $zi-minds;
+    color: #fed12f;
+  }
+}
+.zi-minetest {
+  &:before {
+    content: $zi-minetest;
+    color: #53ac56;
+  }
+}
+.zi-minutemailer {
+  &:before {
+    content: $zi-minutemailer;
+    color: #3abfe6;
+  }
+}
+.zi-mix {
+  &:before {
+    content: $zi-mix;
+    color: #ff8126;
+  }
+}
+.zi-mixcloud {
+  &:before {
+    content: $zi-mixcloud;
+    color: #314359;
+  }
+}
+.zi-mixer {
+  &:before {
+    content: $zi-mixer;
+    color: #002050;
+  }
+}
+.zi-mojang {
+  &:before {
+    content: $zi-mojang;
+    color: #db1f29;
+  }
+}
+.zi-monero {
+  &:before {
+    content: $zi-monero;
+    color: #f60;
+  }
+}
+.zi-mongodb {
+  &:before {
+    content: $zi-mongodb;
+    color: #47a248;
+  }
+}
+.zi-monkeytie {
+  &:before {
+    content: $zi-monkeytie;
+    color: #ffc619;
+  }
+}
+.zi-monogram {
+  &:before {
+    content: $zi-monogram;
+    color: #fdb22a;
+  }
+}
+.zi-monster {
+  &:before {
+    content: $zi-monster;
+    color: #6e46ae;
+  }
+}
+.zi-monzo {
+  &:before {
+    content: $zi-monzo;
+  }
+}
+.zi-moo {
+  &:before {
+    content: $zi-moo;
+    color: #00945e;
+  }
+}
+.zi-mozilla {
+  &:before {
+    content: $zi-mozilla;
+  }
+}
+.zi-mozillafirefox {
+  &:before {
+    content: $zi-mozillafirefox;
+    color: #ff7139;
+  }
+}
+.zi-musescore {
+  &:before {
+    content: $zi-musescore;
+    color: #1a70b8;
+  }
+}
+.zi-mxlinux {
+  &:before {
+    content: $zi-mxlinux;
+  }
+}
+.zi-myspace {
+  &:before {
+    content: $zi-myspace;
+  }
+}
+.zi-mysql {
+  &:before {
+    content: $zi-mysql;
+    color: #4479a1;
+  }
+}
+.zi-nativescript {
+  &:before {
+    content: $zi-nativescript;
+    color: #3655ff;
+  }
+}
+.zi-nec {
+  &:before {
+    content: $zi-nec;
+    color: #1414a0;
+  }
+}
+.zi-neo4j {
+  &:before {
+    content: $zi-neo4j;
+    color: #008cc1;
+  }
+}
+.zi-netflix {
+  &:before {
+    content: $zi-netflix;
+    color: #e50914;
+  }
+}
+.zi-netlify {
+  &:before {
+    content: $zi-netlify;
+    color: #00c7b7;
+  }
+}
+.zi-next-dot-js {
+  &:before {
+    content: $zi-next-dot-js;
+  }
+}
+.zi-nextcloud {
+  &:before {
+    content: $zi-nextcloud;
+    color: #0082c9;
+  }
+}
+.zi-nextdoor {
+  &:before {
+    content: $zi-nextdoor;
+    color: #00b246;
+  }
+}
+.zi-nginx {
+  &:before {
+    content: $zi-nginx;
+    color: #269539;
+  }
+}
+.zi-nim {
+  &:before {
+    content: $zi-nim;
+    color: #ffe953;
+  }
+}
+.zi-nintendo {
+  &:before {
+    content: $zi-nintendo;
+    color: #8f8f8f;
+  }
+}
+.zi-nintendo3ds {
+  &:before {
+    content: $zi-nintendo3ds;
+    color: #d12228;
+  }
+}
+.zi-nintendogamecube {
+  &:before {
+    content: $zi-nintendogamecube;
+    color: #6a5fbb;
+  }
+}
+.zi-nintendoswitch {
+  &:before {
+    content: $zi-nintendoswitch;
+    color: #e60012;
+  }
+}
+.zi-node-dot-js {
+  &:before {
+    content: $zi-node-dot-js;
+    color: #393;
+  }
+}
+.zi-node-red {
+  &:before {
+    content: $zi-node-red;
+    color: #8f0000;
+  }
+}
+.zi-nodemon {
+  &:before {
+    content: $zi-nodemon;
+    color: #76d04b;
+  }
+}
+.zi-nokia {
+  &:before {
+    content: $zi-nokia;
+    color: #124191;
+  }
+}
+.zi-notion {
+  &:before {
+    content: $zi-notion;
+  }
+}
+.zi-notist {
+  &:before {
+    content: $zi-notist;
+  }
+}
+.zi-npm1 {
+  &:before {
+    content: $zi-npm1;
+    color: #cb3837;
+  }
+}
+.zi-nucleo {
+  &:before {
+    content: $zi-nucleo;
+    color: #766dcc;
+  }
+}
+.zi-nuget {
+  &:before {
+    content: $zi-nuget;
+    color: #004880;
+  }
+}
+.zi-nutanix {
+  &:before {
+    content: $zi-nutanix;
+    color: #024da1;
+  }
+}
+.zi-nuxt-dot-js {
+  &:before {
+    content: $zi-nuxt-dot-js;
+    color: #00c58e;
+  }
+}
+.zi-nvidia {
+  &:before {
+    content: $zi-nvidia;
+    color: #76b900;
+  }
+}
+.zi-obsstudio {
+  &:before {
+    content: $zi-obsstudio;
+  }
+}
+.zi-ocaml {
+  &:before {
+    content: $zi-ocaml;
+    color: #ec6813;
+  }
+}
+.zi-octave {
+  &:before {
+    content: $zi-octave;
+    color: #0790c0;
+  }
+}
+.zi-octopusdeploy {
+  &:before {
+    content: $zi-octopusdeploy;
+    color: #2f93e0;
+  }
+}
+.zi-oculus {
+  &:before {
+    content: $zi-oculus;
+  }
+}
+.zi-odnoklassniki {
+  &:before {
+    content: $zi-odnoklassniki;
+    color: #f4731c;
+  }
+}
+.zi-openaccess {
+  &:before {
+    content: $zi-openaccess;
+    color: #f68212;
+  }
+}
+.zi-openapiinitiative {
+  &:before {
+    content: $zi-openapiinitiative;
+    color: #6ba539;
+  }
+}
+.zi-opencollective {
+  &:before {
+    content: $zi-opencollective;
+    color: #7fadf2;
+  }
+}
+.zi-openid {
+  &:before {
+    content: $zi-openid;
+    color: #f78c40;
+  }
+}
+.zi-opensourceinitiative {
+  &:before {
+    content: $zi-opensourceinitiative;
+    color: #3da639;
+  }
+}
+.zi-openssl {
+  &:before {
+    content: $zi-openssl;
+    color: #721412;
+  }
+}
+.zi-openstreetmap {
+  &:before {
+    content: $zi-openstreetmap;
+    color: #7ebc6f;
+  }
+}
+.zi-opensuse {
+  &:before {
+    content: $zi-opensuse;
+    color: #73ba25;
+  }
+}
+.zi-openvpn {
+  &:before {
+    content: $zi-openvpn;
+    color: #ea7e20;
+  }
+}
+.zi-opera1 {
+  &:before {
+    content: $zi-opera1;
+    color: #ff1b2d;
+  }
+}
+.zi-opsgenie {
+  &:before {
+    content: $zi-opsgenie;
+  }
+}
+.zi-oracle {
+  &:before {
+    content: $zi-oracle;
+    color: #f80000;
+  }
+}
+.zi-orcid {
+  &:before {
+    content: $zi-orcid;
+    color: #a6ce39;
+  }
+}
+.zi-origin {
+  &:before {
+    content: $zi-origin;
+    color: #f56c2d;
+  }
+}
+.zi-osmc {
+  &:before {
+    content: $zi-osmc;
+  }
+}
+.zi-overcast {
+  &:before {
+    content: $zi-overcast;
+    color: #fc7e0f;
+  }
+}
+.zi-overleaf {
+  &:before {
+    content: $zi-overleaf;
+    color: #47a141;
+  }
+}
+.zi-ovh {
+  &:before {
+    content: $zi-ovh;
+    color: #123f6d;
+  }
+}
+.zi-pagekit {
+  &:before {
+    content: $zi-pagekit;
+  }
+}
+.zi-palantir {
+  &:before {
+    content: $zi-palantir;
+  }
+}
+.zi-paloaltosoftware {
+  &:before {
+    content: $zi-paloaltosoftware;
+    color: #83da77;
+  }
+}
+.zi-pandora {
+  &:before {
+    content: $zi-pandora;
+    color: #005483;
+  }
+}
+.zi-pantheon {
+  &:before {
+    content: $zi-pantheon;
+    color: #efd01b;
+  }
+}
+.zi-parse-dot-ly {
+  &:before {
+    content: $zi-parse-dot-ly;
+    color: #5ba745;
+  }
+}
+.zi-pastebin {
+  &:before {
+    content: $zi-pastebin;
+    color: #02456c;
+  }
+}
+.zi-patreon {
+  &:before {
+    content: $zi-patreon;
+    color: #f96854;
+  }
+}
+.zi-paypal1 {
+  &:before {
+    content: $zi-paypal1;
+    color: #00457c;
+  }
+}
+.zi-peertube {
+  &:before {
+    content: $zi-peertube;
+    color: #f1680d;
+  }
+}
+.zi-periscope {
+  &:before {
+    content: $zi-periscope;
+    color: #40a4c4;
+  }
+}
+.zi-php {
+  &:before {
+    content: $zi-php;
+    color: #777bb4;
+  }
+}
+.zi-pi-hole {
+  &:before {
+    content: $zi-pi-hole;
+    color: #f60d1a;
+  }
+}
+.zi-picarto-dot-tv {
+  &:before {
+    content: $zi-picarto-dot-tv;
+    color: #1da456;
+  }
+}
+.zi-pinboard {
+  &:before {
+    content: $zi-pinboard;
+    color: #00f;
+  }
+}
+.zi-pingdom {
+  &:before {
+    content: $zi-pingdom;
+    color: #fff000;
+  }
+}
+.zi-pingup {
+  &:before {
+    content: $zi-pingup;
+    color: #00b1ab;
+  }
+}
+.zi-pinterest1 {
+  &:before {
+    content: $zi-pinterest1;
+    color: #bd081c;
+  }
+}
+.zi-pivotaltracker {
+  &:before {
+    content: $zi-pivotaltracker;
+    color: #517a9e;
+  }
+}
+.zi-pjsip {
+  &:before {
+    content: $zi-pjsip;
+    color: #f86001;
+  }
+}
+.zi-plangrid {
+  &:before {
+    content: $zi-plangrid;
+    color: #0085de;
+  }
+}
+.zi-player-dot-me {
+  &:before {
+    content: $zi-player-dot-me;
+    color: #c0379a;
+  }
+}
+.zi-playerfm {
+  &:before {
+    content: $zi-playerfm;
+    color: #c8122a;
+  }
+}
+.zi-playstation {
+  &:before {
+    content: $zi-playstation;
+    color: #003791;
+  }
+}
+.zi-playstation3 {
+  &:before {
+    content: $zi-playstation3;
+    color: #003791;
+  }
+}
+.zi-playstation4 {
+  &:before {
+    content: $zi-playstation4;
+    color: #003791;
+  }
+}
+.zi-plesk {
+  &:before {
+    content: $zi-plesk;
+    color: #52bbe6;
+  }
+}
+.zi-plex {
+  &:before {
+    content: $zi-plex;
+    color: #e5a00d;
+  }
+}
+.zi-pluralsight {
+  &:before {
+    content: $zi-pluralsight;
+    color: #f15b2a;
+  }
+}
+.zi-plurk {
+  &:before {
+    content: $zi-plurk;
+    color: #ff574d;
+  }
+}
+.zi-pocket1 {
+  &:before {
+    content: $zi-pocket1;
+    color: #ef3f56;
+  }
+}
+.zi-pocketcasts {
+  &:before {
+    content: $zi-pocketcasts;
+    color: #f43e37;
+  }
+}
+.zi-postgresql {
+  &:before {
+    content: $zi-postgresql;
+    color: #336791;
+  }
+}
+.zi-postman {
+  &:before {
+    content: $zi-postman;
+    color: #ff6c37;
+  }
+}
+.zi-postwoman {
+  &:before {
+    content: $zi-postwoman;
+    color: #50fa7b;
+  }
+}
+.zi-powershell {
+  &:before {
+    content: $zi-powershell;
+    color: #5391fe;
+  }
+}
+.zi-prestashop {
+  &:before {
+    content: $zi-prestashop;
+    color: #df0067;
+  }
+}
+.zi-prettier {
+  &:before {
+    content: $zi-prettier;
+    color: #f7b93e;
+  }
+}
+.zi-prismic {
+  &:before {
+    content: $zi-prismic;
+    color: #484a7a;
+  }
+}
+.zi-probot {
+  &:before {
+    content: $zi-probot;
+    color: #00b0d8;
+  }
+}
+.zi-processwire {
+  &:before {
+    content: $zi-processwire;
+    color: #ef145f;
+  }
+}
+.zi-producthunt {
+  &:before {
+    content: $zi-producthunt;
+    color: #da552f;
+  }
+}
+.zi-prometheus {
+  &:before {
+    content: $zi-prometheus;
+    color: #e6522c;
+  }
+}
+.zi-proto-dot-io {
+  &:before {
+    content: $zi-proto-dot-io;
+    color: #34a7c1;
+  }
+}
+.zi-protonmail {
+  &:before {
+    content: $zi-protonmail;
+    color: #8b89cc;
+  }
+}
+.zi-proxmox {
+  &:before {
+    content: $zi-proxmox;
+    color: #e57000;
+  }
+}
+.zi-publons {
+  &:before {
+    content: $zi-publons;
+    color: #369;
+  }
+}
+.zi-purescript {
+  &:before {
+    content: $zi-purescript;
+  }
+}
+.zi-pypi {
+  &:before {
+    content: $zi-pypi;
+    color: #3775a9;
+  }
+}
+.zi-python {
+  &:before {
+    content: $zi-python;
+    color: #3776ab;
+  }
+}
+.zi-pytorch {
+  &:before {
+    content: $zi-pytorch;
+    color: #ee4c2c;
+  }
+}
+.zi-pyup {
+  &:before {
+    content: $zi-pyup;
+    color: #9f55ff;
+  }
+}
+.zi-qemu {
+  &:before {
+    content: $zi-qemu;
+    color: #f60;
+  }
+}
+.zi-qgis {
+  &:before {
+    content: $zi-qgis;
+    color: #589632;
+  }
+}
+.zi-qiita {
+  &:before {
+    content: $zi-qiita;
+    color: #55c500;
+  }
+}
+.zi-qualcomm {
+  &:before {
+    content: $zi-qualcomm;
+    color: #3253dc;
+  }
+}
+.zi-quantcast {
+  &:before {
+    content: $zi-quantcast;
+  }
+}
+.zi-quantopian {
+  &:before {
+    content: $zi-quantopian;
+    color: #c50000;
+  }
+}
+.zi-quarkus {
+  &:before {
+    content: $zi-quarkus;
+    color: #4695eb;
+  }
+}
+.zi-quicktime {
+  &:before {
+    content: $zi-quicktime;
+    color: #1c69f0;
+  }
+}
+.zi-quip {
+  &:before {
+    content: $zi-quip;
+    color: #f27557;
+  }
+}
+.zi-quora {
+  &:before {
+    content: $zi-quora;
+    color: #b92b27;
+  }
+}
+.zi-qwiklabs {
+  &:before {
+    content: $zi-qwiklabs;
+    color: #f5cd0e;
+  }
+}
+.zi-qzone {
+  &:before {
+    content: $zi-qzone;
+    color: #fece00;
+  }
+}
+.zi-r {
+  &:before {
+    content: $zi-r;
+    color: #276dc3;
+  }
+}
+.zi-rabbitmq {
+  &:before {
+    content: $zi-rabbitmq;
+    color: #f60;
+  }
+}
+.zi-radiopublic {
+  &:before {
+    content: $zi-radiopublic;
+    color: #ce262f;
+  }
+}
+.zi-rails {
+  &:before {
+    content: $zi-rails;
+    color: #c00;
+  }
+}
+.zi-raspberrypi {
+  &:before {
+    content: $zi-raspberrypi;
+    color: #c51a4a;
+  }
+}
+.zi-react {
+  &:before {
+    content: $zi-react;
+    color: #61dafb;
+  }
+}
+.zi-reactos {
+  &:before {
+    content: $zi-reactos;
+    color: #08c;
+  }
+}
+.zi-reactrouter {
+  &:before {
+    content: $zi-reactrouter;
+    color: #ca4245;
+  }
+}
+.zi-readthedocs {
+  &:before {
+    content: $zi-readthedocs;
+    color: #8ca1af;
+  }
+}
+.zi-realm {
+  &:before {
+    content: $zi-realm;
+    color: #39477f;
+  }
+}
+.zi-reason {
+  &:before {
+    content: $zi-reason;
+    color: #dd4b39;
+  }
+}
+.zi-reasonstudios {
+  &:before {
+    content: $zi-reasonstudios;
+    color: #fff;
+  }
+}
+.zi-redbubble {
+  &:before {
+    content: $zi-redbubble;
+    color: #e41321;
+  }
+}
+.zi-reddit {
+  &:before {
+    content: $zi-reddit;
+    color: #ff4500;
+  }
+}
+.zi-redhat {
+  &:before {
+    content: $zi-redhat;
+    color: #e00;
+  }
+}
+.zi-redis {
+  &:before {
+    content: $zi-redis;
+    color: #d82c20;
+  }
+}
+.zi-redux {
+  &:before {
+    content: $zi-redux;
+    color: #764abc;
+  }
+}
+.zi-renren {
+  &:before {
+    content: $zi-renren;
+    color: #217dc6;
+  }
+}
+.zi-repl-dot-it {
+  &:before {
+    content: $zi-repl-dot-it;
+    color: #667881;
+  }
+}
+.zi-researchgate {
+  &:before {
+    content: $zi-researchgate;
+    color: #0cb;
+  }
+}
+.zi-reverbnation {
+  &:before {
+    content: $zi-reverbnation;
+    color: #e43526;
+  }
+}
+.zi-riot {
+  &:before {
+    content: $zi-riot;
+    color: #368bd6;
+  }
+}
+.zi-ripple {
+  &:before {
+    content: $zi-ripple;
+    color: #0085c0;
+  }
+}
+.zi-riseup {
+  &:before {
+    content: $zi-riseup;
+    color: #5e9ee3;
+  }
+}
+.zi-rollup-dot-js {
+  &:before {
+    content: $zi-rollup-dot-js;
+    color: #ec4a3f;
+  }
+}
+.zi-roots {
+  &:before {
+    content: $zi-roots;
+    color: #525ddc;
+  }
+}
+.zi-roundcube {
+  &:before {
+    content: $zi-roundcube;
+    color: #37beff;
+  }
+}
+.zi-rss1 {
+  &:before {
+    content: $zi-rss1;
+    color: #ffa500;
+  }
+}
+.zi-rstudio {
+  &:before {
+    content: $zi-rstudio;
+    color: #75aadb;
+  }
+}
+.zi-ruby {
+  &:before {
+    content: $zi-ruby;
+    color: #cc342d;
+  }
+}
+.zi-rubygems {
+  &:before {
+    content: $zi-rubygems;
+    color: #e9573f;
+  }
+}
+.zi-runkeeper {
+  &:before {
+    content: $zi-runkeeper;
+    color: #2dc9d7;
+  }
+}
+.zi-rust {
+  &:before {
+    content: $zi-rust;
+  }
+}
+.zi-safari1 {
+  &:before {
+    content: $zi-safari1;
+  }
+}
+.zi-sahibinden {
+  &:before {
+    content: $zi-sahibinden;
+    color: #ffe800;
+  }
+}
+.zi-salesforce {
+  &:before {
+    content: $zi-salesforce;
+    color: #00a1e0;
+  }
+}
+.zi-saltstack {
+  &:before {
+    content: $zi-saltstack;
+    color: #00eace;
+  }
+}
+.zi-samsung {
+  &:before {
+    content: $zi-samsung;
+    color: #1428a0;
+  }
+}
+.zi-samsungpay {
+  &:before {
+    content: $zi-samsungpay;
+    color: #1428a0;
+  }
+}
+.zi-sap {
+  &:before {
+    content: $zi-sap;
+    color: #008fd3;
+  }
+}
+.zi-sass {
+  &:before {
+    content: $zi-sass;
+    color: #c69;
+  }
+}
+.zi-saucelabs {
+  &:before {
+    content: $zi-saucelabs;
+    color: #e2231a;
+  }
+}
+.zi-scala {
+  &:before {
+    content: $zi-scala;
+    color: #dc322f;
+  }
+}
+.zi-scaleway {
+  &:before {
+    content: $zi-scaleway;
+    color: #4f0599;
+  }
+}
+.zi-scribd {
+  &:before {
+    content: $zi-scribd;
+    color: #1a7bba;
+  }
+}
+.zi-scrutinizerci {
+  &:before {
+    content: $zi-scrutinizerci;
+    color: #8a9296;
+  }
+}
+.zi-seagate {
+  &:before {
+    content: $zi-seagate;
+    color: #72be4f;
+  }
+}
+.zi-sega {
+  &:before {
+    content: $zi-sega;
+    color: #0089cf;
+  }
+}
+.zi-sellfy {
+  &:before {
+    content: $zi-sellfy;
+    color: #21b352;
+  }
+}
+.zi-semaphoreci {
+  &:before {
+    content: $zi-semaphoreci;
+    color: #19a974;
+  }
+}
+.zi-sensu {
+  &:before {
+    content: $zi-sensu;
+    color: #89c967;
+  }
+}
+.zi-sentry {
+  &:before {
+    content: $zi-sentry;
+    color: #fb4226;
+  }
+}
+.zi-serverfault {
+  &:before {
+    content: $zi-serverfault;
+    color: #e7282d;
+  }
+}
+.zi-shazam {
+  &:before {
+    content: $zi-shazam;
+    color: #08f;
+  }
+}
+.zi-shell {
+  &:before {
+    content: $zi-shell;
+    color: #ffd500;
+  }
+}
+.zi-shopify {
+  &:before {
+    content: $zi-shopify;
+    color: #7ab55c;
+  }
+}
+.zi-showpad {
+  &:before {
+    content: $zi-showpad;
+    color: #2d2e83;
+  }
+}
+.zi-siemens {
+  &:before {
+    content: $zi-siemens;
+    color: #099;
+  }
+}
+.zi-signal {
+  &:before {
+    content: $zi-signal;
+    color: #2592e9;
+  }
+}
+.zi-simpleicons {
+  &:before {
+    content: $zi-simpleicons;
+  }
+}
+.zi-sinaweibo {
+  &:before {
+    content: $zi-sinaweibo;
+    color: #e6162d;
+  }
+}
+.zi-sitepoint {
+  &:before {
+    content: $zi-sitepoint;
+    color: #258aaf;
+  }
+}
+.zi-sketch {
+  &:before {
+    content: $zi-sketch;
+    color: #f7b500;
+  }
+}
+.zi-skillshare {
+  &:before {
+    content: $zi-skillshare;
+    color: #17c5cb;
+  }
+}
+.zi-skyliner {
+  &:before {
+    content: $zi-skyliner;
+    color: #2fcea0;
+  }
+}
+.zi-skype1 {
+  &:before {
+    content: $zi-skype1;
+    color: #00aff0;
+  }
+}
+.zi-slack1 {
+  &:before {
+    content: $zi-slack1;
+    color: #4a154b;
+  }
+}
+.zi-slashdot {
+  &:before {
+    content: $zi-slashdot;
+    color: #026664;
+  }
+}
+.zi-slickpic {
+  &:before {
+    content: $zi-slickpic;
+    color: #ff880f;
+  }
+}
+.zi-slides {
+  &:before {
+    content: $zi-slides;
+    color: #e4637c;
+  }
+}
+.zi-smashingmagazine {
+  &:before {
+    content: $zi-smashingmagazine;
+    color: #e85c33;
+  }
+}
+.zi-smugmug {
+  &:before {
+    content: $zi-smugmug;
+    color: #6db944;
+  }
+}
+.zi-snapchat {
+  &:before {
+    content: $zi-snapchat;
+    color: #fffc00;
+  }
+}
+.zi-snapcraft {
+  &:before {
+    content: $zi-snapcraft;
+    color: #82bea0;
+  }
+}
+.zi-snyk {
+  &:before {
+    content: $zi-snyk;
+    color: #4c4a73;
+  }
+}
+.zi-society6 {
+  &:before {
+    content: $zi-society6;
+  }
+}
+.zi-socket-dot-io {
+  &:before {
+    content: $zi-socket-dot-io;
+  }
+}
+.zi-sogou {
+  &:before {
+    content: $zi-sogou;
+    color: #fb6022;
+  }
+}
+.zi-solus {
+  &:before {
+    content: $zi-solus;
+    color: #5294e2;
+  }
+}
+.zi-sonarcloud {
+  &:before {
+    content: $zi-sonarcloud;
+    color: #f3702a;
+  }
+}
+.zi-sonarlint {
+  &:before {
+    content: $zi-sonarlint;
+    color: #cc2026;
+  }
+}
+.zi-sonarqube {
+  &:before {
+    content: $zi-sonarqube;
+    color: #4e9bcd;
+  }
+}
+.zi-sonarsource {
+  &:before {
+    content: $zi-sonarsource;
+    color: #cb3032;
+  }
+}
+.zi-songkick {
+  &:before {
+    content: $zi-songkick;
+    color: #f80046;
+  }
+}
+.zi-sonicwall {
+  &:before {
+    content: $zi-sonicwall;
+    color: #f60;
+  }
+}
+.zi-sonos {
+  &:before {
+    content: $zi-sonos;
+  }
+}
+.zi-soundcloud1 {
+  &:before {
+    content: $zi-soundcloud1;
+    color: #f30;
+  }
+}
+.zi-sourceengine {
+  &:before {
+    content: $zi-sourceengine;
+    color: #f79a10;
+  }
+}
+.zi-sourceforge {
+  &:before {
+    content: $zi-sourceforge;
+    color: #535353;
+  }
+}
+.zi-sourcegraph {
+  &:before {
+    content: $zi-sourcegraph;
+    color: #00b4f2;
+  }
+}
+.zi-spacemacs {
+  &:before {
+    content: $zi-spacemacs;
+    color: #9266cc;
+  }
+}
+.zi-spacex {
+  &:before {
+    content: $zi-spacex;
+    color: #005288;
+  }
+}
+.zi-sparkfun {
+  &:before {
+    content: $zi-sparkfun;
+    color: #e53525;
+  }
+}
+.zi-sparkpost {
+  &:before {
+    content: $zi-sparkpost;
+    color: #fa6423;
+  }
+}
+.zi-spdx {
+  &:before {
+    content: $zi-spdx;
+    color: #4398cc;
+  }
+}
+.zi-speakerdeck {
+  &:before {
+    content: $zi-speakerdeck;
+    color: #396;
+  }
+}
+.zi-spectrum {
+  &:before {
+    content: $zi-spectrum;
+    color: #7b16ff;
+  }
+}
+.zi-spotify1 {
+  &:before {
+    content: $zi-spotify1;
+    color: #1ed760;
+  }
+}
+.zi-spotlight {
+  &:before {
+    content: $zi-spotlight;
+    color: #352a71;
+  }
+}
+.zi-spreaker {
+  &:before {
+    content: $zi-spreaker;
+    color: #f5c300;
+  }
+}
+.zi-spring {
+  &:before {
+    content: $zi-spring;
+    color: #6db33f;
+  }
+}
+.zi-sprint {
+  &:before {
+    content: $zi-sprint;
+    color: #ffce0a;
+  }
+}
+.zi-square1 {
+  &:before {
+    content: $zi-square1;
+  }
+}
+.zi-squarespace {
+  &:before {
+    content: $zi-squarespace;
+  }
+}
+.zi-stackbit {
+  &:before {
+    content: $zi-stackbit;
+    color: #3eb0fd;
+  }
+}
+.zi-stackexchange {
+  &:before {
+    content: $zi-stackexchange;
+    color: #1e5397;
+  }
+}
+.zi-stackoverflow {
+  &:before {
+    content: $zi-stackoverflow;
+    color: #fe7a16;
+  }
+}
+.zi-stackpath {
+  &:before {
+    content: $zi-stackpath;
+  }
+}
+.zi-stackshare {
+  &:before {
+    content: $zi-stackshare;
+    color: #0690fa;
+  }
+}
+.zi-stadia {
+  &:before {
+    content: $zi-stadia;
+    color: #cd2640;
+  }
+}
+.zi-statamic {
+  &:before {
+    content: $zi-statamic;
+  }
+}
+.zi-staticman {
+  &:before {
+    content: $zi-staticman;
+  }
+}
+.zi-statuspage {
+  &:before {
+    content: $zi-statuspage;
+  }
+}
+.zi-steam1 {
+  &:before {
+    content: $zi-steam1;
+  }
+}
+.zi-steamworks {
+  &:before {
+    content: $zi-steamworks;
+  }
+}
+.zi-steem {
+  &:before {
+    content: $zi-steem;
+    color: #4ba2f2;
+  }
+}
+.zi-steemit {
+  &:before {
+    content: $zi-steemit;
+    color: #06d6a9;
+  }
+}
+.zi-steinberg {
+  &:before {
+    content: $zi-steinberg;
+    color: #c90827;
+  }
+}
+.zi-stencyl {
+  &:before {
+    content: $zi-stencyl;
+    color: #8e1c04;
+  }
+}
+.zi-stitcher {
+  &:before {
+    content: $zi-stitcher;
+  }
+}
+.zi-storify {
+  &:before {
+    content: $zi-storify;
+    color: #3a98d9;
+  }
+}
+.zi-storybook {
+  &:before {
+    content: $zi-storybook;
+    color: #ff4785;
+  }
+}
+.zi-strapi {
+  &:before {
+    content: $zi-strapi;
+    color: #2e7eea;
+  }
+}
+.zi-strava {
+  &:before {
+    content: $zi-strava;
+    color: #fc4c02;
+  }
+}
+.zi-stripe {
+  &:before {
+    content: $zi-stripe;
+    color: #008cdd;
+  }
+}
+.zi-strongswan {
+  &:before {
+    content: $zi-strongswan;
+    color: #e00033;
+  }
+}
+.zi-stubhub {
+  &:before {
+    content: $zi-stubhub;
+    color: #003168;
+  }
+}
+.zi-styled-components {
+  &:before {
+    content: $zi-styled-components;
+    color: #db7093;
+  }
+}
+.zi-styleshare {
+  &:before {
+    content: $zi-styleshare;
+  }
+}
+.zi-stylus {
+  &:before {
+    content: $zi-stylus;
+  }
+}
+.zi-sublimetext {
+  &:before {
+    content: $zi-sublimetext;
+    color: #ff9800;
+  }
+}
+.zi-subversion {
+  &:before {
+    content: $zi-subversion;
+    color: #809cc9;
+  }
+}
+.zi-superuser {
+  &:before {
+    content: $zi-superuser;
+    color: #2eace3;
+  }
+}
+.zi-svelte {
+  &:before {
+    content: $zi-svelte;
+    color: #ff3e00;
+  }
+}
+.zi-svg {
+  &:before {
+    content: $zi-svg;
+    color: #ffb13b;
+  }
+}
+.zi-svgo {
+  &:before {
+    content: $zi-svgo;
+    color: #14b9ff;
+  }
+}
+.zi-swagger {
+  &:before {
+    content: $zi-swagger;
+    color: #85ea2d;
+  }
+}
+.zi-swarm {
+  &:before {
+    content: $zi-swarm;
+    color: #ffa633;
+  }
+}
+.zi-swift {
+  &:before {
+    content: $zi-swift;
+    color: #fa7343;
+  }
+}
+.zi-symantec {
+  &:before {
+    content: $zi-symantec;
+    color: #fdb511;
+  }
+}
+.zi-symfony {
+  &:before {
+    content: $zi-symfony;
+  }
+}
+.zi-synology {
+  &:before {
+    content: $zi-synology;
+    color: #b6b5b6;
+  }
+}
+.zi-t-mobile {
+  &:before {
+    content: $zi-t-mobile;
+    color: #e20074;
+  }
+}
+.zi-tableau {
+  &:before {
+    content: $zi-tableau;
+    color: #e97627;
+  }
+}
+.zi-tails {
+  &:before {
+    content: $zi-tails;
+    color: #56347c;
+  }
+}
+.zi-tailwindcss {
+  &:before {
+    content: $zi-tailwindcss;
+    color: #38b2ac;
+  }
+}
+.zi-tapas {
+  &:before {
+    content: $zi-tapas;
+    color: #ffce00;
+  }
+}
+.zi-teamviewer {
+  &:before {
+    content: $zi-teamviewer;
+    color: #0e8ee9;
+  }
+}
+.zi-ted {
+  &:before {
+    content: $zi-ted;
+    color: #e62b1e;
+  }
+}
+.zi-teespring {
+  &:before {
+    content: $zi-teespring;
+    color: #39ace6;
+  }
+}
+.zi-telegram1 {
+  &:before {
+    content: $zi-telegram1;
+    color: #2ca5e0;
+  }
+}
+.zi-tencentqq {
+  &:before {
+    content: $zi-tencentqq;
+    color: #eb1923;
+  }
+}
+.zi-tencentweibo {
+  &:before {
+    content: $zi-tencentweibo;
+    color: #20b8e5;
+  }
+}
+.zi-tensorflow {
+  &:before {
+    content: $zi-tensorflow;
+    color: #ff6f00;
+  }
+}
+.zi-teradata {
+  &:before {
+    content: $zi-teradata;
+    color: #f37440;
+  }
+}
+.zi-terraform {
+  &:before {
+    content: $zi-terraform;
+    color: #623ce4;
+  }
+}
+.zi-tesla {
+  &:before {
+    content: $zi-tesla;
+    color: #c00;
+  }
+}
+.zi-themighty {
+  &:before {
+    content: $zi-themighty;
+    color: #d0072a;
+  }
+}
+.zi-themoviedatabase {
+  &:before {
+    content: $zi-themoviedatabase;
+    color: #01d277;
+  }
+}
+.zi-tidal {
+  &:before {
+    content: $zi-tidal;
+  }
+}
+.zi-tiktok {
+  &:before {
+    content: $zi-tiktok;
+  }
+}
+.zi-timescale {
+  &:before {
+    content: $zi-timescale;
+    color: #fdb515;
+  }
+}
+.zi-tinder {
+  &:before {
+    content: $zi-tinder;
+    color: #ff6b6b;
+  }
+}
+.zi-todoist {
+  &:before {
+    content: $zi-todoist;
+    color: #e44332;
+  }
+}
+.zi-toggl {
+  &:before {
+    content: $zi-toggl;
+    color: #e01b22;
+  }
+}
+.zi-topcoder {
+  &:before {
+    content: $zi-topcoder;
+    color: #29a8e0;
+  }
+}
+.zi-toptal {
+  &:before {
+    content: $zi-toptal;
+    color: #3863a0;
+  }
+}
+.zi-tor {
+  &:before {
+    content: $zi-tor;
+    color: #7e4798;
+  }
+}
+.zi-toshiba {
+  &:before {
+    content: $zi-toshiba;
+    color: #f00;
+  }
+}
+.zi-trainerroad {
+  &:before {
+    content: $zi-trainerroad;
+    color: #e12726;
+  }
+}
+.zi-trakt {
+  &:before {
+    content: $zi-trakt;
+    color: #ed1c24;
+  }
+}
+.zi-travisci {
+  &:before {
+    content: $zi-travisci;
+    color: #3eaaaf;
+  }
+}
+.zi-treehouse {
+  &:before {
+    content: $zi-treehouse;
+    color: #5fcf80;
+  }
+}
+.zi-trello2 {
+  &:before {
+    content: $zi-trello2;
+    color: #0079bf;
+  }
+}
+.zi-trendmicro {
+  &:before {
+    content: $zi-trendmicro;
+    color: #d71921;
+  }
+}
+.zi-tripadvisor {
+  &:before {
+    content: $zi-tripadvisor;
+    color: #00af87;
+  }
+}
+.zi-trulia {
+  &:before {
+    content: $zi-trulia;
+    color: #53b50a;
+  }
+}
+.zi-trustpilot {
+  &:before {
+    content: $zi-trustpilot;
+    color: #00b67a;
+  }
+}
+.zi-tumblr1 {
+  &:before {
+    content: $zi-tumblr1;
+    color: #36465d;
+  }
+}
+.zi-turkishairlines {
+  &:before {
+    content: $zi-turkishairlines;
+    color: #c70a0c;
+  }
+}
+.zi-twilio {
+  &:before {
+    content: $zi-twilio;
+    color: #f22f46;
+  }
+}
+.zi-twitch2 {
+  &:before {
+    content: $zi-twitch2;
+    color: #6441a4;
+  }
+}
+.zi-x1 {
+  &:before {
+    content: $zi-x1;
+  }
+}
+.zi-twoo {
+  &:before {
+    content: $zi-twoo;
+    color: #ff7102;
+  }
+}
+.zi-typescript {
+  &:before {
+    content: $zi-typescript;
+    color: #007acc;
+  }
+}
+.zi-typo3 {
+  &:before {
+    content: $zi-typo3;
+    color: #ff8700;
+  }
+}
+.zi-uber {
+  &:before {
+    content: $zi-uber;
+  }
+}
+.zi-ubereats {
+  &:before {
+    content: $zi-ubereats;
+    color: #5fb709;
+  }
+}
+.zi-ubisoft {
+  &:before {
+    content: $zi-ubisoft;
+  }
+}
+.zi-ublockorigin {
+  &:before {
+    content: $zi-ublockorigin;
+    color: #800000;
+  }
+}
+.zi-ubuntu {
+  &:before {
+    content: $zi-ubuntu;
+    color: #e95420;
+  }
+}
+.zi-udacity {
+  &:before {
+    content: $zi-udacity;
+    color: #01b3e3;
+  }
+}
+.zi-udemy {
+  &:before {
+    content: $zi-udemy;
+    color: #ec5252;
+  }
+}
+.zi-uikit {
+  &:before {
+    content: $zi-uikit;
+    color: #2396f3;
+  }
+}
+.zi-umbraco {
+  &:before {
+    content: $zi-umbraco;
+    color: #00bec1;
+  }
+}
+.zi-unity {
+  &:before {
+    content: $zi-unity;
+  }
+}
+.zi-unrealengine {
+  &:before {
+    content: $zi-unrealengine;
+  }
+}
+.zi-unsplash {
+  &:before {
+    content: $zi-unsplash;
+  }
+}
+.zi-untappd {
+  &:before {
+    content: $zi-untappd;
+    color: #ffc000;
+  }
+}
+.zi-upwork {
+  &:before {
+    content: $zi-upwork;
+    color: #6fda44;
+  }
+}
+.zi-v {
+  &:before {
+    content: $zi-v;
+    color: #5d87bf;
+  }
+}
+.zi-v8 {
+  &:before {
+    content: $zi-v8;
+    color: #4b8bf5;
+  }
+}
+.zi-vagrant {
+  &:before {
+    content: $zi-vagrant;
+    color: #1563ff;
+  }
+}
+.zi-valve {
+  &:before {
+    content: $zi-valve;
+    color: #f74843;
+  }
+}
+.zi-veeam {
+  &:before {
+    content: $zi-veeam;
+    color: #00b336;
+  }
+}
+.zi-venmo {
+  &:before {
+    content: $zi-venmo;
+    color: #3d95ce;
+  }
+}
+.zi-verizon {
+  &:before {
+    content: $zi-verizon;
+    color: #cd040b;
+  }
+}
+.zi-viadeo {
+  &:before {
+    content: $zi-viadeo;
+    color: #f88d2d;
+  }
+}
+.zi-viber {
+  &:before {
+    content: $zi-viber;
+    color: #665cac;
+  }
+}
+.zi-vim {
+  &:before {
+    content: $zi-vim;
+    color: #019733;
+  }
+}
+.zi-vimeo1 {
+  &:before {
+    content: $zi-vimeo1;
+    color: #1ab7ea;
+  }
+}
+.zi-vine {
+  &:before {
+    content: $zi-vine;
+    color: #11b48a;
+  }
+}
+.zi-virb {
+  &:before {
+    content: $zi-virb;
+    color: #0093da;
+  }
+}
+.zi-visa {
+  &:before {
+    content: $zi-visa;
+    color: #142787;
+  }
+}
+.zi-visualstudio {
+  &:before {
+    content: $zi-visualstudio;
+    color: #5c2d91;
+  }
+}
+.zi-visualstudiocode {
+  &:before {
+    content: $zi-visualstudiocode;
+    color: #007acc;
+  }
+}
+.zi-vk {
+  &:before {
+    content: $zi-vk;
+    color: #4680c2;
+  }
+}
+.zi-vlcmediaplayer {
+  &:before {
+    content: $zi-vlcmediaplayer;
+    color: #f80;
+  }
+}
+.zi-vodafone {
+  &:before {
+    content: $zi-vodafone;
+    color: #e60000;
+  }
+}
+.zi-volkswagen {
+  &:before {
+    content: $zi-volkswagen;
+    color: #151f5d;
+  }
+}
+.zi-vsco {
+  &:before {
+    content: $zi-vsco;
+  }
+}
+.zi-vue-dot-js {
+  &:before {
+    content: $zi-vue-dot-js;
+    color: #4fc08d;
+  }
+}
+.zi-w3c {
+  &:before {
+    content: $zi-w3c;
+    color: #005a9c;
+  }
+}
+.zi-wattpad {
+  &:before {
+    content: $zi-wattpad;
+    color: #f68d12;
+  }
+}
+.zi-waze {
+  &:before {
+    content: $zi-waze;
+    color: #333665;
+  }
+}
+.zi-weasyl {
+  &:before {
+    content: $zi-weasyl;
+    color: #900;
+  }
+}
+.zi-webauthn {
+  &:before {
+    content: $zi-webauthn;
+    color: #3423a6;
+  }
+}
+.zi-webcomponents-dot-org {
+  &:before {
+    content: $zi-webcomponents-dot-org;
+    color: #29abe2;
+  }
+}
+.zi-webmin {
+  &:before {
+    content: $zi-webmin;
+    color: #7da0d0;
+  }
+}
+.zi-webpack {
+  &:before {
+    content: $zi-webpack;
+    color: #8dd6f9;
+  }
+}
+.zi-webstorm {
+  &:before {
+    content: $zi-webstorm;
+  }
+}
+.zi-wechat {
+  &:before {
+    content: $zi-wechat;
+    color: #7bb32e;
+  }
+}
+.zi-whatsapp1 {
+  &:before {
+    content: $zi-whatsapp1;
+    color: #25d366;
+  }
+}
+.zi-wheniwork {
+  &:before {
+    content: $zi-wheniwork;
+    color: #51a33d;
+  }
+}
+.zi-whitesource {
+  &:before {
+    content: $zi-whitesource;
+    color: #161d4e;
+  }
+}
+.zi-wii {
+  &:before {
+    content: $zi-wii;
+    color: #8b8b8b;
+  }
+}
+.zi-wiiu {
+  &:before {
+    content: $zi-wiiu;
+    color: #8b8b8b;
+  }
+}
+.zi-wikipedia1 {
+  &:before {
+    content: $zi-wikipedia1;
+  }
+}
+.zi-windows2 {
+  &:before {
+    content: $zi-windows2;
+    color: #0078d6;
+  }
+}
+.zi-wire {
+  &:before {
+    content: $zi-wire;
+  }
+}
+.zi-wireguard {
+  &:before {
+    content: $zi-wireguard;
+    color: #88171a;
+  }
+}
+.zi-wish {
+  &:before {
+    content: $zi-wish;
+    color: #2fb7ec;
+  }
+}
+.zi-wix {
+  &:before {
+    content: $zi-wix;
+    color: #faad4d;
+  }
+}
+.zi-wolfram {
+  &:before {
+    content: $zi-wolfram;
+    color: #d10;
+  }
+}
+.zi-wolframlanguage {
+  &:before {
+    content: $zi-wolframlanguage;
+    color: #d10;
+  }
+}
+.zi-wolframmathematica {
+  &:before {
+    content: $zi-wolframmathematica;
+    color: #d10;
+  }
+}
+.zi-wordpress1 {
+  &:before {
+    content: $zi-wordpress1;
+    color: #21759b;
+  }
+}
+.zi-workplace {
+  &:before {
+    content: $zi-workplace;
+  }
+}
+.zi-wpengine {
+  &:before {
+    content: $zi-wpengine;
+    color: #40bac8;
+  }
+}
+.zi-write-dot-as {
+  &:before {
+    content: $zi-write-dot-as;
+    color: #5bc4ee;
+  }
+}
+.zi-x-dot-org {
+  &:before {
+    content: $zi-x-dot-org;
+    color: #f28834;
+  }
+}
+.zi-x-pack {
+  &:before {
+    content: $zi-x-pack;
+    color: #005571;
+  }
+}
+.zi-xamarin {
+  &:before {
+    content: $zi-xamarin;
+    color: #4393d4;
+  }
+}
+.zi-xbox {
+  &:before {
+    content: $zi-xbox;
+    color: #107c10;
+  }
+}
+.zi-xcode {
+  &:before {
+    content: $zi-xcode;
+    color: #1575f9;
+  }
+}
+.zi-xdadevelopers {
+  &:before {
+    content: $zi-xdadevelopers;
+    color: #f59812;
+  }
+}
+.zi-xero {
+  &:before {
+    content: $zi-xero;
+    color: #13b5ea;
+  }
+}
+.zi-xfce {
+  &:before {
+    content: $zi-xfce;
+    color: #2284f2;
+  }
+}
+.zi-xiaomi {
+  &:before {
+    content: $zi-xiaomi;
+    color: #fa6709;
+  }
+}
+.zi-xing {
+  &:before {
+    content: $zi-xing;
+    color: #006567;
+  }
+}
+.zi-xmpp {
+  &:before {
+    content: $zi-xmpp;
+    color: #002b5c;
+  }
+}
+.zi-xrp {
+  &:before {
+    content: $zi-xrp;
+    color: #25a768;
+  }
+}
+.zi-xsplit {
+  &:before {
+    content: $zi-xsplit;
+    color: #0095de;
+  }
+}
+.zi-yahoo {
+  &:before {
+    content: $zi-yahoo;
+    color: #6001d2;
+  }
+}
+.zi-yamahacorporation {
+  &:before {
+    content: $zi-yamahacorporation;
+    color: #4b1e78;
+  }
+}
+.zi-yamahamotorcorporation {
+  &:before {
+    content: $zi-yamahamotorcorporation;
+    color: #e60012;
+  }
+}
+.zi-yammer {
+  &:before {
+    content: $zi-yammer;
+    color: #0072c6;
+  }
+}
+.zi-yandex {
+  &:before {
+    content: $zi-yandex;
+    color: #f00;
+  }
+}
+.zi-yarn {
+  &:before {
+    content: $zi-yarn;
+    color: #2c8ebb;
+  }
+}
+.zi-ycombinator {
+  &:before {
+    content: $zi-ycombinator;
+    color: #f0652f;
+  }
+}
+.zi-yelp {
+  &:before {
+    content: $zi-yelp;
+    color: #d32323;
+  }
+}
+.zi-youtube2 {
+  &:before {
+    content: $zi-youtube2;
+    color: #f00;
+  }
+}
+.zi-zalando {
+  &:before {
+    content: $zi-zalando;
+    color: #ff6900;
+  }
+}
+.zi-zapier {
+  &:before {
+    content: $zi-zapier;
+    color: #ff4a00;
+  }
+}
+.zi-zeit {
+  &:before {
+    content: $zi-zeit;
+  }
+}
+.zi-zend {
+  &:before {
+    content: $zi-zend;
+    color: #0679ea;
+  }
+}
+.zi-zendesk {
+  &:before {
+    content: $zi-zendesk;
+  }
+}
+.zi-zendframework {
+  &:before {
+    content: $zi-zendframework;
+    color: #68b604;
+  }
+}
+.zi-zeromq {
+  &:before {
+    content: $zi-zeromq;
+    color: #df0000;
+  }
+}
+.zi-zerply {
+  &:before {
+    content: $zi-zerply;
+    color: #9dbc7a;
+  }
+}
+.zi-zhihu {
+  &:before {
+    content: $zi-zhihu;
+    color: #0084ff;
+  }
+}
+.zi-zillow {
+  &:before {
+    content: $zi-zillow;
+    color: #0074e4;
+  }
+}
+.zi-zingat {
+  &:before {
+    content: $zi-zingat;
+    color: #009cfb;
+  }
+}
+.zi-zoom {
+  &:before {
+    content: $zi-zoom;
+    color: #2d8cff;
+  }
+}
+.zi-zorin {
+  &:before {
+    content: $zi-zorin;
+    color: #0cc1f3;
+  }
+}
+.zi-zulip {
+  &:before {
+    content: $zi-zulip;
+    color: #52c2af;
+  }
+}
+.zi-home2 {
+  &:before {
+    content: $zi-home2;
+  }
+}
+.zi-home3 {
+  &:before {
+    content: $zi-home3;
+  }
+}
+.zi-office {
+  &:before {
+    content: $zi-office;
+  }
+}
+.zi-newspaper {
+  &:before {
+    content: $zi-newspaper;
+  }
+}
+.zi-quill {
+  &:before {
+    content: $zi-quill;
+  }
+}
+.zi-eyedropper {
+  &:before {
+    content: $zi-eyedropper;
+  }
+}
+.zi-paint-format {
+  &:before {
+    content: $zi-paint-format;
+  }
+}
+.zi-coin-dollar1 {
+  &:before {
+    content: $zi-coin-dollar1;
+  }
+}
+.zi-coin-euro {
+  &:before {
+    content: $zi-coin-euro;
+  }
+}
+.zi-coin-pound {
+  &:before {
+    content: $zi-coin-pound;
+  }
+}
+.zi-home {
+  &:before {
+    content: $zi-home;
+  }
+}
+.zi-pencil {
+  &:before {
+    content: $zi-pencil;
+  }
+}
+.zi-pencil2 {
+  &:before {
+    content: $zi-pencil2;
+  }
+}
+.zi-droplet {
+  &:before {
+    content: $zi-droplet;
+  }
+}
+.zi-image {
+  &:before {
+    content: $zi-image;
+  }
+}
+.zi-images {
+  &:before {
+    content: $zi-images;
+  }
+}
+.zi-camera {
+  &:before {
+    content: $zi-camera;
+  }
+}
+.zi-play {
+  &:before {
+    content: $zi-play;
+  }
+}
+.zi-film {
+  &:before {
+    content: $zi-film;
+  }
+}
+.zi-video-camera {
+  &:before {
+    content: $zi-video-camera;
+  }
+}
+.zi-dice {
+  &:before {
+    content: $zi-dice;
+  }
+}
+.zi-pacman {
+  &:before {
+    content: $zi-pacman;
+  }
+}
+.zi-spades {
+  &:before {
+    content: $zi-spades;
+  }
+}
+.zi-clubs {
+  &:before {
+    content: $zi-clubs;
+  }
+}
+.zi-diamonds {
+  &:before {
+    content: $zi-diamonds;
+  }
+}
+.zi-connection {
+  &:before {
+    content: $zi-connection;
+  }
+}
+.zi-podcast {
+  &:before {
+    content: $zi-podcast;
+  }
+}
+.zi-feed {
+  &:before {
+    content: $zi-feed;
+  }
+}
+.zi-mic {
+  &:before {
+    content: $zi-mic;
+  }
+}
+.zi-book {
+  &:before {
+    content: $zi-book;
+  }
+}
+.zi-books {
+  &:before {
+    content: $zi-books;
+  }
+}
+.zi-file-text {
+  &:before {
+    content: $zi-file-text;
+  }
+}
+.zi-file-empty {
+  &:before {
+    content: $zi-file-empty;
+  }
+}
+.zi-files-empty {
+  &:before {
+    content: $zi-files-empty;
+  }
+}
+.zi-file-text2 {
+  &:before {
+    content: $zi-file-text2;
+  }
+}
+.zi-file-picture {
+  &:before {
+    content: $zi-file-picture;
+  }
+}
+.zi-file-music {
+  &:before {
+    content: $zi-file-music;
+  }
+}
+.zi-file-play {
+  &:before {
+    content: $zi-file-play;
+  }
+}
+.zi-file-zip {
+  &:before {
+    content: $zi-file-zip;
+  }
+}
+.zi-copy {
+  &:before {
+    content: $zi-copy;
+  }
+}
+.zi-paste {
+  &:before {
+    content: $zi-paste;
+  }
+}
+.zi-folder {
+  &:before {
+    content: $zi-folder;
+  }
+}
+.zi-folder-open {
+  &:before {
+    content: $zi-folder-open;
+  }
+}
+.zi-folder-plus {
+  &:before {
+    content: $zi-folder-plus;
+  }
+}
+.zi-folder-minus {
+  &:before {
+    content: $zi-folder-minus;
+  }
+}
+.zi-folder-download {
+  &:before {
+    content: $zi-folder-download;
+  }
+}
+.zi-folder-upload {
+  &:before {
+    content: $zi-folder-upload;
+  }
+}
+.zi-tag {
+  &:before {
+    content: $zi-tag;
+  }
+}
+.zi-tags {
+  &:before {
+    content: $zi-tags;
+  }
+}
+.zi-barcode {
+  &:before {
+    content: $zi-barcode;
+  }
+}
+.zi-qrcode {
+  &:before {
+    content: $zi-qrcode;
+  }
+}
+.zi-cart {
+  &:before {
+    content: $zi-cart;
+  }
+}
+.zi-coin-dollar {
+  &:before {
+    content: $zi-coin-dollar;
+  }
+}
+.zi-phone {
+  &:before {
+    content: $zi-phone;
+  }
+}
+.zi-phone-hang-up {
+  &:before {
+    content: $zi-phone-hang-up;
+  }
+}
+.zi-address-book {
+  &:before {
+    content: $zi-address-book;
+  }
+}
+.zi-location {
+  &:before {
+    content: $zi-location;
+  }
+}
+.zi-location-negative {
+  &:before {
+    content: $zi-location-negative;
+  }
+}
+.zi-compass {
+  &:before {
+    content: $zi-compass;
+  }
+}
+.zi-compass2 {
+  &:before {
+    content: $zi-compass2;
+  }
+}
+.zi-map-black {
+  &:before {
+    content: $zi-map-black;
+  }
+}
+.zi-map-white {
+  &:before {
+    content: $zi-map-white;
+  }
+}
+.zi-clock {
+  &:before {
+    content: $zi-clock;
+  }
+}
+.zi-clock-black {
+  &:before {
+    content: $zi-clock-black;
+  }
+}
+.zi-alarm {
+  &:before {
+    content: $zi-alarm;
+  }
+}
+.zi-bell {
+  &:before {
+    content: $zi-bell;
+  }
+}
+.zi-calendar {
+  &:before {
+    content: $zi-calendar;
+  }
+}
+.zi-printer {
+  &:before {
+    content: $zi-printer;
+  }
+}
+.zi-keyboard {
+  &:before {
+    content: $zi-keyboard;
+  }
+}
+.zi-display {
+  &:before {
+    content: $zi-display;
+  }
+}
+.zi-mobile {
+  &:before {
+    content: $zi-mobile;
+  }
+}
+.zi-mobile2 {
+  &:before {
+    content: $zi-mobile2;
+  }
+}
+.zi-drawer {
+  &:before {
+    content: $zi-drawer;
+  }
+}
+.zi-drawer2 {
+  &:before {
+    content: $zi-drawer2;
+  }
+}
+.zi-floppy-disk {
+  &:before {
+    content: $zi-floppy-disk;
+  }
+}
+.zi-undo {
+  &:before {
+    content: $zi-undo;
+  }
+}
+.zi-redo {
+  &:before {
+    content: $zi-redo;
+  }
+}
+.zi-forward1 {
+  &:before {
+    content: $zi-forward1;
+  }
+}
+.zi-reply {
+  &:before {
+    content: $zi-reply;
+  }
+}
+.zi-bubble {
+  &:before {
+    content: $zi-bubble;
+  }
+}
+.zi-bubbles {
+  &:before {
+    content: $zi-bubbles;
+  }
+}
+.zi-bubbles-back {
+  &:before {
+    content: $zi-bubbles-back;
+  }
+}
+.zi-bubble-w {
+  &:before {
+    content: $zi-bubble-w;
+  }
+}
+.zi-bubbles-conversation {
+  &:before {
+    content: $zi-bubbles-conversation;
+  }
+}
+.zi-bubbles-conversation-back {
+  &:before {
+    content: $zi-bubbles-conversation-back;
+  }
+}
+.zi-user {
+  &:before {
+    content: $zi-user;
+  }
+}
+.zi-users {
+  &:before {
+    content: $zi-users;
+  }
+}
+.zi-user-plus {
+  &:before {
+    content: $zi-user-plus;
+  }
+}
+.zi-user-minus {
+  &:before {
+    content: $zi-user-minus;
+  }
+}
+.zi-user-check {
+  &:before {
+    content: $zi-user-check;
+  }
+}
+.zi-quotes-left {
+  &:before {
+    content: $zi-quotes-left;
+  }
+}
+.zi-quotes-right {
+  &:before {
+    content: $zi-quotes-right;
+  }
+}
+.zi-spinner-worm {
+  &:before {
+    content: $zi-spinner-worm;
+  }
+}
+.zi-spinner-dots {
+  &:before {
+    content: $zi-spinner-dots;
+  }
+}
+.zi-spinner-j {
+  &:before {
+    content: $zi-spinner-j;
+  }
+}
+.zi-spinner11 {
+  &:before {
+    content: $zi-spinner11;
+  }
+}
+.zi-search {
+  &:before {
+    content: $zi-search;
+  }
+}
+.zi-zoom-in {
+  &:before {
+    content: $zi-zoom-in;
+  }
+}
+.zi-zoom-out {
+  &:before {
+    content: $zi-zoom-out;
+  }
+}
+.zi-key {
+  &:before {
+    content: $zi-key;
+  }
+}
+.zi-lock {
+  &:before {
+    content: $zi-lock;
+  }
+}
+.zi-unlocked {
+  &:before {
+    content: $zi-unlocked;
+  }
+}
+.zi-wrench {
+  &:before {
+    content: $zi-wrench;
+  }
+}
+.zi-equalizer {
+  &:before {
+    content: $zi-equalizer;
+  }
+}
+.zi-equalizer2 {
+  &:before {
+    content: $zi-equalizer2;
+  }
+}
+.zi-cog {
+  &:before {
+    content: $zi-cog;
+  }
+}
+.zi-cogs {
+  &:before {
+    content: $zi-cogs;
+  }
+}
+.zi-hammer {
+  &:before {
+    content: $zi-hammer;
+  }
+}
+.zi-magic-wand {
+  &:before {
+    content: $zi-magic-wand;
+  }
+}
+.zi-bug {
+  &:before {
+    content: $zi-bug;
+  }
+}
+.zi-pie-chart {
+  &:before {
+    content: $zi-pie-chart;
+  }
+}
+.zi-stats-dots {
+  &:before {
+    content: $zi-stats-dots;
+  }
+}
+.zi-stats-bars {
+  &:before {
+    content: $zi-stats-bars;
+  }
+}
+.zi-stats-bars-combined {
+  &:before {
+    content: $zi-stats-bars-combined;
+  }
+}
+.zi-gift {
+  &:before {
+    content: $zi-gift;
+  }
+}
+.zi-meter {
+  &:before {
+    content: $zi-meter;
+  }
+}
+.zi-fire {
+  &:before {
+    content: $zi-fire;
+  }
+}
+.zi-lab {
+  &:before {
+    content: $zi-lab;
+  }
+}
+.zi-magnet {
+  &:before {
+    content: $zi-magnet;
+  }
+}
+.zi-trash {
+  &:before {
+    content: $zi-trash;
+  }
+}
+.zi-bin {
+  &:before {
+    content: $zi-bin;
+  }
+}
+.zi-airplane {
+  &:before {
+    content: $zi-airplane;
+  }
+}
+.zi-truck {
+  &:before {
+    content: $zi-truck;
+  }
+}
+.zi-power {
+  &:before {
+    content: $zi-power;
+  }
+}
+.zi-power-cord {
+  &:before {
+    content: $zi-power-cord;
+  }
+}
+.zi-tree {
+  &:before {
+    content: $zi-tree;
+  }
+}
+.zi-cloud {
+  &:before {
+    content: $zi-cloud;
+  }
+}
+.zi-cloud-download {
+  &:before {
+    content: $zi-cloud-download;
+  }
+}
+.zi-cloud-upload {
+  &:before {
+    content: $zi-cloud-upload;
+  }
+}
+.zi-cloud-check {
+  &:before {
+    content: $zi-cloud-check;
+  }
+}
+.zi-flag {
+  &:before {
+    content: $zi-flag;
+  }
+}
+.zi-eye {
+  &:before {
+    content: $zi-eye;
+  }
+}
+.zi-eye-plus {
+  &:before {
+    content: $zi-eye-plus;
+  }
+}
+.zi-eye-minus {
+  &:before {
+    content: $zi-eye-minus;
+  }
+}
+.zi-eye-blocked {
+  &:before {
+    content: $zi-eye-blocked;
+  }
+}
+.zi-bookmark {
+  &:before {
+    content: $zi-bookmark;
+  }
+}
+.zi-bookmarks {
+  &:before {
+    content: $zi-bookmarks;
+  }
+}
+.zi-sun {
+  &:before {
+    content: $zi-sun;
+  }
+}
+.zi-contrast {
+  &:before {
+    content: $zi-contrast;
+  }
+}
+.zi-brightness-contrast {
+  &:before {
+    content: $zi-brightness-contrast;
+  }
+}
+.zi-star-empty {
+  &:before {
+    content: $zi-star-empty;
+  }
+}
+.zi-star-half {
+  &:before {
+    content: $zi-star-half;
+  }
+}
+.zi-star-full {
+  &:before {
+    content: $zi-star-full;
+  }
+}
+.zi-heart {
+  &:before {
+    content: $zi-heart;
+  }
+}
+.zi-man {
+  &:before {
+    content: $zi-man;
+  }
+}
+.zi-woman {
+  &:before {
+    content: $zi-woman;
+  }
+}
+.zi-man-woman {
+  &:before {
+    content: $zi-man-woman;
+  }
+}
+.zi-happy {
+  &:before {
+    content: $zi-happy;
+  }
+}
+.zi-smile {
+  &:before {
+    content: $zi-smile;
+  }
+}
+.zi-tongue {
+  &:before {
+    content: $zi-tongue;
+  }
+}
+.zi-sad {
+  &:before {
+    content: $zi-sad;
+  }
+}
+.zi-wink {
+  &:before {
+    content: $zi-wink;
+  }
+}
+.zi-grin {
+  &:before {
+    content: $zi-grin;
+  }
+}
+.zi-cool {
+  &:before {
+    content: $zi-cool;
+  }
+}
+.zi-angry {
+  &:before {
+    content: $zi-angry;
+  }
+}
+.zi-evil {
+  &:before {
+    content: $zi-evil;
+  }
+}
+.zi-shocked {
+  &:before {
+    content: $zi-shocked;
+  }
+}
+.zi-baffled {
+  &:before {
+    content: $zi-baffled;
+  }
+}
+.zi-confused {
+  &:before {
+    content: $zi-confused;
+  }
+}
+.zi-neutral {
+  &:before {
+    content: $zi-neutral;
+  }
+}
+.zi-hipster {
+  &:before {
+    content: $zi-hipster;
+  }
+}
+.zi-wondering {
+  &:before {
+    content: $zi-wondering;
+  }
+}
+.zi-sleepy {
+  &:before {
+    content: $zi-sleepy;
+  }
+}
+.zi-frustrated {
+  &:before {
+    content: $zi-frustrated;
+  }
+}
+.zi-crying {
+  &:before {
+    content: $zi-crying;
+  }
+}
+.zi-point-up {
+  &:before {
+    content: $zi-point-up;
+  }
+}
+.zi-point-right {
+  &:before {
+    content: $zi-point-right;
+  }
+}
+.zi-point-down {
+  &:before {
+    content: $zi-point-down;
+  }
+}
+.zi-point-left {
+  &:before {
+    content: $zi-point-left;
+  }
+}
+.zi-warning {
+  &:before {
+    content: $zi-warning;
+  }
+}
+.zi-notification {
+  &:before {
+    content: $zi-notification;
+  }
+}
+.zi-plus {
+  &:before {
+    content: $zi-plus;
+  }
+}
+.zi-minus {
+  &:before {
+    content: $zi-minus;
+  }
+}
+.zi-blocked {
+  &:before {
+    content: $zi-blocked;
+  }
+}
+.zi-cross {
+  &:before {
+    content: $zi-cross;
+  }
+}
+.zi-checkmark-filled {
+  &:before {
+    content: $zi-checkmark-filled;
+  }
+}
+.zi-checkmark2 {
+  &:before {
+    content: $zi-checkmark2;
+  }
+}
+.zi-enter {
+  &:before {
+    content: $zi-enter;
+  }
+}
+.zi-exit {
+  &:before {
+    content: $zi-exit;
+  }
+}
+.zi-play-circle {
+  &:before {
+    content: $zi-play-circle;
+  }
+}
+.zi-pause-circle {
+  &:before {
+    content: $zi-pause-circle;
+  }
+}
+.zi-stop-circle {
+  &:before {
+    content: $zi-stop-circle;
+  }
+}
+.zi-previous-circle {
+  &:before {
+    content: $zi-previous-circle;
+  }
+}
+.zi-next-circle {
+  &:before {
+    content: $zi-next-circle;
+  }
+}
+.zi-backward-circle {
+  &:before {
+    content: $zi-backward-circle;
+  }
+}
+.zi-forward-circle {
+  &:before {
+    content: $zi-forward-circle;
+  }
+}
+.zi-play3 {
+  &:before {
+    content: $zi-play3;
+  }
+}
+.zi-pause {
+  &:before {
+    content: $zi-pause;
+  }
+}
+.zi-stop {
+  &:before {
+    content: $zi-stop;
+  }
+}
+.zi-backward {
+  &:before {
+    content: $zi-backward;
+  }
+}
+.zi-forward {
+  &:before {
+    content: $zi-forward;
+  }
+}
+.zi-first {
+  &:before {
+    content: $zi-first;
+  }
+}
+.zi-last {
+  &:before {
+    content: $zi-last;
+  }
+}
+.zi-previous {
+  &:before {
+    content: $zi-previous;
+  }
+}
+.zi-next {
+  &:before {
+    content: $zi-next;
+  }
+}
+.zi-eject {
+  &:before {
+    content: $zi-eject;
+  }
+}
+.zi-volume-high {
+  &:before {
+    content: $zi-volume-high;
+  }
+}
+.zi-volume-medium {
+  &:before {
+    content: $zi-volume-medium;
+  }
+}
+.zi-volume-low {
+  &:before {
+    content: $zi-volume-low;
+  }
+}
+.zi-volume-mute {
+  &:before {
+    content: $zi-volume-mute;
+  }
+}
+.zi-mute {
+  &:before {
+    content: $zi-mute;
+  }
+}
+.zi-volume-increase {
+  &:before {
+    content: $zi-volume-increase;
+  }
+}
+.zi-volume-decrease {
+  &:before {
+    content: $zi-volume-decrease;
+  }
+}
+.zi-loop {
+  &:before {
+    content: $zi-loop;
+  }
+}
+.zi-arrow-up-bold {
+  &:before {
+    content: $zi-arrow-up-bold;
+  }
+}
+.zi-arrow-right-bold {
+  &:before {
+    content: $zi-arrow-right-bold;
+  }
+}
+.zi-arrow-down-bold {
+  &:before {
+    content: $zi-arrow-down-bold;
+  }
+}
+.zi-arrow-left-bold {
+  &:before {
+    content: $zi-arrow-left-bold;
+  }
+}
+.zi-arrow-up {
+  &:before {
+    content: $zi-arrow-up;
+  }
+}
+.zi-arrow-right {
+  &:before {
+    content: $zi-arrow-right;
+  }
+}
+.zi-arrow-down {
+  &:before {
+    content: $zi-arrow-down;
+  }
+}
+.zi-arrow-left {
+  &:before {
+    content: $zi-arrow-left;
+  }
+}
+.zi-circle-up {
+  &:before {
+    content: $zi-circle-up;
+  }
+}
+.zi-circle-right {
+  &:before {
+    content: $zi-circle-right;
+  }
+}
+.zi-circle-down {
+  &:before {
+    content: $zi-circle-down;
+  }
+}
+.zi-circle-left {
+  &:before {
+    content: $zi-circle-left;
+  }
+}
+.zi-checkbox-checked {
+  &:before {
+    content: $zi-checkbox-checked;
+  }
+}
+.zi-checkbox-unchecked {
+  &:before {
+    content: $zi-checkbox-unchecked;
+  }
+}
+.zi-ungroup {
+  &:before {
+    content: $zi-ungroup;
+  }
+}
+.zi-scissors {
+  &:before {
+    content: $zi-scissors;
+  }
+}
+.zi-filter {
+  &:before {
+    content: $zi-filter;
+  }
+}
+.zi-bold {
+  &:before {
+    content: $zi-bold;
+  }
+}
+.zi-underline {
+  &:before {
+    content: $zi-underline;
+  }
+}
+.zi-italic {
+  &:before {
+    content: $zi-italic;
+  }
+}
+.zi-strikethrough {
+  &:before {
+    content: $zi-strikethrough;
+  }
+}
+.zi-omega {
+  &:before {
+    content: $zi-omega;
+  }
+}
+.zi-superscript2 {
+  &:before {
+    content: $zi-superscript2;
+  }
+}
+.zi-subscript2 {
+  &:before {
+    content: $zi-subscript2;
+  }
+}
+.zi-text-color {
+  &:before {
+    content: $zi-text-color;
+  }
+}
+.zi-code {
+  &:before {
+    content: $zi-code;
+  }
+}
+.zi-terminal {
+  &:before {
+    content: $zi-terminal;
+  }
+}
+.zi-share-symbol {
+  &:before {
+    content: $zi-share-symbol;
+  }
+}
+.zi-amazon {
+  &:before {
+    content: $zi-amazon;
+  }
+}
+.zi-google-square {
+  &:before {
+    content: $zi-google-square;
+  }
+}
+.zi-google-plus {
+  &:before {
+    content: $zi-google-plus;
+  }
+}
+.zi-google-plus-square {
+  &:before {
+    content: $zi-google-plus-square;
+  }
+}
+.zi-google-plus-circle {
+  &:before {
+    content: $zi-google-plus-circle;
+  }
+}
+.zi-hangouts {
+  &:before {
+    content: $zi-hangouts;
+  }
+}
+.zi-google-drive {
+  &:before {
+    content: $zi-google-drive;
+  }
+}
+.zi-facebook {
+  &:before {
+    content: $zi-facebook;
+  }
+}
+.zi-facebook-square {
+  &:before {
+    content: $zi-facebook-square;
+  }
+}
+.zi-instagram {
+  &:before {
+    content: $zi-instagram;
+  }
+}
+.zi-whatsapp {
+  &:before {
+    content: $zi-whatsapp;
+  }
+}
+.zi-spotify {
+  &:before {
+    content: $zi-spotify;
+  }
+}
+.zi-telegram {
+  &:before {
+    content: $zi-telegram;
+  }
+}
+.zi-twitter {
+  &:before {
+    content: $zi-twitter;
+  }
+}
+.zi-youtube {
+  &:before {
+    content: $zi-youtube;
+  }
+}
+.zi-youtube-full {
+  &:before {
+    content: $zi-youtube-full;
+  }
+}
+.zi-twitch {
+  &:before {
+    content: $zi-twitch;
+  }
+}
+.zi-vimeo {
+  &:before {
+    content: $zi-vimeo;
+  }
+}
+.zi-deviantart {
+  &:before {
+    content: $zi-deviantart;
+  }
+}
+.zi-steam {
+  &:before {
+    content: $zi-steam;
+  }
+}
+.zi-steam-square {
+  &:before {
+    content: $zi-steam-square;
+  }
+}
+.zi-dropbox {
+  &:before {
+    content: $zi-dropbox;
+  }
+}
+.zi-onedrive {
+  &:before {
+    content: $zi-onedrive;
+  }
+}
+.zi-github {
+  &:before {
+    content: $zi-github;
+  }
+}
+.zi-npm {
+  &:before {
+    content: $zi-npm;
+  }
+}
+.zi-basecamp {
+  &:before {
+    content: $zi-basecamp;
+  }
+}
+.zi-trello {
+  &:before {
+    content: $zi-trello;
+  }
+}
+.zi-wordpress {
+  &:before {
+    content: $zi-wordpress;
+  }
+}
+.zi-blogger {
+  &:before {
+    content: $zi-blogger;
+  }
+}
+.zi-blogger-negative {
+  &:before {
+    content: $zi-blogger-negative;
+  }
+}
+.zi-tumblr {
+  &:before {
+    content: $zi-tumblr;
+  }
+}
+.zi-tumblr-square {
+  &:before {
+    content: $zi-tumblr-square;
+  }
+}
+.zi-tux {
+  &:before {
+    content: $zi-tux;
+  }
+}
+.zi-appleinc {
+  &:before {
+    content: $zi-appleinc;
+  }
+}
+.zi-android {
+  &:before {
+    content: $zi-android;
+  }
+}
+.zi-windows1 {
+  &:before {
+    content: $zi-windows1;
+  }
+}
+.zi-windows {
+  &:before {
+    content: $zi-windows;
+  }
+}
+.zi-soundcloud {
+  &:before {
+    content: $zi-soundcloud;
+  }
+}
+.zi-soundcloud2 {
+  &:before {
+    content: $zi-soundcloud2;
+  }
+}
+.zi-skype {
+  &:before {
+    content: $zi-skype;
+  }
+}
+.zi-wikipedia {
+  &:before {
+    content: $zi-wikipedia;
+  }
+}
+.zi-linkedin {
+  &:before {
+    content: $zi-linkedin;
+  }
+}
+.zi-pinterest {
+  &:before {
+    content: $zi-pinterest;
+  }
+}
+.zi-paypal {
+  &:before {
+    content: $zi-paypal;
+  }
+}
+.zi-chrome {
+  &:before {
+    content: $zi-chrome;
+  }
+}
+.zi-firefox {
+  &:before {
+    content: $zi-firefox;
+  }
+}
+.zi-ie {
+  &:before {
+    content: $zi-ie;
+  }
+}
+.zi-edge {
+  &:before {
+    content: $zi-edge;
+  }
+}
+.zi-safari {
+  &:before {
+    content: $zi-safari;
+  }
+}
+.zi-opera {
+  &:before {
+    content: $zi-opera;
+  }
+}
+.zi-file-pdf {
+  &:before {
+    content: $zi-file-pdf;
+  }
+}
+.zi-file-word {
+  &:before {
+    content: $zi-file-word;
+  }
+}
+.zi-file-excel {
+  &:before {
+    content: $zi-file-excel;
+  }
+}
+.zi-html-five {
+  &:before {
+    content: $zi-html-five;
+  }
+}
+.zi-html-five-negative {
+  &:before {
+    content: $zi-html-five-negative;
+  }
+}
+.zi-css3 {
+  &:before {
+    content: $zi-css3;
+  }
+}
+.zi-git {
+  &:before {
+    content: $zi-git;
+  }
+}
+.zi-sunrise {
+  &:before {
+    content: $zi-sunrise;
+  }
+}
+.zi-sun1 {
+  &:before {
+    content: $zi-sun1;
+  }
+}
+.zi-moon {
+  &:before {
+    content: $zi-moon;
+  }
+}
+.zi-sun2 {
+  &:before {
+    content: $zi-sun2;
+  }
+}
+.zi-windy {
+  &:before {
+    content: $zi-windy;
+  }
+}
+.zi-wind {
+  &:before {
+    content: $zi-wind;
+  }
+}
+.zi-snowflake {
+  &:before {
+    content: $zi-snowflake;
+  }
+}
+.zi-cloudy {
+  &:before {
+    content: $zi-cloudy;
+  }
+}
+.zi-cloud1 {
+  &:before {
+    content: $zi-cloud1;
+  }
+}
+.zi-weather {
+  &:before {
+    content: $zi-weather;
+  }
+}
+.zi-weather1 {
+  &:before {
+    content: $zi-weather1;
+  }
+}
+.zi-weather2 {
+  &:before {
+    content: $zi-weather2;
+  }
+}
+.zi-lines {
+  &:before {
+    content: $zi-lines;
+  }
+}
+.zi-cloud2 {
+  &:before {
+    content: $zi-cloud2;
+  }
+}
+.zi-lightning {
+  &:before {
+    content: $zi-lightning;
+  }
+}
+.zi-lightning1 {
+  &:before {
+    content: $zi-lightning1;
+  }
+}
+.zi-rainy {
+  &:before {
+    content: $zi-rainy;
+  }
+}
+.zi-rainy1 {
+  &:before {
+    content: $zi-rainy1;
+  }
+}
+.zi-windy1 {
+  &:before {
+    content: $zi-windy1;
+  }
+}
+.zi-windy2 {
+  &:before {
+    content: $zi-windy2;
+  }
+}
+.zi-snowy {
+  &:before {
+    content: $zi-snowy;
+  }
+}
+.zi-snowy1 {
+  &:before {
+    content: $zi-snowy1;
+  }
+}
+.zi-snowy2 {
+  &:before {
+    content: $zi-snowy2;
+  }
+}
+.zi-weather3 {
+  &:before {
+    content: $zi-weather3;
+  }
+}
+.zi-cloudy1 {
+  &:before {
+    content: $zi-cloudy1;
+  }
+}
+.zi-cloud3 {
+  &:before {
+    content: $zi-cloud3;
+  }
+}
+.zi-lightning2 {
+  &:before {
+    content: $zi-lightning2;
+  }
+}
+.zi-sun3 {
+  &:before {
+    content: $zi-sun3;
+  }
+}
+.zi-moon1 {
+  &:before {
+    content: $zi-moon1;
+  }
+}
+.zi-cloudy2 {
+  &:before {
+    content: $zi-cloudy2;
+  }
+}
+.zi-cloud4 {
+  &:before {
+    content: $zi-cloud4;
+  }
+}
+.zi-cloud5 {
+  &:before {
+    content: $zi-cloud5;
+  }
+}
+.zi-lightning3 {
+  &:before {
+    content: $zi-lightning3;
+  }
+}
+.zi-rainy2 {
+  &:before {
+    content: $zi-rainy2;
+  }
+}
+.zi-rainy3 {
+  &:before {
+    content: $zi-rainy3;
+  }
+}
+.zi-windy3 {
+  &:before {
+    content: $zi-windy3;
+  }
+}
+.zi-windy4 {
+  &:before {
+    content: $zi-windy4;
+  }
+}
+.zi-snowy3 {
+  &:before {
+    content: $zi-snowy3;
+  }
+}
+.zi-snowy4 {
+  &:before {
+    content: $zi-snowy4;
+  }
+}
+.zi-weather4 {
+  &:before {
+    content: $zi-weather4;
+  }
+}
+.zi-cloudy3 {
+  &:before {
+    content: $zi-cloudy3;
+  }
+}
+.zi-lightning4 {
+  &:before {
+    content: $zi-lightning4;
+  }
+}
+.zi-thermometer {
+  &:before {
+    content: $zi-thermometer;
+  }
+}
+.zi-compass1 {
+  &:before {
+    content: $zi-compass1;
+  }
+}
+.zi-none {
+  &:before {
+    content: $zi-none;
+  }
+}
+.zi-Celsius {
+  &:before {
+    content: $zi-Celsius;
+  }
+}
+.zi-Fahrenheit {
+  &:before {
+    content: $zi-Fahrenheit;
+  }
+}
+.zi-activity {
+  &:before {
+    content: $zi-activity;
+  }
+}
+.zi-airplay {
+  &:before {
+    content: $zi-airplay;
+  }
+}
+.zi-alert-circle {
+  &:before {
+    content: $zi-alert-circle;
+  }
+}
+.zi-alert-octagon {
+  &:before {
+    content: $zi-alert-octagon;
+  }
+}
+.zi-alert-triangle {
+  &:before {
+    content: $zi-alert-triangle;
+  }
+}
+.zi-align-center {
+  &:before {
+    content: $zi-align-center;
+  }
+}
+.zi-align-justify {
+  &:before {
+    content: $zi-align-justify;
+  }
+}
+.zi-align-left {
+  &:before {
+    content: $zi-align-left;
+  }
+}
+.zi-align-right {
+  &:before {
+    content: $zi-align-right;
+  }
+}
+.zi-anchor {
+  &:before {
+    content: $zi-anchor;
+  }
+}
+.zi-aperture {
+  &:before {
+    content: $zi-aperture;
+  }
+}
+.zi-archive {
+  &:before {
+    content: $zi-archive;
+  }
+}
+.zi-arrow-down1 {
+  &:before {
+    content: $zi-arrow-down1;
+  }
+}
+.zi-arrow-down-circle {
+  &:before {
+    content: $zi-arrow-down-circle;
+  }
+}
+.zi-arrow-down-left {
+  &:before {
+    content: $zi-arrow-down-left;
+  }
+}
+.zi-arrow-down-right {
+  &:before {
+    content: $zi-arrow-down-right;
+  }
+}
+.zi-arrow-left1 {
+  &:before {
+    content: $zi-arrow-left1;
+  }
+}
+.zi-arrow-left-circle {
+  &:before {
+    content: $zi-arrow-left-circle;
+  }
+}
+.zi-arrow-right1 {
+  &:before {
+    content: $zi-arrow-right1;
+  }
+}
+.zi-arrow-right-circle {
+  &:before {
+    content: $zi-arrow-right-circle;
+  }
+}
+.zi-arrow-up1 {
+  &:before {
+    content: $zi-arrow-up1;
+  }
+}
+.zi-arrow-up-circle {
+  &:before {
+    content: $zi-arrow-up-circle;
+  }
+}
+.zi-arrow-up-left {
+  &:before {
+    content: $zi-arrow-up-left;
+  }
+}
+.zi-arrow-up-right {
+  &:before {
+    content: $zi-arrow-up-right;
+  }
+}
+.zi-at-sign {
+  &:before {
+    content: $zi-at-sign;
+  }
+}
+.zi-award {
+  &:before {
+    content: $zi-award;
+  }
+}
+.zi-bar-chart {
+  &:before {
+    content: $zi-bar-chart;
+  }
+}
+.zi-bar-chart-2 {
+  &:before {
+    content: $zi-bar-chart-2;
+  }
+}
+.zi-battery {
+  &:before {
+    content: $zi-battery;
+  }
+}
+.zi-battery-charging {
+  &:before {
+    content: $zi-battery-charging;
+  }
+}
+.zi-bell1 {
+  &:before {
+    content: $zi-bell1;
+  }
+}
+.zi-bell-off {
+  &:before {
+    content: $zi-bell-off;
+  }
+}
+.zi-bluetooth {
+  &:before {
+    content: $zi-bluetooth;
+  }
+}
+.zi-bold1 {
+  &:before {
+    content: $zi-bold1;
+  }
+}
+.zi-book1 {
+  &:before {
+    content: $zi-book1;
+  }
+}
+.zi-book-open {
+  &:before {
+    content: $zi-book-open;
+  }
+}
+.zi-bookmark1 {
+  &:before {
+    content: $zi-bookmark1;
+  }
+}
+.zi-box {
+  &:before {
+    content: $zi-box;
+  }
+}
+.zi-briefcase {
+  &:before {
+    content: $zi-briefcase;
+  }
+}
+.zi-calendar1 {
+  &:before {
+    content: $zi-calendar1;
+  }
+}
+.zi-camera1 {
+  &:before {
+    content: $zi-camera1;
+  }
+}
+.zi-camera-off {
+  &:before {
+    content: $zi-camera-off;
+  }
+}
+.zi-cast {
+  &:before {
+    content: $zi-cast;
+  }
+}
+.zi-check {
+  &:before {
+    content: $zi-check;
+  }
+}
+.zi-check-circle {
+  &:before {
+    content: $zi-check-circle;
+  }
+}
+.zi-check-square {
+  &:before {
+    content: $zi-check-square;
+  }
+}
+.zi-chevron-down {
+  &:before {
+    content: $zi-chevron-down;
+  }
+}
+.zi-chevron-left {
+  &:before {
+    content: $zi-chevron-left;
+  }
+}
+.zi-chevron-right {
+  &:before {
+    content: $zi-chevron-right;
+  }
+}
+.zi-chevron-up {
+  &:before {
+    content: $zi-chevron-up;
+  }
+}
+.zi-chevrons-down {
+  &:before {
+    content: $zi-chevrons-down;
+  }
+}
+.zi-chevrons-left {
+  &:before {
+    content: $zi-chevrons-left;
+  }
+}
+.zi-chevrons-right {
+  &:before {
+    content: $zi-chevrons-right;
+  }
+}
+.zi-chevrons-up {
+  &:before {
+    content: $zi-chevrons-up;
+  }
+}
+.zi-chrome1 {
+  &:before {
+    content: $zi-chrome1;
+  }
+}
+.zi-circle {
+  &:before {
+    content: $zi-circle;
+  }
+}
+.zi-clipboard {
+  &:before {
+    content: $zi-clipboard;
+  }
+}
+.zi-clock1 {
+  &:before {
+    content: $zi-clock1;
+  }
+}
+.zi-cloud6 {
+  &:before {
+    content: $zi-cloud6;
+  }
+}
+.zi-cloud-drizzle {
+  &:before {
+    content: $zi-cloud-drizzle;
+  }
+}
+.zi-cloud-lightning {
+  &:before {
+    content: $zi-cloud-lightning;
+  }
+}
+.zi-cloud-off {
+  &:before {
+    content: $zi-cloud-off;
+  }
+}
+.zi-cloud-rain {
+  &:before {
+    content: $zi-cloud-rain;
+  }
+}
+.zi-cloud-snow {
+  &:before {
+    content: $zi-cloud-snow;
+  }
+}
+.zi-code1 {
+  &:before {
+    content: $zi-code1;
+  }
+}
+.zi-codepen {
+  &:before {
+    content: $zi-codepen;
+  }
+}
+.zi-codesandbox {
+  &:before {
+    content: $zi-codesandbox;
+  }
+}
+.zi-coffee {
+  &:before {
+    content: $zi-coffee;
+  }
+}
+.zi-columns {
+  &:before {
+    content: $zi-columns;
+  }
+}
+.zi-command {
+  &:before {
+    content: $zi-command;
+  }
+}
+.zi-compass3 {
+  &:before {
+    content: $zi-compass3;
+  }
+}
+.zi-copy1 {
+  &:before {
+    content: $zi-copy1;
+  }
+}
+.zi-corner-down-left {
+  &:before {
+    content: $zi-corner-down-left;
+  }
+}
+.zi-corner-down-right {
+  &:before {
+    content: $zi-corner-down-right;
+  }
+}
+.zi-corner-left-down {
+  &:before {
+    content: $zi-corner-left-down;
+  }
+}
+.zi-corner-left-up {
+  &:before {
+    content: $zi-corner-left-up;
+  }
+}
+.zi-corner-right-down {
+  &:before {
+    content: $zi-corner-right-down;
+  }
+}
+.zi-corner-right-up {
+  &:before {
+    content: $zi-corner-right-up;
+  }
+}
+.zi-corner-up-left {
+  &:before {
+    content: $zi-corner-up-left;
+  }
+}
+.zi-corner-up-right {
+  &:before {
+    content: $zi-corner-up-right;
+  }
+}
+.zi-cpu {
+  &:before {
+    content: $zi-cpu;
+  }
+}
+.zi-credit-card {
+  &:before {
+    content: $zi-credit-card;
+  }
+}
+.zi-crop {
+  &:before {
+    content: $zi-crop;
+  }
+}
+.zi-crosshair {
+  &:before {
+    content: $zi-crosshair;
+  }
+}
+.zi-database {
+  &:before {
+    content: $zi-database;
+  }
+}
+.zi-delete {
+  &:before {
+    content: $zi-delete;
+  }
+}
+.zi-disc {
+  &:before {
+    content: $zi-disc;
+  }
+}
+.zi-dollar-sign {
+  &:before {
+    content: $zi-dollar-sign;
+  }
+}
+.zi-download {
+  &:before {
+    content: $zi-download;
+  }
+}
+.zi-download-cloud {
+  &:before {
+    content: $zi-download-cloud;
+  }
+}
+.zi-droplet1 {
+  &:before {
+    content: $zi-droplet1;
+  }
+}
+.zi-edit {
+  &:before {
+    content: $zi-edit;
+  }
+}
+.zi-edit-2 {
+  &:before {
+    content: $zi-edit-2;
+  }
+}
+.zi-edit-3 {
+  &:before {
+    content: $zi-edit-3;
+  }
+}
+.zi-external-link {
+  &:before {
+    content: $zi-external-link;
+  }
+}
+.zi-eye1 {
+  &:before {
+    content: $zi-eye1;
+  }
+}
+.zi-eye-off {
+  &:before {
+    content: $zi-eye-off;
+  }
+}
+.zi-facebook1 {
+  &:before {
+    content: $zi-facebook1;
+  }
+}
+.zi-fast-forward {
+  &:before {
+    content: $zi-fast-forward;
+  }
+}
+.zi-feather {
+  &:before {
+    content: $zi-feather;
+  }
+}
+.zi-figma {
+  &:before {
+    content: $zi-figma;
+  }
+}
+.zi-file {
+  &:before {
+    content: $zi-file;
+  }
+}
+.zi-file-minus {
+  &:before {
+    content: $zi-file-minus;
+  }
+}
+.zi-file-plus {
+  &:before {
+    content: $zi-file-plus;
+  }
+}
+.zi-file-text1 {
+  &:before {
+    content: $zi-file-text1;
+  }
+}
+.zi-film1 {
+  &:before {
+    content: $zi-film1;
+  }
+}
+.zi-filter1 {
+  &:before {
+    content: $zi-filter1;
+  }
+}
+.zi-flag1 {
+  &:before {
+    content: $zi-flag1;
+  }
+}
+.zi-folder1 {
+  &:before {
+    content: $zi-folder1;
+  }
+}
+.zi-folder-minus1 {
+  &:before {
+    content: $zi-folder-minus1;
+  }
+}
+.zi-folder-plus1 {
+  &:before {
+    content: $zi-folder-plus1;
+  }
+}
+.zi-framer {
+  &:before {
+    content: $zi-framer;
+  }
+}
+.zi-frown {
+  &:before {
+    content: $zi-frown;
+  }
+}
+.zi-gift1 {
+  &:before {
+    content: $zi-gift1;
+  }
+}
+.zi-git-branch {
+  &:before {
+    content: $zi-git-branch;
+  }
+}
+.zi-git-commit {
+  &:before {
+    content: $zi-git-commit;
+  }
+}
+.zi-git-merge {
+  &:before {
+    content: $zi-git-merge;
+  }
+}
+.zi-git-pull-request {
+  &:before {
+    content: $zi-git-pull-request;
+  }
+}
+.zi-github1 {
+  &:before {
+    content: $zi-github1;
+  }
+}
+.zi-gitlab {
+  &:before {
+    content: $zi-gitlab;
+  }
+}
+.zi-globe {
+  &:before {
+    content: $zi-globe;
+  }
+}
+.zi-grid {
+  &:before {
+    content: $zi-grid;
+  }
+}
+.zi-hard-drive {
+  &:before {
+    content: $zi-hard-drive;
+  }
+}
+.zi-hash {
+  &:before {
+    content: $zi-hash;
+  }
+}
+.zi-headphones {
+  &:before {
+    content: $zi-headphones;
+  }
+}
+.zi-heart1 {
+  &:before {
+    content: $zi-heart1;
+  }
+}
+.zi-help-circle {
+  &:before {
+    content: $zi-help-circle;
+  }
+}
+.zi-hexagon {
+  &:before {
+    content: $zi-hexagon;
+  }
+}
+.zi-home1 {
+  &:before {
+    content: $zi-home1;
+  }
+}
+.zi-image1 {
+  &:before {
+    content: $zi-image1;
+  }
+}
+.zi-inbox {
+  &:before {
+    content: $zi-inbox;
+  }
+}
+.zi-info {
+  &:before {
+    content: $zi-info;
+  }
+}
+.zi-instagram1 {
+  &:before {
+    content: $zi-instagram1;
+  }
+}
+.zi-italic1 {
+  &:before {
+    content: $zi-italic1;
+  }
+}
+.zi-key1 {
+  &:before {
+    content: $zi-key1;
+  }
+}
+.zi-layers {
+  &:before {
+    content: $zi-layers;
+  }
+}
+.zi-layout {
+  &:before {
+    content: $zi-layout;
+  }
+}
+.zi-life-buoy {
+  &:before {
+    content: $zi-life-buoy;
+  }
+}
+.zi-link {
+  &:before {
+    content: $zi-link;
+  }
+}
+.zi-link-2 {
+  &:before {
+    content: $zi-link-2;
+  }
+}
+.zi-linkedin1 {
+  &:before {
+    content: $zi-linkedin1;
+  }
+}
+.zi-list {
+  &:before {
+    content: $zi-list;
+  }
+}
+.zi-loader {
+  &:before {
+    content: $zi-loader;
+  }
+}
+.zi-lock1 {
+  &:before {
+    content: $zi-lock1;
+  }
+}
+.zi-log-in {
+  &:before {
+    content: $zi-log-in;
+  }
+}
+.zi-log-out {
+  &:before {
+    content: $zi-log-out;
+  }
+}
+.zi-mail {
+  &:before {
+    content: $zi-mail;
+  }
+}
+.zi-map {
+  &:before {
+    content: $zi-map;
+  }
+}
+.zi-map-pin {
+  &:before {
+    content: $zi-map-pin;
+  }
+}
+.zi-maximize {
+  &:before {
+    content: $zi-maximize;
+  }
+}
+.zi-maximize-2 {
+  &:before {
+    content: $zi-maximize-2;
+  }
+}
+.zi-meh {
+  &:before {
+    content: $zi-meh;
+  }
+}
+.zi-menu {
+  &:before {
+    content: $zi-menu;
+  }
+}
+.zi-message-circle {
+  &:before {
+    content: $zi-message-circle;
+  }
+}
+.zi-message-square {
+  &:before {
+    content: $zi-message-square;
+  }
+}
+.zi-mic1 {
+  &:before {
+    content: $zi-mic1;
+  }
+}
+.zi-mic-off {
+  &:before {
+    content: $zi-mic-off;
+  }
+}
+.zi-minimize {
+  &:before {
+    content: $zi-minimize;
+  }
+}
+.zi-minimize-2 {
+  &:before {
+    content: $zi-minimize-2;
+  }
+}
+.zi-minus1 {
+  &:before {
+    content: $zi-minus1;
+  }
+}
+.zi-minus-circle {
+  &:before {
+    content: $zi-minus-circle;
+  }
+}
+.zi-minus-square {
+  &:before {
+    content: $zi-minus-square;
+  }
+}
+.zi-monitor {
+  &:before {
+    content: $zi-monitor;
+  }
+}
+.zi-moon2 {
+  &:before {
+    content: $zi-moon2;
+  }
+}
+.zi-more-horizontal {
+  &:before {
+    content: $zi-more-horizontal;
+  }
+}
+.zi-more-vertical {
+  &:before {
+    content: $zi-more-vertical;
+  }
+}
+.zi-mouse-pointer {
+  &:before {
+    content: $zi-mouse-pointer;
+  }
+}
+.zi-move {
+  &:before {
+    content: $zi-move;
+  }
+}
+.zi-music {
+  &:before {
+    content: $zi-music;
+  }
+}
+.zi-navigation {
+  &:before {
+    content: $zi-navigation;
+  }
+}
+.zi-navigation-2 {
+  &:before {
+    content: $zi-navigation-2;
+  }
+}
+.zi-octagon {
+  &:before {
+    content: $zi-octagon;
+  }
+}
+.zi-package {
+  &:before {
+    content: $zi-package;
+  }
+}
+.zi-paperclip {
+  &:before {
+    content: $zi-paperclip;
+  }
+}
+.zi-pause1 {
+  &:before {
+    content: $zi-pause1;
+  }
+}
+.zi-pause-circle1 {
+  &:before {
+    content: $zi-pause-circle1;
+  }
+}
+.zi-pen-tool {
+  &:before {
+    content: $zi-pen-tool;
+  }
+}
+.zi-percent {
+  &:before {
+    content: $zi-percent;
+  }
+}
+.zi-phone1 {
+  &:before {
+    content: $zi-phone1;
+  }
+}
+.zi-phone-call {
+  &:before {
+    content: $zi-phone-call;
+  }
+}
+.zi-phone-forwarded {
+  &:before {
+    content: $zi-phone-forwarded;
+  }
+}
+.zi-phone-incoming {
+  &:before {
+    content: $zi-phone-incoming;
+  }
+}
+.zi-phone-missed {
+  &:before {
+    content: $zi-phone-missed;
+  }
+}
+.zi-phone-off {
+  &:before {
+    content: $zi-phone-off;
+  }
+}
+.zi-phone-outgoing {
+  &:before {
+    content: $zi-phone-outgoing;
+  }
+}
+.zi-pie-chart1 {
+  &:before {
+    content: $zi-pie-chart1;
+  }
+}
+.zi-play1 {
+  &:before {
+    content: $zi-play1;
+  }
+}
+.zi-play-circle1 {
+  &:before {
+    content: $zi-play-circle1;
+  }
+}
+.zi-plus1 {
+  &:before {
+    content: $zi-plus1;
+  }
+}
+.zi-plus-circle {
+  &:before {
+    content: $zi-plus-circle;
+  }
+}
+.zi-plus-square {
+  &:before {
+    content: $zi-plus-square;
+  }
+}
+.zi-pocket {
+  &:before {
+    content: $zi-pocket;
+  }
+}
+.zi-power1 {
+  &:before {
+    content: $zi-power1;
+  }
+}
+.zi-printer1 {
+  &:before {
+    content: $zi-printer1;
+  }
+}
+.zi-radio {
+  &:before {
+    content: $zi-radio;
+  }
+}
+.zi-refresh-ccw {
+  &:before {
+    content: $zi-refresh-ccw;
+  }
+}
+.zi-refresh-cw {
+  &:before {
+    content: $zi-refresh-cw;
+  }
+}
+.zi-repeat {
+  &:before {
+    content: $zi-repeat;
+  }
+}
+.zi-rewind {
+  &:before {
+    content: $zi-rewind;
+  }
+}
+.zi-rotate-ccw {
+  &:before {
+    content: $zi-rotate-ccw;
+  }
+}
+.zi-rotate-cw {
+  &:before {
+    content: $zi-rotate-cw;
+  }
+}
+.zi-rss {
+  &:before {
+    content: $zi-rss;
+  }
+}
+.zi-save {
+  &:before {
+    content: $zi-save;
+  }
+}
+.zi-scissors1 {
+  &:before {
+    content: $zi-scissors1;
+  }
+}
+.zi-search1 {
+  &:before {
+    content: $zi-search1;
+  }
+}
+.zi-send {
+  &:before {
+    content: $zi-send;
+  }
+}
+.zi-server {
+  &:before {
+    content: $zi-server;
+  }
+}
+.zi-settings {
+  &:before {
+    content: $zi-settings;
+  }
+}
+.zi-share {
+  &:before {
+    content: $zi-share;
+  }
+}
+.zi-share-2 {
+  &:before {
+    content: $zi-share-2;
+  }
+}
+.zi-shield {
+  &:before {
+    content: $zi-shield;
+  }
+}
+.zi-shield-off {
+  &:before {
+    content: $zi-shield-off;
+  }
+}
+.zi-shopping-bag {
+  &:before {
+    content: $zi-shopping-bag;
+  }
+}
+.zi-shopping-cart {
+  &:before {
+    content: $zi-shopping-cart;
+  }
+}
+.zi-shuffle {
+  &:before {
+    content: $zi-shuffle;
+  }
+}
+.zi-sidebar {
+  &:before {
+    content: $zi-sidebar;
+  }
+}
+.zi-skip-back {
+  &:before {
+    content: $zi-skip-back;
+  }
+}
+.zi-skip-forward {
+  &:before {
+    content: $zi-skip-forward;
+  }
+}
+.zi-slack {
+  &:before {
+    content: $zi-slack;
+  }
+}
+.zi-slash {
+  &:before {
+    content: $zi-slash;
+  }
+}
+.zi-sliders {
+  &:before {
+    content: $zi-sliders;
+  }
+}
+.zi-smartphone {
+  &:before {
+    content: $zi-smartphone;
+  }
+}
+.zi-smile1 {
+  &:before {
+    content: $zi-smile1;
+  }
+}
+.zi-speaker {
+  &:before {
+    content: $zi-speaker;
+  }
+}
+.zi-square {
+  &:before {
+    content: $zi-square;
+  }
+}
+.zi-star {
+  &:before {
+    content: $zi-star;
+  }
+}
+.zi-stop-circle1 {
+  &:before {
+    content: $zi-stop-circle1;
+  }
+}
+.zi-sun4 {
+  &:before {
+    content: $zi-sun4;
+  }
+}
+.zi-sunrise1 {
+  &:before {
+    content: $zi-sunrise1;
+  }
+}
+.zi-sunset {
+  &:before {
+    content: $zi-sunset;
+  }
+}
+.zi-tablet {
+  &:before {
+    content: $zi-tablet;
+  }
+}
+.zi-tag1 {
+  &:before {
+    content: $zi-tag1;
+  }
+}
+.zi-target {
+  &:before {
+    content: $zi-target;
+  }
+}
+.zi-terminal1 {
+  &:before {
+    content: $zi-terminal1;
+  }
+}
+.zi-thermometer1 {
+  &:before {
+    content: $zi-thermometer1;
+  }
+}
+.zi-thumbs-down {
+  &:before {
+    content: $zi-thumbs-down;
+  }
+}
+.zi-thumbs-up {
+  &:before {
+    content: $zi-thumbs-up;
+  }
+}
+.zi-toggle-left {
+  &:before {
+    content: $zi-toggle-left;
+  }
+}
+.zi-toggle-right {
+  &:before {
+    content: $zi-toggle-right;
+  }
+}
+.zi-tool {
+  &:before {
+    content: $zi-tool;
+  }
+}
+.zi-trash1 {
+  &:before {
+    content: $zi-trash1;
+  }
+}
+.zi-trash-2 {
+  &:before {
+    content: $zi-trash-2;
+  }
+}
+.zi-trello1 {
+  &:before {
+    content: $zi-trello1;
+  }
+}
+.zi-trending-down {
+  &:before {
+    content: $zi-trending-down;
+  }
+}
+.zi-trending-up {
+  &:before {
+    content: $zi-trending-up;
+  }
+}
+.zi-triangle {
+  &:before {
+    content: $zi-triangle;
+  }
+}
+.zi-truck1 {
+  &:before {
+    content: $zi-truck1;
+  }
+}
+.zi-tv {
+  &:before {
+    content: $zi-tv;
+  }
+}
+.zi-twitch1 {
+  &:before {
+    content: $zi-twitch1;
+  }
+}
+.zi-twitter1 {
+  &:before {
+    content: $zi-twitter1;
+  }
+}
+.zi-type {
+  &:before {
+    content: $zi-type;
+  }
+}
+.zi-umbrella {
+  &:before {
+    content: $zi-umbrella;
+  }
+}
+.zi-underline1 {
+  &:before {
+    content: $zi-underline1;
+  }
+}
+.zi-unlock {
+  &:before {
+    content: $zi-unlock;
+  }
+}
+.zi-upload {
+  &:before {
+    content: $zi-upload;
+  }
+}
+.zi-upload-cloud {
+  &:before {
+    content: $zi-upload-cloud;
+  }
+}
+.zi-user1 {
+  &:before {
+    content: $zi-user1;
+  }
+}
+.zi-user-check1 {
+  &:before {
+    content: $zi-user-check1;
+  }
+}
+.zi-user-minus1 {
+  &:before {
+    content: $zi-user-minus1;
+  }
+}
+.zi-user-plus1 {
+  &:before {
+    content: $zi-user-plus1;
+  }
+}
+.zi-user-x {
+  &:before {
+    content: $zi-user-x;
+  }
+}
+.zi-users1 {
+  &:before {
+    content: $zi-users1;
+  }
+}
+.zi-video {
+  &:before {
+    content: $zi-video;
+  }
+}
+.zi-video-off {
+  &:before {
+    content: $zi-video-off;
+  }
+}
+.zi-voicemail {
+  &:before {
+    content: $zi-voicemail;
+  }
+}
+.zi-volume {
+  &:before {
+    content: $zi-volume;
+  }
+}
+.zi-volume-1 {
+  &:before {
+    content: $zi-volume-1;
+  }
+}
+.zi-volume-2 {
+  &:before {
+    content: $zi-volume-2;
+  }
+}
+.zi-volume-x {
+  &:before {
+    content: $zi-volume-x;
+  }
+}
+.zi-watch {
+  &:before {
+    content: $zi-watch;
+  }
+}
+.zi-wifi {
+  &:before {
+    content: $zi-wifi;
+  }
+}
+.zi-wifi-off {
+  &:before {
+    content: $zi-wifi-off;
+  }
+}
+.zi-wind1 {
+  &:before {
+    content: $zi-wind1;
+  }
+}
+.zi-x {
+  &:before {
+    content: $zi-x;
+  }
+}
+.zi-x-circle {
+  &:before {
+    content: $zi-x-circle;
+  }
+}
+.zi-x-octagon {
+  &:before {
+    content: $zi-x-octagon;
+  }
+}
+.zi-x-square {
+  &:before {
+    content: $zi-x-square;
+  }
+}
+.zi-youtube1 {
+  &:before {
+    content: $zi-youtube1;
+  }
+}
+.zi-zap {
+  &:before {
+    content: $zi-zap;
+  }
+}
+.zi-zap-off {
+  &:before {
+    content: $zi-zap-off;
+  }
+}
+.zi-zoom-in1 {
+  &:before {
+    content: $zi-zoom-in1;
+  }
+}
+.zi-zoom-out1 {
+  &:before {
+    content: $zi-zoom-out1;
+  }
 }
 

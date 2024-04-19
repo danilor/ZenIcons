@@ -4,8 +4,8 @@
  */
 @font-face {
   font-family: "zenicon";
-  src: url("../font/zenicon.eot?g1x2yz");
-  src: url("../font/zenicon.eot?g1x2yz#iefix") format("embedded-opentype"), url("../font/zenicon.ttf?g1x2yz") format("truetype"), url("../font/zenicon.woff?g1x2yz") format("woff"), url("../font/zenicon.svg?g1x2yz#zenicon") format("svg");
+  src: url("../font/zenicon.eot?5g3xxu");
+  src: url("../font/zenicon.eot?5g3xxu#iefix") format("embedded-opentype"), url("../font/zenicon.ttf?5g3xxu") format("truetype"), url("../font/zenicon.woff?5g3xxu") format("woff"), url("../font/zenicon.svg?5g3xxu#zenicon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -218,12 +218,12 @@
   content: "\eb92";
 }
 
-.zi-anchor1:before {
+.zi-anchor_color:before {
   content: "\eb93";
   color: #8940fa;
 }
 
-.zi-android1:before {
+.zi-android_color:before {
   content: "\eb94";
   color: #3ddc84;
 }
@@ -453,7 +453,7 @@
   color: #dc3710;
 }
 
-.zi-basecamp1:before {
+.zi-basecamp_color:before {
   content: "\ebc3";
   color: #5ecc62;
 }
@@ -556,7 +556,7 @@
   color: #ef5734;
 }
 
-.zi-box1:before {
+.zi-box_color:before {
   content: "\ebd8";
   color: #0061d5;
 }
@@ -666,7 +666,7 @@
   color: #f09820;
 }
 
-.zi-circle1:before {
+.zi-circle_color:before {
   content: "\ebee";
   color: #8669ae;
 }
@@ -757,7 +757,7 @@
   color: #ee4623;
 }
 
-.zi-codepen1:before {
+.zi-codepen_color:before {
   content: "\ec01";
 }
 
@@ -766,7 +766,7 @@
   color: #3e8dcc;
 }
 
-.zi-codesandbox1:before {
+.zi-codesandbox_color:before {
   content: "\ec03";
 }
 
@@ -876,7 +876,7 @@
   color: #239120;
 }
 
-.zi-css31:before {
+.zi-css3_color:before {
   content: "\ec1a";
   color: #1572b6;
 }
@@ -973,7 +973,7 @@
   content: "\ec2d";
 }
 
-.zi-deviantart1:before {
+.zi-deviantart_color:before {
   content: "\ec2e";
   color: #05cc47;
 }
@@ -1066,7 +1066,7 @@
   content: "\ec41";
 }
 
-.zi-dropbox1:before {
+.zi-dropbox_color:before {
   content: "\ec42";
   color: #0061ff;
 }
@@ -1300,7 +1300,7 @@
   color: #ffbf3b;
 }
 
-.zi-figma1:before {
+.zi-figma_color:before {
   content: "\ec72";
   color: #f24e1e;
 }
@@ -1378,7 +1378,7 @@
   color: #f94877;
 }
 
-.zi-framer1:before {
+.zi-framer_color:before {
   content: "\ec82";
   color: #05f;
 }
@@ -1458,7 +1458,7 @@
   color: #5c5543;
 }
 
-.zi-git1:before {
+.zi-git_color:before {
   content: "\ec92";
   color: #f05032;
 }
@@ -1472,7 +1472,7 @@
   content: "\ec94";
 }
 
-.zi-gitlab1:before {
+.zi-gitlab_color:before {
   content: "\ec95";
   color: #fca121;
 }
@@ -2309,7 +2309,7 @@
   color: #005571;
 }
 
-.zi-loop1:before {
+.zi-loop_color:before {
   content: "\ed40";
   color: #f29400;
 }
@@ -2739,7 +2739,7 @@
   content: "\ed98";
 }
 
-.zi-npm1:before {
+.zi-npm_color:before {
   content: "\ed99";
   color: #cb3837;
 }
@@ -2923,7 +2923,7 @@
   color: #f96854;
 }
 
-.zi-paypal1:before {
+.zi-paypal_color:before {
   content: "\edbf";
   color: #00457c;
 }
@@ -2968,7 +2968,7 @@
   color: #00b1ab;
 }
 
-.zi-pinterest1:before {
+.zi-pinterest_color:before {
   content: "\edc8";
   color: #bd081c;
 }
@@ -3033,7 +3033,7 @@
   color: #ff574d;
 }
 
-.zi-pocket1:before {
+.zi-pocket_color:before {
   content: "\edd5";
   color: #ef3f56;
 }
@@ -3336,7 +3336,7 @@
   color: #37beff;
 }
 
-.zi-rss1:before {
+.zi-rss_color:before {
   content: "\ee12";
   color: #ffa500;
 }
@@ -3365,7 +3365,7 @@
   content: "\ee17";
 }
 
-.zi-safari1:before {
+.zi-safari-alt:before {
   content: "\ee18";
 }
 
@@ -3523,12 +3523,12 @@
   color: #2fcea0;
 }
 
-.zi-skype1:before {
+.zi-skype_color:before {
   content: "\ee38";
   color: #00aff0;
 }
 
-.zi-slack1:before {
+.zi-slack-alt:before {
   content: "\ee39";
   color: #4a154b;
 }
@@ -3625,7 +3625,7 @@
   content: "\ee4c";
 }
 
-.zi-soundcloud1:before {
+.zi-soundcloud_color:before {
   content: "\ee4d";
   color: #f30;
 }
@@ -3680,7 +3680,7 @@
   color: #7b16ff;
 }
 
-.zi-spotify1:before {
+.zi-spotify_color:before {
   content: "\ee58";
   color: #1ed760;
 }
@@ -3705,7 +3705,7 @@
   color: #ffce0a;
 }
 
-.zi-square1:before {
+.zi-square_color:before {
   content: "\ee5d";
 }
 
@@ -3754,7 +3754,7 @@
   content: "\ee67";
 }
 
-.zi-steam1:before {
+.zi-steam-alt:before {
   content: "\ee68";
 }
 
@@ -3933,7 +3933,7 @@
   color: #39ace6;
 }
 
-.zi-telegram1:before {
+.zi-telegram_color:before {
   content: "\ee8d";
   color: #2ca5e0;
 }
@@ -4046,7 +4046,7 @@
   color: #5fcf80;
 }
 
-.zi-trello2:before {
+.zi-trello_color:before {
   content: "\eea4";
   color: #0079bf;
 }
@@ -4071,7 +4071,7 @@
   color: #00b67a;
 }
 
-.zi-tumblr1:before {
+.zi-tumblr_color:before {
   content: "\eea9";
   color: #36465d;
 }
@@ -4086,12 +4086,12 @@
   color: #f22f46;
 }
 
-.zi-twitch2:before {
+.zi-twitch_color:before {
   content: "\eeac";
   color: #6441a4;
 }
 
-.zi-x1:before {
+.zi-x-alt:before {
   content: "\eead";
 }
 
@@ -4225,7 +4225,7 @@
   color: #019733;
 }
 
-.zi-vimeo1:before {
+.zi-vimeo_color:before {
   content: "\eec9";
   color: #1ab7ea;
 }
@@ -4333,7 +4333,7 @@
   color: #7bb32e;
 }
 
-.zi-whatsapp1:before {
+.zi-whatsapp_color:before {
   content: "\eedf";
   color: #25d366;
 }
@@ -4358,7 +4358,7 @@
   color: #8b8b8b;
 }
 
-.zi-wikipedia1:before {
+.zi-wikipedia-alt:before {
   content: "\eee4";
 }
 
@@ -4401,7 +4401,7 @@
   color: #d10;
 }
 
-.zi-wordpress1:before {
+.zi-wordpress_color:before {
   content: "\eeed";
   color: #21759b;
 }
@@ -4596,46 +4596,6 @@
 .zi-zulip:before {
   content: "\ef14";
   color: #52c2af;
-}
-
-.zi-home2:before {
-  content: "\e98e";
-}
-
-.zi-home3:before {
-  content: "\e998";
-}
-
-.zi-office:before {
-  content: "\e99e";
-}
-
-.zi-newspaper:before {
-  content: "\e9a0";
-}
-
-.zi-quill:before {
-  content: "\e9a1";
-}
-
-.zi-eyedropper:before {
-  content: "\e9a2";
-}
-
-.zi-paint-format:before {
-  content: "\e9a3";
-}
-
-.zi-coin-dollar1:before {
-  content: "\e9a4";
-}
-
-.zi-coin-euro:before {
-  content: "\e9a5";
-}
-
-.zi-coin-pound:before {
-  content: "\e9a7";
 }
 
 .zi-home:before {
@@ -5752,6 +5712,46 @@
 
 .zi-git:before {
   content: "\eae7";
+}
+
+.zi-home2:before {
+  content: "\e98e";
+}
+
+.zi-home3:before {
+  content: "\e998";
+}
+
+.zi-office:before {
+  content: "\e99e";
+}
+
+.zi-newspaper:before {
+  content: "\e9a0";
+}
+
+.zi-quill:before {
+  content: "\e9a1";
+}
+
+.zi-eyedropper:before {
+  content: "\e9a2";
+}
+
+.zi-paint-format:before {
+  content: "\e9a3";
+}
+
+.zi-coin-dollar1:before {
+  content: "\e9a4";
+}
+
+.zi-coin-euro:before {
+  content: "\e9a5";
+}
+
+.zi-coin-pound:before {
+  content: "\e9a7";
 }
 
 .zi-sunrise:before {

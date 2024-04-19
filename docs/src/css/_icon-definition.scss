@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?g1x2yz');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?g1x2yz#iefix') format('embedded-opentype'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?g1x2yz') format('truetype'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?g1x2yz') format('woff'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?g1x2yz##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?5g3xxu');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?5g3xxu#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?5g3xxu') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?5g3xxu') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?5g3xxu##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -262,15 +262,15 @@
     content: $zi-analogue;
   }
 }
-.zi-anchor1 {
+.zi-anchor_color {
   &:before {
-    content: $zi-anchor1;
+    content: $zi-anchor_color;
     color: #8940fa;
   }
 }
-.zi-android1 {
+.zi-android_color {
   &:before {
-    content: $zi-android1;
+    content: $zi-android_color;
     color: #3ddc84;
   }
 }
@@ -545,9 +545,9 @@
     color: #dc3710;
   }
 }
-.zi-basecamp1 {
+.zi-basecamp_color {
   &:before {
-    content: $zi-basecamp1;
+    content: $zi-basecamp_color;
     color: #5ecc62;
   }
 }
@@ -669,9 +669,9 @@
     color: #ef5734;
   }
 }
-.zi-box1 {
+.zi-box_color {
   &:before {
-    content: $zi-box1;
+    content: $zi-box_color;
     color: #0061d5;
   }
 }
@@ -801,9 +801,9 @@
     color: #f09820;
   }
 }
-.zi-circle1 {
+.zi-circle_color {
   &:before {
-    content: $zi-circle1;
+    content: $zi-circle_color;
     color: #8669ae;
   }
 }
@@ -911,9 +911,9 @@
     color: #ee4623;
   }
 }
-.zi-codepen1 {
+.zi-codepen_color {
   &:before {
-    content: $zi-codepen1;
+    content: $zi-codepen_color;
   }
 }
 .zi-coderwall {
@@ -922,9 +922,9 @@
     color: #3e8dcc;
   }
 }
-.zi-codesandbox1 {
+.zi-codesandbox_color {
   &:before {
-    content: $zi-codesandbox1;
+    content: $zi-codesandbox_color;
   }
 }
 .zi-codeship {
@@ -1055,9 +1055,9 @@
     color: #239120;
   }
 }
-.zi-css31 {
+.zi-css3_color {
   &:before {
-    content: $zi-css31;
+    content: $zi-css3_color;
     color: #1572b6;
   }
 }
@@ -1172,9 +1172,9 @@
     content: $zi-dev-dot-to;
   }
 }
-.zi-deviantart1 {
+.zi-deviantart_color {
   &:before {
-    content: $zi-deviantart1;
+    content: $zi-deviantart_color;
     color: #05cc47;
   }
 }
@@ -1285,9 +1285,9 @@
     content: $zi-drone;
   }
 }
-.zi-dropbox1 {
+.zi-dropbox_color {
   &:before {
-    content: $zi-dropbox1;
+    content: $zi-dropbox_color;
     color: #0061ff;
   }
 }
@@ -1567,9 +1567,9 @@
     color: #ffbf3b;
   }
 }
-.zi-figma1 {
+.zi-figma_color {
   &:before {
-    content: $zi-figma1;
+    content: $zi-figma_color;
     color: #f24e1e;
   }
 }
@@ -1661,9 +1661,9 @@
     color: #f94877;
   }
 }
-.zi-framer1 {
+.zi-framer_color {
   &:before {
-    content: $zi-framer1;
+    content: $zi-framer_color;
     color: #05f;
   }
 }
@@ -1757,9 +1757,9 @@
     color: #5c5543;
   }
 }
-.zi-git1 {
+.zi-git_color {
   &:before {
-    content: $zi-git1;
+    content: $zi-git_color;
     color: #f05032;
   }
 }
@@ -1774,9 +1774,9 @@
     content: $zi-github2;
   }
 }
-.zi-gitlab1 {
+.zi-gitlab_color {
   &:before {
-    content: $zi-gitlab1;
+    content: $zi-gitlab_color;
     color: #fca121;
   }
 }
@@ -2782,9 +2782,9 @@
     color: #005571;
   }
 }
-.zi-loop1 {
+.zi-loop_color {
   &:before {
-    content: $zi-loop1;
+    content: $zi-loop_color;
     color: #f29400;
   }
 }
@@ -3301,9 +3301,9 @@
     content: $zi-notist;
   }
 }
-.zi-npm1 {
+.zi-npm_color {
   &:before {
-    content: $zi-npm1;
+    content: $zi-npm_color;
     color: #cb3837;
   }
 }
@@ -3523,9 +3523,9 @@
     color: #f96854;
   }
 }
-.zi-paypal1 {
+.zi-paypal_color {
   &:before {
-    content: $zi-paypal1;
+    content: $zi-paypal_color;
     color: #00457c;
   }
 }
@@ -3577,9 +3577,9 @@
     color: #00b1ab;
   }
 }
-.zi-pinterest1 {
+.zi-pinterest_color {
   &:before {
-    content: $zi-pinterest1;
+    content: $zi-pinterest_color;
     color: #bd081c;
   }
 }
@@ -3655,9 +3655,9 @@
     color: #ff574d;
   }
 }
-.zi-pocket1 {
+.zi-pocket_color {
   &:before {
-    content: $zi-pocket1;
+    content: $zi-pocket_color;
     color: #ef3f56;
   }
 }
@@ -4019,9 +4019,9 @@
     color: #37beff;
   }
 }
-.zi-rss1 {
+.zi-rss_color {
   &:before {
-    content: $zi-rss1;
+    content: $zi-rss_color;
     color: #ffa500;
   }
 }
@@ -4054,9 +4054,9 @@
     content: $zi-rust;
   }
 }
-.zi-safari1 {
+.zi-safari-alt {
   &:before {
-    content: $zi-safari1;
+    content: $zi-safari-alt;
   }
 }
 .zi-sahibinden {
@@ -4244,15 +4244,15 @@
     color: #2fcea0;
   }
 }
-.zi-skype1 {
+.zi-skype_color {
   &:before {
-    content: $zi-skype1;
+    content: $zi-skype_color;
     color: #00aff0;
   }
 }
-.zi-slack1 {
+.zi-slack-alt {
   &:before {
-    content: $zi-slack1;
+    content: $zi-slack-alt;
     color: #4a154b;
   }
 }
@@ -4367,9 +4367,9 @@
     content: $zi-sonos;
   }
 }
-.zi-soundcloud1 {
+.zi-soundcloud_color {
   &:before {
-    content: $zi-soundcloud1;
+    content: $zi-soundcloud_color;
     color: #f30;
   }
 }
@@ -4433,9 +4433,9 @@
     color: #7b16ff;
   }
 }
-.zi-spotify1 {
+.zi-spotify_color {
   &:before {
-    content: $zi-spotify1;
+    content: $zi-spotify_color;
     color: #1ed760;
   }
 }
@@ -4463,9 +4463,9 @@
     color: #ffce0a;
   }
 }
-.zi-square1 {
+.zi-square_color {
   &:before {
-    content: $zi-square1;
+    content: $zi-square_color;
   }
 }
 .zi-squarespace {
@@ -4523,9 +4523,9 @@
     content: $zi-statuspage;
   }
 }
-.zi-steam1 {
+.zi-steam-alt {
   &:before {
-    content: $zi-steam1;
+    content: $zi-steam-alt;
   }
 }
 .zi-steamworks {
@@ -4739,9 +4739,9 @@
     color: #39ace6;
   }
 }
-.zi-telegram1 {
+.zi-telegram_color {
   &:before {
-    content: $zi-telegram1;
+    content: $zi-telegram_color;
     color: #2ca5e0;
   }
 }
@@ -4875,9 +4875,9 @@
     color: #5fcf80;
   }
 }
-.zi-trello2 {
+.zi-trello_color {
   &:before {
-    content: $zi-trello2;
+    content: $zi-trello_color;
     color: #0079bf;
   }
 }
@@ -4905,9 +4905,9 @@
     color: #00b67a;
   }
 }
-.zi-tumblr1 {
+.zi-tumblr_color {
   &:before {
-    content: $zi-tumblr1;
+    content: $zi-tumblr_color;
     color: #36465d;
   }
 }
@@ -4923,15 +4923,15 @@
     color: #f22f46;
   }
 }
-.zi-twitch2 {
+.zi-twitch_color {
   &:before {
-    content: $zi-twitch2;
+    content: $zi-twitch_color;
     color: #6441a4;
   }
 }
-.zi-x1 {
+.zi-x-alt {
   &:before {
-    content: $zi-x1;
+    content: $zi-x-alt;
   }
 }
 .zi-twoo {
@@ -5091,9 +5091,9 @@
     color: #019733;
   }
 }
-.zi-vimeo1 {
+.zi-vimeo_color {
   &:before {
-    content: $zi-vimeo1;
+    content: $zi-vimeo_color;
     color: #1ab7ea;
   }
 }
@@ -5221,9 +5221,9 @@
     color: #7bb32e;
   }
 }
-.zi-whatsapp1 {
+.zi-whatsapp_color {
   &:before {
-    content: $zi-whatsapp1;
+    content: $zi-whatsapp_color;
     color: #25d366;
   }
 }
@@ -5251,9 +5251,9 @@
     color: #8b8b8b;
   }
 }
-.zi-wikipedia1 {
+.zi-wikipedia-alt {
   &:before {
-    content: $zi-wikipedia1;
+    content: $zi-wikipedia-alt;
   }
 }
 .zi-windows2 {
@@ -5303,9 +5303,9 @@
     color: #d10;
   }
 }
-.zi-wordpress1 {
+.zi-wordpress_color {
   &:before {
-    content: $zi-wordpress1;
+    content: $zi-wordpress_color;
     color: #21759b;
   }
 }
@@ -5538,56 +5538,6 @@
   &:before {
     content: $zi-zulip;
     color: #52c2af;
-  }
-}
-.zi-home2 {
-  &:before {
-    content: $zi-home2;
-  }
-}
-.zi-home3 {
-  &:before {
-    content: $zi-home3;
-  }
-}
-.zi-office {
-  &:before {
-    content: $zi-office;
-  }
-}
-.zi-newspaper {
-  &:before {
-    content: $zi-newspaper;
-  }
-}
-.zi-quill {
-  &:before {
-    content: $zi-quill;
-  }
-}
-.zi-eyedropper {
-  &:before {
-    content: $zi-eyedropper;
-  }
-}
-.zi-paint-format {
-  &:before {
-    content: $zi-paint-format;
-  }
-}
-.zi-coin-dollar1 {
-  &:before {
-    content: $zi-coin-dollar1;
-  }
-}
-.zi-coin-euro {
-  &:before {
-    content: $zi-coin-euro;
-  }
-}
-.zi-coin-pound {
-  &:before {
-    content: $zi-coin-pound;
   }
 }
 .zi-home {
@@ -6983,6 +6933,56 @@
 .zi-git {
   &:before {
     content: $zi-git;
+  }
+}
+.zi-home2 {
+  &:before {
+    content: $zi-home2;
+  }
+}
+.zi-home3 {
+  &:before {
+    content: $zi-home3;
+  }
+}
+.zi-office {
+  &:before {
+    content: $zi-office;
+  }
+}
+.zi-newspaper {
+  &:before {
+    content: $zi-newspaper;
+  }
+}
+.zi-quill {
+  &:before {
+    content: $zi-quill;
+  }
+}
+.zi-eyedropper {
+  &:before {
+    content: $zi-eyedropper;
+  }
+}
+.zi-paint-format {
+  &:before {
+    content: $zi-paint-format;
+  }
+}
+.zi-coin-dollar1 {
+  &:before {
+    content: $zi-coin-dollar1;
+  }
+}
+.zi-coin-euro {
+  &:before {
+    content: $zi-coin-euro;
+  }
+}
+.zi-coin-pound {
+  &:before {
+    content: $zi-coin-pound;
   }
 }
 .zi-sunrise {

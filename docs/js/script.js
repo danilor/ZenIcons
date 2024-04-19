@@ -89,12 +89,13 @@ function bindSearch() {
             timer = setTimeout(callback, ms);
         };
     })();
-    $('#search').keyup(function () {
+    $('#search').on('input',function () {
         var term = $(this).val();
         delay(() => {
             searchIcon(term);
         }, keyPressWait);
     });
+
 }
 
 function searchIcon(term) {

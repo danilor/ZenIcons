@@ -2003,6 +2003,7 @@ label {
 }
 
 input[type="text"],
+input[type="search"],
 input[type="password"],
 input[type="email"],
 select,
@@ -2023,6 +2024,7 @@ textarea {
   width: 100%;
 }
 
+input[type="search"]:invalid,
 input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
@@ -2055,6 +2057,7 @@ select::-ms-expand {
 }
 
 input[type="text"],
+input[type="search"],
 input[type="password"],
 input[type="email"],
 select {
@@ -2154,6 +2157,7 @@ label {
   color: #828282;
 }
 
+input[type="search"],
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -2164,6 +2168,7 @@ textarea {
   border-color: #e6e6e6;
 }
 
+input[type="search"]:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -2966,6 +2971,7 @@ table.alt tbody tr td {
   color: #ffffff;
 }
 
+.wrapper.style1 input[type="search"],
 .wrapper.style1 input[type="text"],
 .wrapper.style1 input[type="password"],
 .wrapper.style1 input[type="email"],
@@ -2976,6 +2982,7 @@ table.alt tbody tr td {
   border-color: rgba(255, 255, 255, 0.25);
 }
 
+.wrapper.style1 input[type="search"]:focus
 .wrapper.style1 input[type="text"]:focus,
 .wrapper.style1 input[type="password"]:focus,
 .wrapper.style1 input[type="email"]:focus,
@@ -3177,6 +3184,7 @@ table.alt tbody tr td {
   color: #828282;
 }
 
+.wrapper.style2 input[type="search"],
 .wrapper.style2 input[type="text"],
 .wrapper.style2 input[type="password"],
 .wrapper.style2 input[type="email"],
@@ -3187,6 +3195,7 @@ table.alt tbody tr td {
   border-color: #e6e6e6;
 }
 
+.wrapper.style2 input[type="search"]:focus,
 .wrapper.style2 input[type="text"]:focus,
 .wrapper.style2 input[type="password"]:focus,
 .wrapper.style2 input[type="email"]:focus,
@@ -3391,6 +3400,7 @@ table.alt tbody tr td {
   color: #828282;
 }
 
+.wrapper.style3 input[type="search"],
 .wrapper.style3 input[type="text"],
 .wrapper.style3 input[type="password"],
 .wrapper.style3 input[type="email"],
@@ -3401,6 +3411,7 @@ table.alt tbody tr td {
   border-color: #d6d6d6;
 }
 
+.wrapper.style3 input[type="search"]:focus,
 .wrapper.style3 input[type="text"]:focus,
 .wrapper.style3 input[type="password"]:focus,
 .wrapper.style3 input[type="email"]:focus,
@@ -3654,6 +3665,7 @@ table.alt tbody tr td {
   color: #ffffff;
 }
 
+#header input[type="search"],
 #header input[type="text"],
 #header input[type="password"],
 #header input[type="email"],
@@ -3664,6 +3676,7 @@ table.alt tbody tr td {
   border-color: rgba(255, 255, 255, 0.25);
 }
 
+#header input[type="search"]:focus
 #header input[type="text"]:focus,
 #header input[type="password"]:focus,
 #header input[type="email"]:focus,

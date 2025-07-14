@@ -14,6 +14,12 @@ export default function Instructions() {
                         After that, put the following line of code between the &lt;head&gt;&lt;/head&gt; tags:
                     </p>
                     <pre><code>&lt;link id="ZenIcons" rel="stylesheet" href="dist/fonts.css" /&gt;</code></pre>
+
+                    <p>
+                        Or you can use the following CDN link to include it directly from the internet:
+                    </p>
+                    <pre><code>&lt;link id="ZenIcons" rel="stylesheet" href="https://cdn.statically.io/gh/danilor/ZenIcons/master/dist/fonts.css" /&gt;</code></pre>
+
                     <p>
                         With just that line, you are ready to use all the icons in ZenIcons. Easy-peasy! right?
                     </p>

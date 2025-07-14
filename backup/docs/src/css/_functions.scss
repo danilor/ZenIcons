@@ -1,0 +1,65 @@
+.zif-spin {
+  display: block;
+  width: 1em;
+  height: 1em;
+  -webkit-animation: zif-spin 1s infinite linear;
+  animation: zif-spin 1s infinite linear;
+}
+.zif-spin-reverse {
+  display: block;
+  width: 1em;
+  height: 1em;
+  -webkit-animation: zif-spin-reverse 1s infinite linear;
+  animation: zif-spin-reverse 1s infinite linear reverse;
+}
+@-webkit-keyframes zif-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes zif-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes zif-spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes zif-spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.zif-2x{
+  font-size:2em;
+}
+.zif-3x{
+  font-size:3em;
+}
+.zif-4x{
+  font-size:4em;
+}

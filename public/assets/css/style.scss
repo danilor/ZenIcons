@@ -1,0 +1,76 @@
+@import "variables";
+@import "mixins";
+@import "main";
+
+body{
+  background: url('assets/img/pattern.jpg') repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/**
+GENERAL CLASSES
+ */
+
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+
+/**
+  FONT SIZES and STYLES
+ */
+
+.font_big52{
+  font-size:52px;
+  @media (max-width: $breakpoint-tablet) {
+    font-size:26px;
+  }
+  @media (max-width: $breakpoint-phone) {
+    font-size:23px;
+  }
+}
+.font_big24{
+  font-size:24px;
+  @media (max-width: $breakpoint-tablet) {
+    font-size:20px;
+  }
+  @media (max-width: $breakpoint-phone) {
+    font-size:22px;
+  }
+}
+
+.font_big18{
+  font-size:18px;
+  @media (max-width: $breakpoint-tablet) {
+    font-size:18px;
+  }
+  @media (max-width: $breakpoint-phone) {
+    font-size:20px;
+  }
+}
+
+.font_big14{
+  font-size:16px;
+  @media (max-width: $breakpoint-tablet) {
+    font-size:15px;
+  }
+  @media (max-width: $breakpoint-phone) {
+    font-size:14px;
+  }
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.icons_block{
+  margin-bottom: 40px;
+}

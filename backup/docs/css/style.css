@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/**
+Mixins
+@author Danilo Ramírez
+@version 1.0
+ */
+body {
+  background: url("../img/pattern.jpg") repeat;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  -webkit-box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.75);
+  width: 95%;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 10px;
+  /*@media (max-width: $breakpoint-tablet) {
+    width: 95%;
+  }*/
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.wrapper .wrapper-icon-list {
+  margin-top: 20px;
+  display: none;
+}
+@media (max-width: 800px) {
+  .wrapper .wrapper-icon-list {
+    margin-top: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .wrapper-icon-list {
+    margin-top: 10px;
+  }
+}
+.wrapper .wrapper-icon-list .icons {
+  border: lightgrey dotted 1px;
+  position: relative;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+@media (max-width: 800px) {
+  .wrapper .wrapper-icon-list .icons {
+    grid-template-columns: auto auto auto auto auto;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .wrapper-icon-list .icons {
+    grid-template-columns: auto auto auto;
+  }
+}
+.wrapper .wrapper-icon-list .icons .icon {
+  cursor: pointer;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .wrapper .wrapper-icon-list .icons .icon {
+    height: 55px;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .wrapper-icon-list .icons .icon {
+    height: 60px;
+  }
+}
+.wrapper .wrapper-icon-list .icons .icon span {
+  font-size: 30px;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+@media (max-width: 800px) {
+  .wrapper .wrapper-icon-list .icons .icon span {
+    font-size: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .wrapper-icon-list .icons .icon span {
+    font-size: 55px;
+  }
+}
+.wrapper .wrapper-icon-list .icons .icon:hover span {
+  font-size: 35px;
+}
+@media (max-width: 800px) {
+  .wrapper .wrapper-icon-list .icons .icon:hover span {
+    font-size: 53px;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .wrapper-icon-list .icons .icon:hover span {
+    font-size: 58px;
+  }
+}
+
+/**
+GENERAL CLASSES
+ */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/**
+  FONT SIZES and STYLES
+ */
+.font_big52 {
+  font-size: 52px;
+}
+@media (max-width: 800px) {
+  .font_big52 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 500px) {
+  .font_big52 {
+    font-size: 23px;
+  }
+}
+
+.font_big24 {
+  font-size: 24px;
+}
+@media (max-width: 800px) {
+  .font_big24 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .font_big24 {
+    font-size: 22px;
+  }
+}
+
+.font_big18 {
+  font-size: 18px;
+}
+@media (max-width: 800px) {
+  .font_big18 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .font_big18 {
+    font-size: 20px;
+  }
+}
+
+.font_big14 {
+  font-size: 16px;
+}
+@media (max-width: 800px) {
+  .font_big14 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .font_big14 {
+    font-size: 14px;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

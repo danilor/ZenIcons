@@ -1,3 +1,5 @@
+import IconsConfig from "../config/Icons.config.ts";
+
 export default function Instructions() {
     return (
         <section id="four" className="wrapper">
@@ -7,11 +9,11 @@ export default function Instructions() {
                 </header>
                 <section>
                     <h4>Downloading and Installing</h4>
-                    <p>You can download the latest version of ZenIcons from <a href="" className="download_pack">here</a>. After downloading it, place it next to the project where you want to use it.</p>
+                    <p>You can download the latest version of ZenIcons from <a href={IconsConfig.downloadLink} target={'_blank'} className="download_pack">here</a>. After downloading it, place it next to the project where you want to use it.</p>
                     <p>
                         After that, put the following line of code between the &lt;head&gt;&lt;/head&gt; tags:
                     </p>
-                    <pre><code>&lt;link id="ZendIcons" rel="stylesheet" href="dist/fonts.css" /&gt;</code></pre>
+                    <pre><code>&lt;link id="ZenIcons" rel="stylesheet" href="dist/fonts.css" /&gt;</code></pre>
                     <p>
                         With just that line, you are ready to use all the icons in ZenIcons. Easy-peasy! right?
                     </p>

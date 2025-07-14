@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import type {IconSelectionModel} from "../models/IconSelection.ts";
 import IconsConfig from "../config/Icons.config.ts";
+import SingleIcon from "./SingleIcon.tsx";
 
 
 
@@ -62,11 +63,9 @@ export default function IconsBlock(
             <h3 custom-definition={definitionFile}>{title}</h3>
             <hr/>
             <section className="icons-list">
-
                 {
                     getResultedIcons().map((icon:IconSelectionModel, index: number)  => (
-                        <div key={`icon${icon.name}${index}`} className="icon" title={IconsConfig.prefix + icon.name}><span className={IconsConfig.prefix + icon.name}></span></div>
-                    ))
+                        <SingleIcon key={`icon${icon.name}${index}`} icon={IconsConfig.prefix + icon.name} />))
                 }
 
 

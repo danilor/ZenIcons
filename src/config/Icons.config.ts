@@ -1,5 +1,6 @@
 const IconsConfig = {
-    prefix: 'zi-'
+    prefix: 'zi-',
+    downloadLink:'https://github.com/danilor/ZenIcons/releases'
 };
 
 export default IconsConfig;

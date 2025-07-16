@@ -5,8 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base:'/ZenIcons/',
+  publicDir:'public',
   build:{
     outDir: './docs',
-    emptyOutDir: true
+    emptyOutDir: true,
+    reportCompressedSize: true,
   }
 })
